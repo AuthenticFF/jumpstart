@@ -7,7 +7,6 @@ require.config( {
 
   baseUrl: "/assets/scripts",
 
-
   urlArgs: "bust=" +  (new Date()).getTime(),
 
   paths:{
@@ -29,7 +28,6 @@ require([
   "underscore",
   "classes/sitewide"
   ], function($, _, Sitewide){
-
 
     // Intantiating template js
     var template_name = $("[data-template]").data("template");

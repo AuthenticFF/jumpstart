@@ -4,6 +4,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
 
     pkg: grunt.file.readJSON('package.json'),
+
     settings: grunt.file.readJSON('config/grunt_settings.json'),
 
     deployments: {
@@ -40,15 +41,34 @@ module.exports = function(grunt) {
     copy: {
       plugins: {
         files: [
+
+          // Foundation
+          {cwd: "bower_modules/foundation/js", src: '**', dest: 'assets/scripts/vendor', expand: true, flatten: false},
+          {cwd: "bower_modules/foundation/scss/foundation", src: '**', dest: 'assets/styles/sass/foundation', expand: true, flatten: false},
+          {isFile: true, rename: function(dest, src){ return dest + "_" + src; }, cwd: "bower_modules/foundation/scss", src: 'foundation.scss', dest: 'assets/styles/sass/', expand: true, flatten: false},
+          {isFile: true, rename: function(dest, src){ return dest + "_" + src; }, cwd: "bower_modules/foundation/scss", src: 'normalize.scss', dest: 'assets/styles/sass/', expand: true, flatten: false},
+
           {expand: true, flatten: false, cwd: "bower_modules/jquery", src: 'jquery.js', dest: 'assets/scripts/vendor/', filter: 'isFile'},
           {expand: true, flatten: false, cwd: "bower_modules/requirejs", src: 'require.js', dest: 'assets/scripts/vendor/', filter: 'isFile'},
           {expand: true, flatten: false, cwd: "bower_modules/underscore", src: 'underscore.js', dest: 'assets/scripts/vendor/', filter: 'isFile'},
         ]
       }
+    },
+
+    requirejs: {
+      compile: {
+        options: {
+          name: "main",
+          baseUrl: "assets/scripts",
+          mainConfigFile: "assest/scripts/main.js",
+          out: "assets/scripts/main-built.js"
+        }
+      }
     }
 
   });
 
+  grunt.loadNpmTasks('grunt-contrib-requirejs');
   grunt.loadNpmTasks('grunt-deployments');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks("grunt-rsync");

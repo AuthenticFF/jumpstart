@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "devDependencies": {
     "grunt": "~0.4.1",
-    "grunt-deployments": "https://github.com/bryantAXS/grunt-deployments/tarball/develop",
-    "grunt-contrib-copy": "~0.4.1"
+    "grunt-deployments": "~0.1.5",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-requirejs": "~0.4.1"
   },
   "dependencies": {
     "grunt-rsync": "~0.2.0"

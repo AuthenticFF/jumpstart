@@ -1,5 +1,6 @@
 .sass-cache/*
 .DS_STORE
+
 Gemfile.lock
 
 node_modules
@@ -8,6 +9,12 @@ bower_modules
 /db/staging/*
 /db/local/*
 /db/production/*
+
+/assets/scripts/vendor
+/assets/styles/sass/foundation
+/assets/styles/sass/_foundation*
+/assets/styles/sass/_normalize*
+
 
 
 
