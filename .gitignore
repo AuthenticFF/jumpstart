@@ -1,0 +1,14 @@
+.sass-cache/*
+.DS_STORE
+Gemfile.lock
+
+node_modules
+bower_modules
+
+/db/staging/*
+/db/local/*
+/db/production/*
+
+
+
+
