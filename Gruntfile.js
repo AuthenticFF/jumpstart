@@ -38,6 +38,23 @@ module.exports = function(grunt) {
       }
     },
 
+    rsync: {
+      // staging: {
+      //   options: {
+      //     args: ["-e ssh -p24","--recursive","-avz","--progress", "--verbose"],
+      //     src: "user@0.0.0.0:/content/",
+      //     dest: "./content",
+      //   }
+      // },
+      production: {
+        options: {
+          args: ["-e ssh","--recursive","-avz","--progress", "--verbose"],
+          src: "user@0.0.0.0:/content/",
+          dest: "./content",
+        }
+      },
+    },
+
     copy: {
       plugins: {
         files: [
@@ -74,6 +91,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-rsync");
 
   grunt.registerTask("copy-plugins", ["copy:plugins"]);
+  grunt.registerTask("content_pull", ["rsync:production"]);
 
   //Default task(s).
   //grunt.registerTask('default', [""]);
