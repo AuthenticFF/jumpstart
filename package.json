@@ -6,6 +6,8 @@
     "grunt-deployments": "~0.1.5",
     "grunt-contrib-copy": "~0.4.1",
     "grunt-contrib-requirejs": "~0.4.1",
-    "grunt-rsync": "~0.2.1"
-  },
+    "grunt-rsync": "~0.2.1",
+    "bower": "~0.10.0",
+    "grunt-bower-requirejs": "~0.6.0"
+  }
 }

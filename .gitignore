@@ -4,7 +4,7 @@
 Gemfile.lock
 
 node_modules
-bower_modules
+bower_components
 
 /db/staging/*
 /db/local/*

@@ -10,8 +10,8 @@ require.config( {
   urlArgs: "bust=" +  (new Date()).getTime(),
 
   paths:{
-    "jquery": "vendor/jquery",
-    "underscore": "vendor/underscore",
+    // "jquery": "vendor/jquery",
+    // "underscore": "vendor/underscore",
   },
 
   shim: {

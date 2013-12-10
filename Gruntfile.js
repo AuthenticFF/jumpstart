@@ -3,10 +3,13 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
 
+
     pkg: grunt.file.readJSON('package.json'),
 
+    // loading our settings vars
     settings: grunt.file.readJSON('config/grunt_settings.json'),
 
+    // -- Handling DB migrations
     deployments: {
       options:{
         "backups_dir": "db",
@@ -22,22 +25,23 @@ module.exports = function(grunt) {
       },
       staging:{
         "title": "Staging",
-        "database": "",
-        "user": "",
-        "pass": "",
-        "host": "",
-        "ssh_host": "root@0.0.0.0.0 -p 1234"
+        "database": "<%- settings.db.staging.database %>",
+        "user": "<%- settings.db.staging.user %>",
+        "pass": "<%- settings.db.staging.pass %>",
+        "host": "<%- settings.db.staging.host %>",
+        "ssh_host": "<%- settings.db.staging.ssh_host %>"
       },
       production:{
         "title": "Production",
-        "database": "",
-        "user": "",
-        "pass": "",
-        "host": "",
-        "ssh_host": ""
+        "database": "<%- settings.db.production.database %>",
+        "user": "<%- settings.db.production.user %>",
+        "pass": "<%- settings.db.production.pass %>",
+        "host": "<%- settings.db.production.host %>",
+        "ssh_host": "<%- settings.db.production.ssh_host %>"
       }
     },
 
+    // -- Syncing files from Prod to Local
     rsync: {
       // staging: {
       //   options: {
@@ -55,23 +59,27 @@ module.exports = function(grunt) {
       },
     },
 
+
+    // -- Copying plugins from bower_components to vendor
     copy: {
       plugins: {
         files: [
 
           // Foundation
-          {cwd: "bower_modules/foundation/js", src: '**', dest: 'assets/scripts/vendor', expand: true, flatten: false},
-          {cwd: "bower_modules/foundation/scss/foundation", src: '**', dest: 'assets/styles/sass/foundation', expand: true, flatten: false},
-          {isFile: true, rename: function(dest, src){ return dest + "_" + src; }, cwd: "bower_modules/foundation/scss", src: 'foundation.scss', dest: 'assets/styles/sass/', expand: true, flatten: false},
-          {isFile: true, rename: function(dest, src){ return dest + "_" + src; }, cwd: "bower_modules/foundation/scss", src: 'normalize.scss', dest: 'assets/styles/sass/', expand: true, flatten: false},
+          {cwd: "bower_components/foundation/js", src: '**', dest: 'assets/scripts/vendor', expand: true, flatten: false},
+          {cwd: "bower_components/foundation/scss/foundation", src: '**', dest: 'assets/styles/sass/foundation', expand: true, flatten: false},
+          {isFile: true, rename: function(dest, src){ return dest + "_" + src; }, cwd: "bower_components/foundation/scss", src: 'foundation.scss', dest: 'assets/styles/sass/', expand: true, flatten: false},
+          {isFile: true, rename: function(dest, src){ return dest + "_" + src; }, cwd: "bower_components/foundation/scss", src: 'normalize.scss', dest: 'assets/styles/sass/', expand: true, flatten: false},
 
-          {expand: true, flatten: false, cwd: "bower_modules/jquery", src: 'jquery.js', dest: 'assets/scripts/vendor/', filter: 'isFile'},
-          {expand: true, flatten: false, cwd: "bower_modules/requirejs", src: 'require.js', dest: 'assets/scripts/vendor/', filter: 'isFile'},
-          {expand: true, flatten: false, cwd: "bower_modules/underscore", src: 'underscore.js', dest: 'assets/scripts/vendor/', filter: 'isFile'},
+          {expand: true, flatten: false, cwd: "bower_components/jquery", src: 'jquery.js', dest: 'assets/scripts/vendor/', filter: 'isFile'},
+          {expand: true, flatten: false, cwd: "bower_components/requirejs", src: 'require.js', dest: 'assets/scripts/vendor/', filter: 'isFile'},
+          {expand: true, flatten: false, cwd: "bower_components/underscore", src: 'underscore.js', dest: 'assets/scripts/vendor/', filter: 'isFile'},
         ]
       }
     },
 
+
+    // -- Require.js Compiling
     requirejs: {
       compile: {
         options: {
@@ -81,9 +89,20 @@ module.exports = function(grunt) {
           out: "assets/scripts/main-built.js"
         }
       }
+    },
+
+
+    // -- Adding bower packages to require.js paths
+    bower: {
+      target: {
+        rjsConfig: 'assets/scripts/main.js'
+      }
     }
 
   });
+
+
+  // TASKS
 
   grunt.loadNpmTasks('grunt-contrib-requirejs');
   grunt.loadNpmTasks('grunt-deployments');
