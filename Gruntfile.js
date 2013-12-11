@@ -71,9 +71,7 @@ module.exports = function(grunt) {
           {isFile: true, rename: function(dest, src){ return dest + "_" + src; }, cwd: "bower_components/foundation/scss", src: 'foundation.scss', dest: 'assets/styles/sass/', expand: true, flatten: false},
           {isFile: true, rename: function(dest, src){ return dest + "_" + src; }, cwd: "bower_components/foundation/scss", src: 'normalize.scss', dest: 'assets/styles/sass/', expand: true, flatten: false},
 
-          {expand: true, flatten: false, cwd: "bower_components/jquery", src: 'jquery.js', dest: 'assets/scripts/vendor/', filter: 'isFile'},
           {expand: true, flatten: false, cwd: "bower_components/requirejs", src: 'require.js', dest: 'assets/scripts/vendor/', filter: 'isFile'},
-          {expand: true, flatten: false, cwd: "bower_components/underscore", src: 'underscore.js', dest: 'assets/scripts/vendor/', filter: 'isFile'},
         ]
       }
     },
@@ -95,7 +93,10 @@ module.exports = function(grunt) {
     // -- Adding bower packages to require.js paths
     bower: {
       target: {
-        rjsConfig: 'assets/scripts/main.js'
+        rjsConfig: 'assets/scripts/main.js',
+        options: {
+          exclude: ['requirejs']
+        }
       }
     }
 
@@ -103,7 +104,7 @@ module.exports = function(grunt) {
 
 
   // TASKS
-
+  grunt.loadNpmTasks('grunt-bower-requirejs');
   grunt.loadNpmTasks('grunt-contrib-requirejs');
   grunt.loadNpmTasks('grunt-deployments');
   grunt.loadNpmTasks('grunt-contrib-copy');
@@ -111,6 +112,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask("copy-plugins", ["copy:plugins"]);
   grunt.registerTask("content_pull", ["rsync:production"]);
+  grunt.registerTask("copy-bower", ["bower"]);
 
   //Default task(s).
   //grunt.registerTask('default', [""]);
