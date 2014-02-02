@@ -1,4 +1,4 @@
-require File.expand_path("#{File.dirname(__FILE__)}/cap-assets/dbtasks")
+
 
 if !ENV['env'].nil? then
   set(:env, ENV['env'])

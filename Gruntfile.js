@@ -3,121 +3,130 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
 
-
     pkg: grunt.file.readJSON('package.json'),
 
-    // loading our settings vars
-    settings: grunt.file.readJSON('config/grunt_settings.json'),
+    // deployments: grunt.file.readJSON("config/settings/deployments.json"),
 
-    // -- Handling DB migrations
-    deployments: {
-      options:{
-        "backups_dir": "db",
-        "replace_url": false
-      },
-      local:{
-        "title": "Local",
-        "database": "<%- settings.db.local.database %>",
-        "user": "<%- settings.db.local.user %>",
-        "pass": "<%- settings.db.local.pass %>",
-        "host": "<%- settings.db.local.host %>",
-        // note that the `local` target does not have an "ssh_host"
-      },
-      staging:{
-        "title": "Staging",
-        "database": "<%- settings.db.staging.database %>",
-        "user": "<%- settings.db.staging.user %>",
-        "pass": "<%- settings.db.staging.pass %>",
-        "host": "<%- settings.db.staging.host %>",
-        "ssh_host": "<%- settings.db.staging.ssh_host %>"
-      },
-      production:{
-        "title": "Production",
-        "database": "<%- settings.db.production.database %>",
-        "user": "<%- settings.db.production.user %>",
-        "pass": "<%- settings.db.production.pass %>",
-        "host": "<%- settings.db.production.host %>",
-        "ssh_host": "<%- settings.db.production.ssh_host %>"
+    // rsync: grunt.file.readJSON("config/settings/rsync.json"),
+
+    clean: {
+      hooks: ['.git/hooks/pre-commit']
+    },
+
+    shell: {
+      hooks: {
+        command: ['cp config/githooks/pre-commit .git/hooks/', 'chmod 755 .git/hooks/pre-commit'].join(";")
       }
     },
 
-    // -- Syncing files from Prod to Local
-    rsync: {
-      // staging: {
-      //   options: {
-      //     args: ["-e ssh -p24","--recursive","-avz","--progress", "--verbose"],
-      //     src: "user@0.0.0.0:/content/",
-      //     dest: "./content",
-      //   }
-      // },
-      production: {
-        options: {
-          args: ["-e ssh","--recursive","-avz","--progress", "--verbose"],
-          src: "user@0.0.0.0:/content/",
-          dest: "./content",
-        }
-      },
-    },
-
-
-    // -- Copying plugins from bower_components to vendor
     copy: {
       plugins: {
         files: [
-
           // Foundation
-          {cwd: "bower_components/foundation/js", src: '**', dest: 'assets/scripts/vendor', expand: true, flatten: false},
           {cwd: "bower_components/foundation/scss/foundation", src: '**', dest: 'assets/styles/sass/foundation', expand: true, flatten: false},
           {isFile: true, rename: function(dest, src){ return dest + "_" + src; }, cwd: "bower_components/foundation/scss", src: 'foundation.scss', dest: 'assets/styles/sass/', expand: true, flatten: false},
           {isFile: true, rename: function(dest, src){ return dest + "_" + src; }, cwd: "bower_components/foundation/scss", src: 'normalize.scss', dest: 'assets/styles/sass/', expand: true, flatten: false},
-
-          {expand: true, flatten: false, cwd: "bower_components/requirejs", src: 'require.js', dest: 'assets/scripts/vendor/', filter: 'isFile'},
         ]
       }
     },
 
-
-    // -- Require.js Compiling
-    requirejs: {
-      compile: {
-        options: {
-          name: "main",
-          baseUrl: "assets/scripts",
-          mainConfigFile: "assest/scripts/main.js",
-          out: "assets/scripts/main-built.js"
+    bower_concat: {
+      all: {
+        dest: 'assets/scripts/built/bower.js',
+        dependencies: {
+          'foundation': 'jquery'
+        },
+        bowerOptions: {
+          relative: false
         }
       }
     },
 
+    concat: {
+      dist: {
+        src: [
+          'assets/scripts/classes/*',
+          'assets/scripts/templates/*',
+          'assets/scripts/vendor/*',
+          'assets/scripts/built/bower.js',
+          'assets/scripts/main.js'
+        ],
+        dest: 'assets/scripts/built/scripts.js',
+      },
+    },
 
-    // -- Adding bower packages to require.js paths
-    bower: {
-      target: {
-        rjsConfig: 'assets/scripts/main.js',
-        options: {
-          exclude: ['requirejs']
+    uglify: {
+      options: {
+        mangle: false,
+        compress: false,
+        beautify: false
+      },
+      my_target: {
+        files: {
+          'assets/scripts/built/built.js': [
+            'assets/scripts/built/scripts.js'
+            ]
         }
       }
+    },
+
+    compass: {
+      dist: {
+        options: {
+          sassDir: 'assets/styles/sass',
+          cssDir: 'assets/styles/css',
+          imagesDir: 'assets/images',
+          javascriptsDir: 'assets/scripts',
+          outputStyle: "nested",
+          environment: "development",
+          watch: true
+        }
+      }
+    },
+
+    watch: {
+      options: {
+        livereload: true,
+      },
+      sass: {
+        files: ['assets/styles/sass/**/*.scss'],
+        tasks: ['compass']
+      },
+      scripts: {
+        files: ['assets/scripts/**/*.js', '!assets/scripts/built/*'],
+        tasks: ['concat']
+      }
+    },
+
+    concurrent: {
+      options: {
+        logConcurrentOutput: true
+      },
+      watch: ['compass', 'watch:scripts'],
     }
 
   });
 
-
   // TASKS
-  grunt.loadNpmTasks('grunt-bower-requirejs');
-  grunt.loadNpmTasks('grunt-contrib-requirejs');
+
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-deployments');
-  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks("grunt-rsync");
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-bower-concat');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-concurrent');
 
-  grunt.registerTask("copy-plugins", ["copy:plugins"]);
-  grunt.registerTask("content_pull", ["rsync:production"]);
-  grunt.registerTask("copy-bower", ["bower"]);
+  grunt.registerTask('hookmeup', ['clean:hooks', 'shell:hooks']);
+  grunt.registerTask("init", ["copy:plugins"]);
+  grunt.registerTask("compile", ["bower_concat", "concat", "uglify"]);
+  grunt.registerTask("watchme", ["concurrent:watch"]);
 
-  //Default task(s).
-  //grunt.registerTask('default', [""]);
-
-
-
+  // grunt.registerTask("get-content", ["rsync:production"]);
+  // grunt.registerTask('default', [""]);
 
 };

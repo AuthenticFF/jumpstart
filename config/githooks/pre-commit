@@ -1,0 +1,10 @@
+#!/bin/sh
+#
+# Pre-commit hooks
+
+# Lint stuff before committing
+grunt compile
+
+git add -f httpdocs/assets/scripts/built
+
+exit 0

@@ -1,0 +1,35 @@
+{
+
+  "options":{
+    "backups_dir" : "db",
+    "replace_url" : false
+  },
+
+  "local":{
+    "title"    : "Local",
+    "database" : "",
+    "user"     : "",
+    "pass"     : "",
+    "host"     : "127.0.0.1"
+    // note that the `local` target does not have an "ssh_host"
+  },
+
+  "staging":{
+    "title"    : "Staging",
+    "database" : "",
+    "user"     : "",
+    "pass"     : "",
+    "host"     : "127.0.0.1",
+    "ssh_host" : "user@0.0.0.0 -p 22"
+  },
+
+  "production":{
+    "title"    : "Production",
+    "database" : "",
+    "user"     : "",
+    "pass"     : "",
+    "host"     : "127.0.0.1",
+    "ssh_host" : "user@0.0.0.0 -p 22"
+  }
+
+}

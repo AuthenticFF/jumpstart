@@ -10,11 +10,12 @@ bower_components
 /db/local/*
 /db/production/*
 
-/assets/scripts/vendor
 /assets/styles/sass/foundation
 /assets/styles/sass/_foundation*
 /assets/styles/sass/_normalize*
 
+*.sublime-project
+*.sublime-workspace
 
 
 

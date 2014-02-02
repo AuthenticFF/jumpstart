@@ -1,0 +1,1968 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"sub",
+				"submissionErrorMessage"
+			],
+			[
+				"alternate",
+				"alternateCourses"
+			],
+			[
+				"selected",
+				"selectedCourses"
+			],
+			[
+				"place",
+				"placeholderItemView"
+			],
+			[
+				"program-requests",
+				"program-requests-choose"
+			],
+			[
+				"speci",
+				"specialNeedsData"
+			],
+			[
+				"spec",
+				"specialNeedsData"
+			],
+			[
+				"createStudent",
+				"createStudentPassword"
+			],
+			[
+				"success",
+				"successStudentData"
+			],
+			[
+				"load",
+				"loadParentForm"
+			],
+			[
+				"getStudent",
+				"getStudentRelationships"
+			],
+			[
+				"studentData",
+				"studentDataMatches"
+			],
+			[
+				"ent",
+				"entities"
+			],
+			[
+				"relation",
+				"relationshipMatch"
+			],
+			[
+				"poss",
+				"possibleStudents1"
+			],
+			[
+				"findStudnetByFirst",
+				"findStudentByFirstInitialLastNameAndEmptyBirthday"
+			],
+			[
+				"record",
+				"recordLookupModal"
+			],
+			[
+				"regist",
+				"registrationOpenNewStudents"
+			],
+			[
+				"array_ke",
+				"array_key_exists"
+			],
+			[
+				"erro",
+				"errorMessage"
+			],
+			[
+				"hijack",
+				"hijackAnchors"
+			],
+			[
+				"prospect",
+				"prospectEntity"
+			],
+			[
+				"new",
+				"newStudentEntity"
+			],
+			[
+				"fields",
+				"fieldsToMap"
+			],
+			[
+				"pros",
+				"prospectRecId"
+			],
+			[
+				"prospe",
+				"prospectEntity"
+			],
+			[
+				"gradeLe",
+				"gradeLevelsArr"
+			],
+			[
+				"grade",
+				"gradeLevels"
+			],
+			[
+				"parent",
+				"parentRecId"
+			],
+			[
+				"student",
+				"studentRecId"
+			],
+			[
+				"pare",
+				"parentRecId"
+			],
+			[
+				"stud",
+				"studentRecId"
+			],
+			[
+				"validat",
+				"validationMessages"
+			],
+			[
+				"create",
+				"createPersonEntity"
+			],
+			[
+				"json_",
+				"json_encode"
+			],
+			[
+				"json",
+				"json_decode"
+			],
+			[
+				"course",
+				"courseRequestEntity"
+			],
+			[
+				"pre",
+				"prerequisiteGateway"
+			],
+			[
+				"stude",
+				"studentEntity"
+			],
+			[
+				"strp",
+				"strpos"
+			],
+			[
+				"Servicelocater",
+				"ServicelocaterServiceProvider"
+			],
+			[
+				"simple",
+				"simpleFMAdapterRow"
+			],
+			[
+				"getAverage",
+				"getAverageVehicleMilesTraveledAttribute"
+			],
+			[
+				"getGas",
+				"getGasMtco2ePerYearAtSite"
+			],
+			[
+				"getEle",
+				"getElectricMtco2dPerYearAtSite"
+			],
+			[
+				"cateo",
+				"categoryCollection"
+			],
+			[
+				"categ",
+				"categoryCollection"
+			],
+			[
+				"getCate",
+				"getCategoryShort"
+			],
+			[
+				"get",
+				"getLut"
+			],
+			[
+				"landUse",
+				"landUseTypesCollection"
+			],
+			[
+				"init",
+				"initBg"
+			],
+			[
+				"acre",
+				"acreDistribution"
+			],
+			[
+				"show",
+				"showSidebar"
+			],
+			[
+				"lut",
+				"lut-distribution-chart"
+			],
+			[
+				"Compa",
+				"CompareChartLayout"
+			],
+			[
+				"zipcode",
+				"zipcodeContainer"
+			],
+			[
+				"setZip",
+				"setZipcodeError"
+			],
+			[
+				"validate",
+				"validateFields"
+			],
+			[
+				"has",
+				"hasValidatedZipcode"
+			],
+			[
+				"hasVal",
+				"hasValidatedAcreage"
+			],
+			[
+				"hasValida",
+				"hasValidatedZipcode"
+			],
+			[
+				"big-icon",
+				"big-input-helper-icon"
+			],
+			[
+				"dark",
+				"dark-highlight"
+			],
+			[
+				"goGreenPotne",
+				"goGreenPotentialReductionTotal"
+			],
+			[
+				"bau",
+				"bauEmissionsTotal"
+			],
+			[
+				"getGoGreenSta",
+				"getGoGreenStationaryReductionPercentage"
+			],
+			[
+				"getGoGreenMobile",
+				"getGoGreenMobileReductionPercentage"
+			],
+			[
+				"getGoGreenCon",
+				"getGoGreenWaterReductionAttribute"
+			],
+			[
+				"getGoGreen",
+				"getGoGreenWaterReductionAttribute"
+			],
+			[
+				"goGreen",
+				"getGoGreenMobileReductionAttribute"
+			],
+			[
+				"getBA",
+				"getBAUConstructionMtco2e"
+			],
+			[
+				"goGreenConstruct",
+				"getGoGreenConstructionReductionAttribute"
+			],
+			[
+				"getGoGreenMobil",
+				"getGoGreenMobileReductionPercentage"
+			],
+			[
+				"getGoGreenSt",
+				"getGoGreenStationaryReductionPercentage"
+			],
+			[
+				"getGoGreenWater",
+				"getGoGreenWaterReductionPercentage"
+			],
+			[
+				"percent",
+				"percentOpenSpace"
+			],
+			[
+				"category",
+				"category_short"
+			],
+			[
+				"cat",
+				"category_short"
+			],
+			[
+				"Land",
+				"landUseType"
+			],
+			[
+				"total",
+				"testTotalMtco2ePerYearAtSite"
+			],
+			[
+				"loca",
+				"locationData"
+			],
+			[
+				"number",
+				"number_of_units"
+			],
+			[
+				"galle",
+				"gallons_per_person_per_day"
+			],
+			[
+				"is_n",
+				"is_null"
+			],
+			[
+				"ser",
+				"service_population_unit"
+			],
+			[
+				"gall",
+				"gallons_per_person_per_day"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"foreach",
+				"foreach	foreach …"
+			],
+			[
+				"num",
+				"numberOfPeople"
+			],
+			[
+				"_getPer",
+				"_getPersonLeft"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"upload",
+				"upload_preferences"
+			],
+			[
+				"i",
+				"isScrolledIntoView"
+			],
+			[
+				"back",
+				"backup_pro_config"
+			],
+			[
+				"vertical",
+				"vertical-align"
+			],
+			[
+				"Section_resources",
+				"section_resources"
+			],
+			[
+				"asset",
+				"asset_overlay"
+			],
+			[
+				"asset-library",
+				"asset-library-overlay"
+			],
+			[
+				"protot",
+				"prototype"
+			],
+			[
+				"Helv-",
+				"HelvNeue-Bold"
+			],
+			[
+				"current_sec",
+				"current_section_index"
+			],
+			[
+				"hidd",
+				"hidden"
+			],
+			[
+				"current",
+				"current_section_title"
+			],
+			[
+				"inArra",
+				"inArray"
+			],
+			[
+				"8cc",
+				"8cc53f"
+			],
+			[
+				"realizi",
+				"realizing-the-promise"
+			],
+			[
+				"assets",
+				"assets"
+			],
+			[
+				"Smarter",
+				"Smarter"
+			],
+			[
+				"Realizing",
+				"Realizing"
+			],
+			[
+				"is_a",
+				"is_array"
+			],
+			[
+				"doc_f",
+				"doc_f: Function"
+			],
+			[
+				"doc_c",
+				"doc_c: Class"
+			],
+			[
+				"entries",
+				"entries: exp:channel:entries"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 2479,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Gruntfile.js",
+			"settings":
+			{
+				"buffer_size": 3552,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 118.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"back",
+				"SublimeLinter: Background Linting"
+			],
+			[
+				"linter",
+				"SublimeLinter: Lint Current File"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"lint",
+				"SublimeLinter: Lint Current File"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Enable Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"packages",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set json",
+				"Set Syntax: JSON"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"et laravel",
+				"Set Syntax: PHP - Laravel Blade"
+			],
+			[
+				"controller",
+				"Laravel Generate: Controller"
+			],
+			[
+				"gist",
+				"Gist: Insert Gist"
+			],
+			[
+				"fetch",
+				"Fetch: Manage remote files"
+			],
+			[
+				"set html",
+				"Set Syntax: HTML5"
+			],
+			[
+				"set php",
+				"Set Syntax: PHP"
+			],
+			[
+				"set p",
+				"Set Syntax: PHP"
+			],
+			[
+				"set exp",
+				"Set Syntax: ExpressionEngine"
+			],
+			[
+				"express",
+				"Set Syntax: ExpressionEngine"
+			]
+		],
+		"width": 561.0
+	},
+	"console":
+	{
+		"height": 375.0,
+		"history":
+		[
+			"clear()",
+			"clear",
+			"php l",
+			"php -l",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": true,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/bryanthughes/Sites/Authentic FF/Tools/jumpstart/Gruntfile.js",
+		"/Users/bryanthughes/Sites/Authentic FF/Tools/jumpstart/package.json",
+		"/Users/bryanthughes/Sites/Authentic FF/Tools/jumpstart/index.html",
+		"/Users/bryanthughes/Sites/Authentic FF/Tools/jumpstart/jumpstart.sublime-project",
+		"/Users/bryanthughes/Sites/Authentic FF/Tools/jumpstart/assets/scripts/main.js",
+		"/Users/bryanthughes/Sites/Authentic FF/Tools/jumpstart/config/grunt_settings.json",
+		"/Users/bryanthughes/Sites/Authentic FF/Tools/jumpstart/.gitignore",
+		"/Users/bryanthughes/Sites/Authentic FF/Tools/jumpstart/README.md",
+		"/Users/bryanthughes/Sites/Authentic FF/Tools/jumpstart/bower.json",
+		"/Users/bryanthughes/Sites/Authentic FF/Tools/jumpstart/config/bootstrap.php",
+		"/Users/bryanthughes/Sites/Authentic FF/Tools/jumpstart/config/compass.rb",
+		"/Users/bryanthughes/Sites/Authentic FF/Tools/jumpstart/config/config_local.php",
+		"/Users/bryanthughes/Sites/Authentic FF/Tools/jumpstart/config/TEMP_config_local.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/apps/App.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/controllers/AppController.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/artisan",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/styles/sass/components/_forms.scss",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/pageLayouts/ProgramRequestsAdditionalPageLayout.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/views/pageLayouts/programRequestsLandingPageLayout.blade.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/views/pageLayouts/programRequestsChoosePageLayout.blade.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/lib/repositories/interfaces/ProspectsRepository.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/phpunit.xml",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/pageLayouts/ProgramRequestsChoosePageLayout.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/views/templates/itemViews/emptyCoursesItemView.blade.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/styles/sass/modules/_modules.scss",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/views/itemViews/SortableCourseItemView.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/views/collectionViews/CoursesCollectionView.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/collections/CoursesCollection.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/controllers/CoursesController.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/views/templates/itemViews/courseItemView.blade.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/composer.json",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/views/itemViews/CourseItemView.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/views/itemViews/PlaceholderCourseItemView.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/views/templates/itemViews/placeholderCourseItemView.blade.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/vendor/monolog/monolog/tests/Monolog/PsrLogCompatTest.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/views/collectionViews/SortableCoursesCollectionView.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/vendor/mustache/mustache/test/fixtures/examples/section_objects/section_objects.mustache",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/slicing.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/node_modules/bower/templates/search-empty.mustache",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/collections/SelectedCoursesCollection.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/bower_components/foundation/js/vendor/placeholder.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/vendor/vendor/placeholder.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/models/CourseModel.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/tests/Gateways/PersonGatewayTest.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/bower_components/requirejs/tests/error/globalOnError.html",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/vendor/nikic/php-parser/lib/PHPParser/Node/Expr/GreaterOrEqual.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/PostgresGrammar.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/vendor/composer/autoload_psr4.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/.git/index",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/vendor/nesbot/carbon/tests/IsTest.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/collections/AlternateCoursesCollection.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/controllers/RoutingController.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/tests/Controllers/CourseRequestsControllerTest.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/tests/Entities/CourseRequestEntityTest.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/tests/Gateways/CourseRequestGatewayTest.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/vendor/mockery/mockery/library/Mockery/CountValidator/AtLeast.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/fonts/AlrightSans-Light.svg",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/README",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/routes.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/routers/Router.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/main.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/bower_components/jquery-validation/localization/messages_ar.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/views/templates/itemViews/sortableCourseItemView.blade.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/vendor/symfony/finder/Symfony/Component/Finder/Iterator/SortableIterator.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/node_modules/bower/node_modules/fstream/lib/socket-reader.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/bootstrap/start.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/views/templates/itemViews/alternateCourseItemView.blade.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/views/templates/itemViews/selectedCourseItemView.blade.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/views/collectionViews/AlternateCoursesCollectionView.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/views/itemViews/SelectedCourseItemView.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/views/itemViews/AlternateCourseItemView.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/node_modules/bower/LICENSE",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/views/collectionViews/SelectedCoursesCollectionView.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/models/CourseModel.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/SendListener.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/vendor/jquery-ui.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/bower_components/backbone.marionette/src/marionette.collectionview.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/bower_components/backbone/test/collection.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/node_modules/bower/node_modules/colors/colors.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/views/wrappers/master.blade.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/vendor/yui-min.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/vendor/UseYUI.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/bower_components/jquery-validation/localization/messages_it.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/node_modules/grunt-contrib-requirejs/tasks/requirejs.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/bower_components/requirejs/require.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/bower_components/backbone.marionette/src/marionette.itemview.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/bower_components/requirejs/tests/circular/complexPlugin/viewport.html",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/bower_components/backbone.marionette/src/marionette.view.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/bower_components/backbone.marionette/src/marionette.compositeview.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/workbench/authff/servicelocater/vendor/doctrine/dbal/docs/examples/sharding/view_federation_members.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/workbench/authff/servicelocater/vendor/laravel/framework/tests/View/ViewCompilerEngineTest.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/tests/main.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/pageLayouts/WelcomePageLayout.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/views/pageLayouts/welcomePageLayout.blade.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/tests/specs/models/SiteModelTest.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/controllers/BaseController.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/views/partials/scriptTemplates.blade.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/.git/logs/refs/remotes/origin/master",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/.git/refs/remotes/origin/master",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/.git/logs/refs/heads/master",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/.git/refs/heads/master",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/BaseCommand.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/bower_components/modernizr/feature-detects/battery-api.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/bower.json",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/CharsetObserver.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/bower_components/modernizr/feature-detects/css-hyphens.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/start/global.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/lib/helpers/TemplateHelpers.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/bower_components/requirejs/tests/jquery/scripts/jquery-GPL-LICENSE.txt",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/Gruntfile.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/lib/repositories/storage/FmpTermsRepository.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/lib/repositories/interfaces/CoursesRepository.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/lib/repositories/storage/FmpCoursesRepository.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/tests/Repositories/CoursesRepositoryTest.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/tests/Repositories/TermsRepositoryTest.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/workbench/authff/servicelocater/src/Authff/Servicelocater/Entities/TermEntity.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/TODO.md",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/vendor/bin/phpunit",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/lib/repositories/interfaces/TermsRepository.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/lib/repositories/storage/FmpPeopleRepository.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/lib/repositories/storage/FmpRelationships.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/vendor/phpunit/phpunit/Tests/TextUI/filter-method.phpt",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/.git/FETCH_HEAD",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/views/pageLayouts/programRequestsAdditionalPageLayout.blade.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/bower_components/modernizr/feature-detects/elem-progress-meter.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/tests/Gateways/CourseGatewayTest.php",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/bower_components/requirejs/tests/universal/universal-tests-built-expected.js",
+		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/bower_components/requirejs/tests/universal/universal-tests-built.js"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 94.0,
+		"where_history":
+		[
+			"/Users/bryanthughes/Sites/Clients/marwen/registration",
+			"/Users/bryanthughes/Sites/TGL Client Projects/greenhousego/ghg",
+			"/Users/bryanthughes/Sites/TGL Client Projects/foldcraft/foldcraft/httpdocs/assets/scripts",
+			"/Users/bryanthughes/Sites/TGL Client Projects/foldcraft/foldcraft",
+			"/Users/bryanthughes/Sites/TGL Client Projects/foldcraft/foldcraft/templates",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"cursor",
+			"/^[",
+			"Field",
+			"setError",
+			"specify",
+			"findByOne",
+			"ToParent",
+			"createStudent",
+			"createStudentTo",
+			"noMatchConti",
+			"terms",
+			"saveStu",
+			"noMatch",
+			"redirect",
+			"App",
+			"events",
+			"terms",
+			"TermsRepository",
+			"studentData",
+			"getNewStudentEntity",
+			"validat",
+			"servicelocater",
+			"pages",
+			"getNewStudent",
+			"messages",
+			"set",
+			"Student",
+			"Prereq",
+			"Person",
+			"host",
+			"hostname",
+			"php",
+			"html",
+			"this.get(\"acreage\"",
+			"servicePop",
+			"Total",
+			"servicePop",
+			"jasmineAsync",
+			"populate",
+			"console",
+			"console.l",
+			"console.log(\"new\");",
+			"new",
+			"console",
+			"laravel",
+			"console",
+			"is-good",
+			"clearZipcodeHelpers",
+			"lower",
+			"backg",
+			"1000",
+			"cssTriangles",
+			"url('ss",
+			"url('",
+			"url('/assets/fonts/",
+			"bower_modules",
+			"acer",
+			"acre",
+			"acer",
+			"distri",
+			"Acerage",
+			"opens",
+			"$this->bau",
+			"roads",
+			"var_dum",
+			"var_Dump",
+			"\"electricity_percentage\"",
+			"\"pv_roof_area_factor\"",
+			"\"units_per_acre\"",
+			"\"service_population_per_unit\"",
+			"\"sf_per_employee\"",
+			"gfa_per_unit\":\"",
+			"getAverageNumber",
+			"return",
+			"bua",
+			"number_of_units",
+			"getGasMtco2ePerYearAtSite",
+			"gasCfPerSfPerYear",
+			"Attribute",
+			"getGas",
+			"getE",
+			"assign_to",
+			".com",
+			"waymar.com",
+			"content/",
+			"foldcraft.local",
+			"system",
+			"console.log",
+			"padding-top",
+			"address",
+			"family",
+			".subnav-select",
+			"hack",
+			"bryant",
+			"height",
+			"TGL",
+			"capability",
+			"services-slide",
+			".subnav-select",
+			".contact-form",
+			"hr",
+			"display_settings",
+			"grey",
+			".slide",
+			"slide",
+			"side",
+			"populate",
+			"Dough",
+			"capability",
+			"news_galler",
+			"index",
+			"slide_index",
+			"news-title",
+			"capabilities-gallery-pager",
+			"basic-gallery-pager",
+			"slide",
+			".contact",
+			"class=\"contact",
+			"emailModal",
+			"emailModeal",
+			"email",
+			"search-field",
+			"blue",
+			"sitemap",
+			"about-copy-section",
+			"green",
+			"k.push",
+			"sitemap"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Form",
+			"findOneBy",
+			"pageLayouts",
+			"is-valid",
+			"url('/assets/fonts/ss",
+			"url('/assets/fonts/",
+			"bower_components",
+			"$this",
+			"\"electricity_percentage",
+			"\"pv_roof_area_factor",
+			"\"units_per_acre",
+			"\"service_population_per_unit",
+			"\"sf_per_employee",
+			"gfa_per_unit\":",
+			"bau",
+			"numberOfUnits",
+			"",
+			"gas",
+			"g",
+			"e",
+			"waymar",
+			"",
+			"waymar.local",
+			"slide_count",
+			"content-copy-section",
+			"{snippet:partials-_footer}",
+			"{snippet:partials-_code_footer}",
+			"{snippet:partials-_header}",
+			"{snippet:partials-_code_header}",
+			"",
+			"/assets",
+			"",
+			"data-overlay-content",
+			"../img/page-thumbs",
+			"../img/page-thumbs-0.png",
+			".the-foundations-of-innovation",
+			".introduction",
+			"/assets/img/slide-thumbnail-sprite.png",
+			".how-smarter-works #nav-thumb-1{",
+			"-woff.woff",
+			"-ttf.ttf",
+			"-svg.svg",
+			"-eot.eot",
+			"-.eot",
+			"url('../fonts/lub",
+			"url('../fonts",
+			"url('..",
+			"url('../"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2479,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2478,
+								2478
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"Python Django": "python"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Gruntfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3552,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2512,
+								2512
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"Python Django": "python"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 110.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"project": "jumpstart.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"_config",
+				"public/assets/styles/sass/base/_config.scss"
+			],
+			[
+				"_modules",
+				"public/assets/styles/sass/modules/_modules.scss"
+			],
+			[
+				"programreq",
+				"public/assets/scripts/pageLayouts/ProgramRequestsChoosePageLayout.js"
+			],
+			[
+				"program",
+				"app/views/pageLayouts/programRequestsChoosePageLayout.blade.php"
+			],
+			[
+				"coursescollection",
+				"public/assets/scripts/views/collectionViews/CoursesCollectionView.js"
+			],
+			[
+				"courseitemview",
+				"public/assets/scripts/views/itemViews/CourseItemView.js"
+			],
+			[
+				"placeholder",
+				"public/assets/scripts/views/itemViews/PlaceholderCourseItemView.js"
+			],
+			[
+				"sortable",
+				"public/assets/scripts/views/itemViews/SortableCourseItemView.js"
+			],
+			[
+				"placed",
+				"app/views/templates/itemViews/placeholderCourseItemView.blade.php"
+			],
+			[
+				"programchoose",
+				"app/views/pageLayouts/programRequestsChoosePageLayout.blade.php"
+			],
+			[
+				"appcontroll",
+				"app/controllers/AppController.php"
+			],
+			[
+				"courseitem",
+				"app/views/templates/itemViews/courseItemView.blade.php"
+			],
+			[
+				"coursemodel",
+				"public/assets/scripts/models/CourseModel.js"
+			],
+			[
+				"select",
+				"public/assets/scripts/collections/SelectedCoursesCollection.js"
+			],
+			[
+				"alter",
+				"public/assets/scripts/collections/AlternateCoursesCollection.js"
+			],
+			[
+				"routingcontro",
+				"public/assets/scripts/controllers/RoutingController.js"
+			],
+			[
+				"app.js",
+				"public/assets/scripts/apps/App.js"
+			],
+			[
+				"sortableitem",
+				"public/assets/scripts/views/itemViews/SortableCourseItemView.js"
+			],
+			[
+				"selected",
+				"public/assets/scripts/views/itemViews/SelectedCourseItemView.js"
+			],
+			[
+				"selectedcourseitem",
+				"public/assets/scripts/views/itemViews/SelectedCourseItemView.js"
+			],
+			[
+				"selectedcourses",
+				"public/assets/scripts/views/collectionViews/SelectedCoursesCollectionView.js"
+			],
+			[
+				"selectcoure",
+				"public/assets/scripts/views/collectionViews/SelectedCoursesCollectionView.js"
+			],
+			[
+				"selec",
+				"public/assets/scripts/collections/SelectedCoursesCollection.js"
+			],
+			[
+				"main",
+				"public/assets/scripts/main.js"
+			],
+			[
+				"collectionview",
+				"public/assets/scripts/views/collectionViews/CoursesCollectionView.js"
+			],
+			[
+				"master",
+				"app/views/wrappers/master.blade.php"
+			],
+			[
+				"main.js",
+				"public/assets/scripts/main.js"
+			],
+			[
+				"main.j",
+				"public/assets/scripts/main.js"
+			],
+			[
+				"itemview",
+				"app/views/templates/itemViews/courseItemView.blade.php"
+			],
+			[
+				"_forms",
+				"public/assets/styles/sass/components/_forms.scss"
+			],
+			[
+				"welcome",
+				"public/assets/scripts/pageLayouts/WelcomePageLayout.js"
+			],
+			[
+				"master.blade",
+				"app/views/wrappers/master.blade.php"
+			],
+			[
+				"basecon",
+				"app/controllers/BaseController.php"
+			],
+			[
+				"choose",
+				"public/assets/scripts/pageLayouts/ProgramRequestsChoosePageLayout.js"
+			],
+			[
+				"global",
+				"app/start/global.php"
+			],
+			[
+				"terms",
+				"app/tests/Repositories/TermsRepositoryTest.php"
+			],
+			[
+				"composer",
+				"composer.json"
+			],
+			[
+				"termsrepos",
+				"app/lib/repositories/interfaces/TermsRepository.php"
+			],
+			[
+				"fmpterms",
+				"app/lib/repositories/storage/FmpTermsRepository.php"
+			],
+			[
+				"programreques",
+				"app/views/pageLayouts/programRequestsChoosePageLayout.blade.php"
+			],
+			[
+				"_form",
+				"public/assets/styles/sass/components/_forms.scss"
+			],
+			[
+				"special",
+				"app/views/pageLayouts/specialNeedsPageLayout.blade.php"
+			],
+			[
+				"landing",
+				"public/assets/scripts/pageLayouts/ProgramRequestsLandingPageLayout.js"
+			],
+			[
+				"consent",
+				"app/views/pageLayouts/parentConsentPageLayout.blade.php"
+			],
+			[
+				"parent",
+				"app/views/pageLayouts/parentInfoPageLayout.blade.php"
+			],
+			[
+				"programlanding",
+				"app/views/pageLayouts/programRequestsLandingPageLayout.blade.php"
+			],
+			[
+				"routingcon",
+				"public/assets/scripts/controllers/RoutingController.js"
+			],
+			[
+				"specialnee",
+				"app/views/pageLayouts/specialNeedsPageLayout.blade.php"
+			],
+			[
+				"parentconsen",
+				"app/views/pageLayouts/parentConsentPageLayout.blade.php"
+			],
+			[
+				"fmppeople",
+				"app/lib/repositories/storage/FmpPeopleRepository.php"
+			],
+			[
+				"routes",
+				"app/routes.php"
+			],
+			[
+				"stud",
+				"public/assets/scripts/pageLayouts/StudentInfoPageLayout.js"
+			],
+			[
+				"personent",
+				"workbench/authff/servicelocater/src/Authff/Servicelocater/Entities/PersonEntity.php"
+			],
+			[
+				"specialneeds",
+				"app/views/pageLayouts/specialNeedsPageLayout.blade.php"
+			],
+			[
+				"student",
+				"app/views/pageLayouts/studentInfoPageLayout.blade.php"
+			],
+			[
+				"parentform",
+				"app/views/partials/parentInfoForm.blade.php"
+			],
+			[
+				"parentpage",
+				"public/assets/scripts/pageLayouts/ParentInfoPageLayout.js"
+			],
+			[
+				"peoplerepos",
+				"app/tests/Repositories/PeopleRepositoryTest.php"
+			],
+			[
+				"phpunit",
+				"phpunit.xml"
+			],
+			[
+				"people",
+				"app/lib/repositories/interfaces/PeopleRepository.php"
+			],
+			[
+				"peoplere",
+				"app/tests/Repositories/PeopleRepositoryTest.php"
+			],
+			[
+				"fmpper",
+				"app/lib/repositories/storage/FmpPeopleRepository.php"
+			],
+			[
+				"personenti",
+				"workbench/authff/servicelocater/src/Authff/Servicelocater/Entities/PersonEntity.php"
+			],
+			[
+				"fmppeop",
+				"app/lib/repositories/storage/FmpPeopleRepository.php"
+			],
+			[
+				"fmprel",
+				"app/lib/repositories/storage/FmpRelationships.php"
+			],
+			[
+				"studentinfo",
+				"public/assets/scripts/pageLayouts/StudentInfoPageLayout.js"
+			],
+			[
+				"parentinfo",
+				"public/assets/scripts/pageLayouts/ParentInfoPageLayout.js"
+			],
+			[
+				"appcont",
+				"app/controllers/AppController.php"
+			],
+			[
+				"stu",
+				"public/assets/scripts/pageLayouts/StudentInfoPageLayout.js"
+			],
+			[
+				"studentinfobla",
+				"app/views/pageLayouts/studentInfoPageLayout.blade.php"
+			],
+			[
+				"relationshiptest",
+				"app/tests/Repositories/RelationshipRepositoryTest.php"
+			],
+			[
+				"abstractgat",
+				"vendor/soliantconsulting/simplefm/library/Soliant/SimpleFM/ZF2/Gateway/AbstractGateway.php"
+			],
+			[
+				"appcontroller",
+				"app/controllers/AppController.php"
+			],
+			[
+				"stude",
+				"app/views/pageLayouts/studentInfoPageLayout.blade.php"
+			],
+			[
+				"abstractgateway",
+				"vendor/soliantconsulting/simplefm/library/Soliant/SimpleFM/ZF2/Gateway/AbstractGateway.php"
+			],
+			[
+				"peoplerep",
+				"app/lib/repositories/interfaces/PeopleRepository.php"
+			],
+			[
+				"peopletest",
+				"app/tests/Repositories/PeopleRepositoryTest.php"
+			],
+			[
+				"relation",
+				"workbench/authff/servicelocater/src/Authff/Servicelocater/Entities/RelationshipEntity.php"
+			],
+			[
+				"relationships",
+				"app/lib/repositories/storage/FmpRelationships.php"
+			],
+			[
+				"persongate",
+				"workbench/authff/servicelocater/src/Authff/Servicelocater/Gateways/PersonGateway.php"
+			],
+			[
+				"authgateway",
+				"workbench/authff/servicelocater/src/Authff/Servicelocater/Gateways/TermGateway.php"
+			],
+			[
+				"authentity",
+				"workbench/authff/servicelocater/src/Authff/Servicelocater/Entities/AuthEntity.php"
+			],
+			[
+				"abstractentity",
+				"vendor/soliantconsulting/simplefm/library/Soliant/SimpleFM/ZF2/Entity/AbstractEntity.php"
+			],
+			[
+				"abstractgate",
+				"vendor/soliantconsulting/simplefm/library/Soliant/SimpleFM/ZF2/Gateway/AbstractGateway.php"
+			],
+			[
+				"peoplerepis",
+				"app/tests/Repositories/PeopleRepositoryTest.php"
+			],
+			[
+				"fmppeo",
+				"app/lib/repositories/storage/FmpPeopleRepository.php"
+			],
+			[
+				"peope",
+				"app/tests/Repositories/PeopleRepositoryTest.php"
+			],
+			[
+				"relationgateway",
+				"app/tests/Gateways/RelationshipGatewayTest.php"
+			],
+			[
+				"fmprelation",
+				"app/lib/repositories/storage/FmpRelationships.php"
+			],
+			[
+				"peopleres",
+				"app/tests/Repositories/PeopleRepositoryTest.php"
+			],
+			[
+				"gatewat",
+				"workbench/authff/servicelocater/src/Authff/Servicelocater/Gateways/PersonGateway.php"
+			],
+			[
+				"relatipn",
+				"workbench/authff/servicelocater/src/Authff/Servicelocater/Gateways/RelationshipGateway.php"
+			],
+			[
+				"prospectsreps",
+				"app/lib/repositories/interfaces/ProspectsRepository.php"
+			],
+			[
+				"prospects",
+				"app/lib/repositories/storage/FmpProspectsRepository.php"
+			],
+			[
+				"app",
+				"app/controllers/AppController.php"
+			],
+			[
+				"welcomelayout",
+				"public/assets/scripts/pageLayouts/WelcomePageLayout.js"
+			],
+			[
+				"welcomeblad",
+				"app/views/pageLayouts/welcomePageLayout.blade.php"
+			],
+			[
+				"persongateway",
+				"workbench/authff/servicelocater/src/Authff/Servicelocater/Gateways/PersonGateway.php"
+			],
+			[
+				"gateway",
+				"app/tests/Gateways/PersonGatewayTest.php"
+			],
+			[
+				"prospectsrepos",
+				"app/lib/repositories/storage/FmpProspectsRepository.php"
+			],
+			[
+				"read",
+				"README"
+			],
+			[
+				"prospect",
+				"workbench/authff/servicelocater/src/Authff/Servicelocater/Gateways/ProspectGateway.php"
+			],
+			[
+				"prospectgate",
+				"workbench/authff/servicelocater/src/Authff/Servicelocater/Gateways/ProspectGateway.php"
+			],
+			[
+				"repositorytest",
+				"app/tests/Repositories/PeopleRepositoryTest.php"
+			],
+			[
+				"prospectgateway",
+				"workbench/authff/servicelocater/src/Authff/Servicelocater/Gateways/ProspectGateway.php"
+			],
+			[
+				"abstractenti",
+				"vendor/soliantconsulting/simplefm/library/Soliant/SimpleFM/ZF2/Entity/AbstractEntity.php"
+			],
+			[
+				"adapter",
+				"vendor/soliantconsulting/simplefm/library/Soliant/SimpleFM/Adapter.php"
+			],
+			[
+				"fmp",
+				"app/lib/repositories/storage/FmpPeopleRepository.php"
+			],
+			[
+				"fmppeopel",
+				"app/lib/repositories/storage/FmpPeopleRepository.php"
+			],
+			[
+				"_buttons",
+				"public/assets/styles/sass/components/_buttons.scss"
+			],
+			[
+				"configbugsnag",
+				"app/config/packages/bugsnag/bugsnag-laravel/config.php"
+			],
+			[
+				"wrappersmaster",
+				"app/views/wrappers/master.blade.php"
+			],
+			[
+				"slicing",
+				"public/assets/scripts/slicing.js"
+			],
+			[
+				"routingcontroller",
+				"public/assets/scripts/controllers/RoutingController.js"
+			],
+			[
+				"view",
+				"vendor/laravel/framework/src/Illuminate/View/View.php"
+			],
+			[
+				"welcomepagelayout",
+				"public/assets/scripts/pageLayouts/WelcomePageLayout.js"
+			],
+			[
+				"welcomeblade",
+				"app/views/pageLayouts/welcomePageLayout.blade.php"
+			],
+			[
+				"wrappersmas",
+				"app/views/wrappers/master.blade.php"
+			],
+			[
+				"sidebar",
+				"app/views/partials/sidebarLayout.blade.php"
+			],
+			[
+				"_sidebar",
+				"public/assets/styles/sass/components/_sidebar.scss"
+			],
+			[
+				"termgateway",
+				"workbench/authff/servicelocater/src/Authff/Servicelocater/Gateways/TermGateway.php"
+			],
+			[
+				"termentit",
+				"workbench/authff/servicelocater/src/Authff/Servicelocater/Entities/TermEntity.php"
+			],
+			[
+				"basecontroller",
+				"app/controllers/BaseController.php"
+			],
+			[
+				"peoplec",
+				"app/controllers/PeopleController.php"
+			],
+			[
+				"appcon",
+				"app/controllers/AppController.php"
+			],
+			[
+				"termscon",
+				"app/controllers/TermsController.php"
+			],
+			[
+				"peoplecon",
+				"app/controllers/PeopleController.php"
+			],
+			[
+				"peoplecontroller",
+				"app/tests/Controllers/PeopleControllerTest.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"dimos",
+				"~/Sites/Clients/dimos/dimos.sublime-project"
+			],
+			[
+				"crowd",
+				"~/Sites/Clients/crowdnoize/website/crowdnoize-website.sublime-project"
+			],
+			[
+				"rsvp",
+				"~/Sites/Clients/crowdnoize/rsvp/rsvp.sublime-project"
+			],
+			[
+				"auth",
+				"~/Sites/Authentic FF/Website/authffwebsite.sublime-project"
+			],
+			[
+				"parks",
+				"~/Sites/TGL Client Projects/broomfield/parksapp/parks.sublime-project"
+			],
+			[
+				"ghg",
+				"~/Sites/TGL Client Projects/greenhousego/ghg/ghg.sublime-project"
+			],
+			[
+				"marwen",
+				"~/Sites/TGL Client Projects/marwen/marwen.sublime-workspace"
+			],
+			[
+				"way",
+				"~/Documents/waymarjhcarr.sublime-project"
+			],
+			[
+				"fold",
+				"~/Sites/TGL Client Projects/foldcraft/foldcraft/foldcraft.sublime-project"
+			],
+			[
+				"refac",
+				"/Users/bryanthughes/Sites/Crowdnoize/mobile-refactor/mobile-refactor.sublime-project"
+			],
+			[
+				"401",
+				"/Users/bryanthughes/Sites/TGL Client Projects/personalcapital/401k/401k.sublime-project"
+			],
+			[
+				"ee",
+				"/Users/bryanthughes/Sites/sublime_projects/ee-template.sublime-project"
+			],
+			[
+				"ref",
+				"/Users/bryanthughes/Sites/Crowdnoize/mobile-refactor/mobile-refactor.sublime-project"
+			],
+			[
+				"sound",
+				"/Users/bryanthughes/Sites/sublime_projects/soundset2012.sublime-project"
+			],
+			[
+				"person",
+				"/Users/bryanthughes/Sites/sublime_projects/personalcapital-poc.sublime-project"
+			],
+			[
+				"mob",
+				"/Users/bryanthughes/Sites/Crowdnoize/mobile-refactor/mobile-refactor.sublime-project"
+			],
+			[
+				"erwin",
+				"/Users/bryanthughes/Sites/sublime_projects/erwin.sublime-project"
+			],
+			[
+				"brother",
+				"/Users/bryanthughes/Sites/sublime_projects/brotherali.sublime-project"
+			],
+			[
+				"split",
+				"/Users/bryanthughes/Sites/sublime_projects/splitsecond.sublime-project"
+			],
+			[
+				"heal",
+				"/Users/bryanthughes/Sites/sublime_projects/healthyschools.sublime-project"
+			],
+			[
+				"cause",
+				"/Users/bryanthughes/Sites/sublime_projects/causetee.sublime-project"
+			],
+			[
+				"thegood",
+				"/Users/bryanthughes/Sites/sublime_projects/thegoodlab.sublime-project"
+			],
+			[
+				"prox",
+				"/Users/bryanthughes/Sites/sublime_projects/proxy.sublime-project"
+			],
+			[
+				"health",
+				"/Users/bryanthughes/Sites/sublime_projects/healthyschools.sublime-project"
+			],
+			[
+				"sond",
+				"/Users/bryanthughes/Sites/sublime_projects/soundset2012.sublime-project"
+			],
+			[
+				"ful",
+				"/Users/bryanthughes/Sites/sublime_projects/fultonfithouse.sublime-project"
+			],
+			[
+				"fulton",
+				"/Users/bryanthughes/Sites/sublime_projects/fultonfithouse.sublime-project"
+			],
+			[
+				"prod",
+				"/Users/bryanthughes/Sites/sublime_projects/smarter_planet_prod.sublime-project"
+			],
+			[
+				"thegoo",
+				"/Users/bryanthughes/Sites/sublime_projects/thegoodlab.sublime-project"
+			],
+			[
+				"smarte",
+				"/Users/bryanthughes/Sites/sublime_projects/smarter_planet_prototype.sublime-project"
+			],
+			[
+				"proto",
+				"/Users/bryanthughes/Sites/sublime_projects/smarter_planet_prototype.sublime-project"
+			],
+			[
+				"smarter",
+				"/Users/bryanthughes/Sites/sublime_projects/smarter_planet_prototype.sublime-project"
+			],
+			[
+				"pcap",
+				"/Users/bryanthughes/Sites/sublime_projects/pcapital.sublime-project"
+			],
+			[
+				"add",
+				"/Users/bryanthughes/Sites/sublime_projects/addons.sublime-project"
+			],
+			[
+				"",
+				"/Users/bryanthughes/Sites/sublime_projects/smarter_planet_prototype.sublime-project"
+			],
+			[
+				"smart",
+				"/Users/bryanthughes/Sites/sublime_projects/smarter_planet_prototype.sublime-project"
+			],
+			[
+				"thegod",
+				"/Users/bryanthughes/Sites/sublime_projects/thegoodlab.sublime-project"
+			],
+			[
+				"ad",
+				"/Users/bryanthughes/Sites/sublime_projects/addons.sublime-project"
+			],
+			[
+				"smar",
+				"/Users/bryanthughes/Sites/sublime_projects/smarter_planet_prototype.sublime-project"
+			],
+			[
+				"via",
+				"/Users/bryanthughes/Sites/sublime_projects/viayou.sublime-project"
+			],
+			[
+				"thepost",
+				"/Users/bryanthughes/Sites/sublime_projects/thepostfamily.sublime-project"
+			],
+			[
+				"the",
+				"/Users/bryanthughes/Sites/sublime_projects/thegoodlab.sublime-project"
+			],
+			[
+				"pretty",
+				"/Users/bryanthughes/Sites/sublime_projects/prettydoc.sublime-project"
+			],
+			[
+				"marw",
+				"/Users/bryanthughes/Sites/sublime_projects/marwen.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 290.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
