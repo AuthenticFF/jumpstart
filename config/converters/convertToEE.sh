@@ -21,5 +21,5 @@ rm -r -f ./TEMP
 mv ./assets ./httpdocs/assets
 
 # Replaceing paths in some configuration files
-sed 's/\/assets/\/httpdocs\/assets/g' .gitignore
-sed 's/assets/httpdocs\/assets/g' Gruntfile.js
+sed -i 's/\/assets/\/httpdocs\/assets/g' .gitignore
+sed -i 's/assets/httpdocs\/assets/g' Gruntfile.js
