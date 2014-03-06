@@ -6632,15 +6632,15 @@ th.hide-for-touch {
 .bg-black {
   background-color: black; }
 
+/* line 14, ../sass/config/_colors.scss */
+.black {
+  color: black; }
+
 /* line 11, ../sass/config/_colors.scss */
 .bg-white {
   background-color: white; }
 
-/* line 16, ../sass/config/_colors.scss */
-.black {
-  color: black; }
-
-/* line 16, ../sass/config/_colors.scss */
+/* line 14, ../sass/config/_colors.scss */
 .white {
   color: white; }
 
