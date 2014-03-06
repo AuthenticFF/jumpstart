@@ -1,26 +1,34 @@
 // Global Foundation Settings
-@import "settings";
+@import "config/foundation_settings";
 
 // Comment out this import if you don't want to use normalize
-@import "normalize";
+@import "overrides/normalize";
 
 // Comment out this import if you are customizing you imports below
 @import "foundation";
-
 @import "compass/css3";
 
-// Auth FF styles hierarchy
-@import "base/config";
+// Base and Config
+@import "overrides/3rd_party_overrides";
+@import "base/mixins";
+@import "config/base";
+@import "config/colors";
 @import "base/layout";
-@import "base/overrides";
 @import "base/typography";
 
+// Layout 
+@import "layout/header";
+@import "layout/footer";
+
+// Repeating Components
 @import "components/buttons";
 @import "components/forms";
 @import "components/list";
-@import "components/nav";
 
-@import "modules/footer";
-@import "modules/header";
+// High and Element Level Modules
 @import "modules/modules";
 @import "modules/elements";
+
+// :(
+@import "overrides/shame";
+@import "overrides/ie";

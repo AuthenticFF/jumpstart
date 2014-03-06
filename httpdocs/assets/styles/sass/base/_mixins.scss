@@ -1,5 +1,3 @@
-
-
 @mixin font($font-name: "Helvetica", $font-size: false, $line-height:false, $font-weight: false){
 
   font-family: $font-name;
@@ -21,14 +19,4 @@
     font-weight: 300;
   }
 
-}
-
-//clearfix
-.clearfix:before,
-.clearfix:after {
-  content:"";
-  display:table;
-}
-.clearfix:after {
-  clear:both;
 }

@@ -1,0 +1,19 @@
+// Define Colors
+$black: #000;
+$white: #fff;
+
+// List Colors Names
+$color_names: black white;
+$colors: $black $white;
+
+// Loop through and make color classes
+@for $i from 1 through length($colors) {
+  .bg-#{nth($color_names, $i)} {
+    background-color: nth($colors, $i)
+  }
+}
+@for $i from 1 through length($colors) {
+  .#{nth($color_names, $i)} {
+    color: nth($colors, $i)
+  }
+}
