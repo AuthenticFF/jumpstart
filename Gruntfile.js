@@ -23,16 +23,16 @@ module.exports = function(grunt) {
       plugins: {
         files: [
           // Foundation
-          {cwd: "bower_components/foundation/scss/foundation", src: '**', dest: 'assets/styles/sass/foundation', expand: true, flatten: false},
-          {isFile: true, rename: function(dest, src){ return dest + "_" + src; }, cwd: "bower_components/foundation/scss", src: 'foundation.scss', dest: 'assets/styles/sass/', expand: true, flatten: false},
-          {isFile: true, rename: function(dest, src){ return dest + "_" + src; }, cwd: "bower_components/foundation/scss", src: 'normalize.scss', dest: 'assets/styles/sass/', expand: true, flatten: false},
+          {cwd: "bower_components/foundation/scss/foundation", src: '**', dest: 'httpdocs/assets/styles/sass/foundation', expand: true, flatten: false},
+          {isFile: true, rename: function(dest, src){ return dest + "_" + src; }, cwd: "bower_components/foundation/scss", src: 'foundation.scss', dest: 'httpdocs/assets/styles/sass/', expand: true, flatten: false},
+          {isFile: true, rename: function(dest, src){ return dest + "_" + src; }, cwd: "bower_components/foundation/scss", src: 'normalize.scss', dest: 'httpdocs/assets/styles/sass/', expand: true, flatten: false},
         ]
       }
     },
 
     bower_concat: {
       all: {
-        dest: 'assets/scripts/built/bower.js',
+        dest: 'httpdocs/assets/scripts/built/bower.js',
         dependencies: {
           'foundation': 'jquery'
         },
@@ -45,13 +45,13 @@ module.exports = function(grunt) {
     concat: {
       dist: {
         src: [
-          'assets/scripts/classes/*',
-          'assets/scripts/templates/*',
-          'assets/scripts/vendor/*',
-          'assets/scripts/built/bower.js',
-          'assets/scripts/main.js'
+          'httpdocs/assets/scripts/classes/*',
+          'httpdocs/assets/scripts/templates/*',
+          'httpdocs/assets/scripts/vendor/*',
+          'httpdocs/assets/scripts/built/bower.js',
+          'httpdocs/assets/scripts/main.js'
         ],
-        dest: 'assets/scripts/built/scripts.js',
+        dest: 'httpdocs/assets/scripts/built/scripts.js',
       },
     },
 
@@ -63,8 +63,8 @@ module.exports = function(grunt) {
       },
       my_target: {
         files: {
-          'assets/scripts/built/built.js': [
-            'assets/scripts/built/scripts.js'
+          'httpdocs/assets/scripts/built/built.js': [
+            'httpdocs/assets/scripts/built/scripts.js'
             ]
         }
       }
@@ -73,10 +73,10 @@ module.exports = function(grunt) {
     compass: {
       dist: {
         options: {
-          sassDir: 'assets/styles/sass',
-          cssDir: 'assets/styles/css',
-          imagesDir: 'assets/images',
-          javascriptsDir: 'assets/scripts',
+          sassDir: 'httpdocs/assets/styles/sass',
+          cssDir: 'httpdocs/assets/styles/css',
+          imagesDir: 'httpdocs/assets/images',
+          javascriptsDir: 'httpdocs/assets/scripts',
           outputStyle: "nested",
           environment: "development",
           watch: true
@@ -89,11 +89,11 @@ module.exports = function(grunt) {
         livereload: true,
       },
       sass: {
-        files: ['assets/styles/sass/**/*.scss'],
+        files: ['httpdocs/assets/styles/sass/**/*.scss'],
         tasks: ['compass']
       },
       scripts: {
-        files: ['assets/scripts/**/*.js', '!assets/scripts/built/*'],
+        files: ['httpdocs/assets/scripts/**/*.js', '!httpdocs/assets/scripts/built/*'],
         tasks: ['concat']
       }
     },
