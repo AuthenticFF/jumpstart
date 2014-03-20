@@ -47,8 +47,8 @@ module.exports = function(grunt) {
         src: [
           'httpdocs/assets/scripts/classes/*',
           'httpdocs/assets/scripts/templates/*',
-          'httpdocs/assets/scripts/vendor/*',
           'httpdocs/assets/scripts/built/bower.js',
+          'httpdocs/assets/scripts/vendor/*',
           'httpdocs/assets/scripts/main.js'
         ],
         dest: 'httpdocs/assets/scripts/built/scripts.js',

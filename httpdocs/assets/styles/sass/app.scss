@@ -1,33 +1,36 @@
-// Global Foundation Settings
-@import "config/foundation_settings";
-
 // Comment out this import if you don't want to use normalize
 @import "overrides/normalize";
+
+// Global Foundation Settings
+@import "config/foundation_settings";
 
 // Comment out this import if you are customizing you imports below
 @import "foundation";
 @import "compass/css3";
 
-// Base and Config
+// 3rd Party Overrides
 @import "overrides/3rd_party_overrides";
-@import "base/mixins";
-@import "config/base";
+
+// Mixins
+@import "utility/global_mixins";
+@import "utility/type_mixins";
+
+// Config
+@import "config/variables";
 @import "config/colors";
+
+// Base
 @import "base/layout";
 @import "base/typography";
 
-// Layout 
-@import "layout/header";
-@import "layout/footer";
-
 // Repeating Components
-@import "components/buttons";
-@import "components/forms";
-@import "components/list";
+// @import "components/buttons";
+// @import "components/forms";
+// @import "components/list";
 
-// High and Element Level Modules
-@import "modules/modules";
-@import "modules/elements";
+// High Level Modules (eg: hero, footer, datepicker)
+// @import "modules/module";
+// @import "modules/layout/footer";
 
 // :(
 @import "overrides/shame";

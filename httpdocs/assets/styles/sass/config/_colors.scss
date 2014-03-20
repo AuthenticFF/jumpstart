@@ -9,9 +9,9 @@ $colors: $black $white;
 // Loop through and make color classes
 @for $i from 1 through length($colors) {
   .bg-#{nth($color_names, $i)} {
-    background-color: nth($colors, $i)
+    background-color: nth($colors, $i);
   }
   .#{nth($color_names, $i)} {
-    color: nth($colors, $i)
+    color: nth($colors, $i);
   }
 }

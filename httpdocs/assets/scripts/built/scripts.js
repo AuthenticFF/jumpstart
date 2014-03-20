@@ -23938,13 +23938,8 @@ window.Modernizr = (function( window, document, undefined ) {
 
 $(window).ready(function(){
 
-  var template_name = $("[data-template]").data("template");
-  var template;
-
-  if(template_name === "home"){
+  if(template === "home"){
     template = new HomeTemplate();
-  } else if(template_name === '' | template_name === undefined) {
-    template = undefined;
   }
 
   Sitewide.init();

@@ -6628,6 +6628,68 @@ th.hide-for-touch {
 .touch th.show-for-touch {
   display: table-cell !important; }
 
+/* line 40, ../sass/utility/_type_mixins.scss */
+.ligatures {
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -ms-font-feature-settings: "liga", "dlig";
+  -webkit-font-feature-settings: "liga", "dlig";
+  -o-font-feature-settings: "liga", "dlig";
+  font-feature-settings: "liga", "dlig"; }
+
+/* line 47, ../sass/utility/_type_mixins.scss */
+.fractions {
+  -moz-font-feature-settings: "frac" 1;
+  -moz-font-feature-settings: "frac=1";
+  -ms-font-feature-settings: "frac" 1;
+  -o-font-feature-settings: "frac" 1;
+  -webkit-font-feature-settings: "frac" 1;
+  font-feature-settings: "frac" 1; }
+
+/* line 55, ../sass/utility/_type_mixins.scss */
+.little-numbers {
+  -moz-font-feature-settings: "onum" 1;
+  -moz-font-feature-settings: "onum=1";
+  -ms-font-feature-settings: "onum" 1;
+  -o-font-feature-settings: "onum" 1;
+  -webkit-font-feature-settings: "onum" 1;
+  font-feature-settings: "onum" 1; }
+
+/* line 63, ../sass/utility/_type_mixins.scss */
+.big-numbers {
+  -moz-font-feature-settings: "lnum" 1;
+  -moz-font-feature-settings: "lnum=1";
+  -ms-font-feature-settings: "lnum" 1;
+  -o-font-feature-settings: "lnum" 1;
+  -webkit-font-feature-settings: "lnum" 1;
+  font-feature-settings: "lnum" 1; }
+
+/* line 71, ../sass/utility/_type_mixins.scss */
+.small-caps {
+  -moz-font-feature-settings: "smcp" 1;
+  -moz-font-feature-settings: "smcp=1";
+  -ms-font-feature-settings: "smcp" 1;
+  -o-font-feature-settings: "smcp" 1;
+  -webkit-font-feature-settings: "smcp" 1;
+  font-feature-settings: "smcp" 1; }
+
+/* line 79, ../sass/utility/_type_mixins.scss */
+.sub-script {
+  -moz-font-feature-settings: "subs" 1;
+  -moz-font-feature-settings: "subs=1";
+  -ms-font-feature-settings: "subs" 1;
+  -o-font-feature-settings: "subs" 1;
+  -webkit-font-feature-settings: "subs" 1;
+  font-feature-settings: "subs" 1; }
+
+/* line 87, ../sass/utility/_type_mixins.scss */
+.super-script {
+  -moz-font-feature-settings: "sups" 1;
+  -moz-font-feature-settings: "sups=1";
+  -ms-font-feature-settings: "sups" 1;
+  -o-font-feature-settings: "sups" 1;
+  -webkit-font-feature-settings: "sups" 1;
+  font-feature-settings: "sups" 1; }
+
 /* line 11, ../sass/config/_colors.scss */
 .bg-black {
   background-color: black; }
@@ -6643,6 +6705,14 @@ th.hide-for-touch {
 /* line 14, ../sass/config/_colors.scss */
 .white {
   color: white; }
+
+/* line 1, ../sass/base/_typography.scss */
+html, body {
+  font-size: 16px; }
+
+/* line 5, ../sass/base/_typography.scss */
+a {
+  color: inherit; }
 
 /* line 3, ../sass/overrides/_shame.scss */
 .clearfix:before,
