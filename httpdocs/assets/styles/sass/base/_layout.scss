@@ -1,1 +1,45 @@
+// REM IS FOR LAYOUT LEVEL ADJUSTMENTS
+// EM IS FOR TYPE RELATIVE ADJUSTMENTS
 
+// the 'root' class is used to designate root level elements, giving us the ability to keep
+// clean code, and semantic markup e.g. <nav class="root"></nav> <footer class="root"></footer>
+
+html, body {
+  height: 100%; // 100% height div hack
+}
+
+.nix-pad {
+  padding: 0;
+}
+
+.nix-pad-bot {
+  padding-bottom: 0;
+}
+
+.nix-pad-top {
+  padding-top: 0;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
+.left-absolute {
+  left: 0;
+}
+
+.right-absolute {
+  right: 0;
+}
+
+.top-absolute {
+  top: 0;
+}
+
+.bottom-absolute {
+  top: 0;
+}

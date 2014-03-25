@@ -1,7 +1,33 @@
+// REM IS FOR LAYOUT LEVEL ADJUSTMENTS
+// EM IS FOR TYPE RELATIVE ADJUSTMENTS
+
 html, body {
   font-size: 16px;
+  font-weight: 400;
+  line-height: $line-height-body;
 }
 
+// this helps with link color
 a {
   color: inherit;
+  &:hover {
+    color: inherit;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: $line-height-header;
+}
+
+.align-left {
+  text-align: left;
+}
+.align-right {
+  text-align: right;
+}
+.align-center {
+  text-align: center;
+}
+.align-justify {
+  text-align: justify;
 }
