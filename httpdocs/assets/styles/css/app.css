@@ -6779,44 +6779,47 @@ h1, h2, h3, h4, h5, h6 {
 .align-justify {
   text-align: justify; }
 
-/* line 35, ../sass/base/_typography.scss */
+/* line 37, ../sass/base/_typography.scss */
 .t1 {
   font-size: 1.95313rem; }
-  /* line 38, ../sass/base/_typography.scss */
+  /* line 40, ../sass/base/_typography.scss */
   .t1.alt {
-    font-size: 1.331rem; }
+    font-size: 1.70898rem; }
 
-/* line 42, ../sass/base/_typography.scss */
+/* line 44, ../sass/base/_typography.scss */
 .t2 {
   font-size: 1.5625rem; }
-  /* line 45, ../sass/base/_typography.scss */
+  /* line 47, ../sass/base/_typography.scss */
   .t2.alt {
-    font-size: 1.21rem; }
+    font-size: 1.36719rem; }
 
-/* line 49, ../sass/base/_typography.scss */
+/* line 51, ../sass/base/_typography.scss */
 .t3 {
   font-size: 1.25rem; }
-  /* line 52, ../sass/base/_typography.scss */
+  /* line 54, ../sass/base/_typography.scss */
   .t3.alt {
-    font-size: 1.1rem; }
+    font-size: 1.09375rem; }
 
-/* line 56, ../sass/base/_typography.scss */
+/* line 58, ../sass/base/_typography.scss */
 .t4 {
   font-size: 1rem; }
+  /* line 61, ../sass/base/_typography.scss */
+  .t4.alt {
+    font-size: 0.875rem; }
 
-/* line 59, ../sass/base/_typography.scss */
+/* line 65, ../sass/base/_typography.scss */
 .t5 {
   font-size: 0.8rem; }
-  /* line 62, ../sass/base/_typography.scss */
+  /* line 68, ../sass/base/_typography.scss */
   .t5.alt {
-    font-size: 0.90909rem; }
+    font-size: 0.7rem; }
 
-/* line 66, ../sass/base/_typography.scss */
+/* line 72, ../sass/base/_typography.scss */
 .t6 {
   font-size: 0.64rem; }
-  /* line 69, ../sass/base/_typography.scss */
+  /* line 75, ../sass/base/_typography.scss */
   .t6.alt {
-    font-size: 0.82645rem; }
+    font-size: 0.56rem; }
 
 /* line 3, ../sass/overrides/_shame.scss */
 .clearfix:before,
