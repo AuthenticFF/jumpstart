@@ -1,33 +1,3 @@
-define([
-  "jquery"
-], function($){
-
-  var Sitewide = function(){
-
-  };
-
-  Sitewide.prototype.init = function(){
-
-  };
-
-  return Sitewide;
-
-});
-define([
-  "jquery"
-], function($){
-
-  var Home = function(){
-
-  };
-
-  Home.prototype.init = function(){
-
-  };
-
-  return Home;
-
-});
 /*!
  * jQuery JavaScript Library v2.0.3
  * http://jquery.com/
@@ -17632,23 +17602,30 @@ var requirejs, require, define;
 
 }).call(this);
 
+var Sitewide = {
 
+};
 
+Sitewide.init = function(){
 
+};
+var HomeTemplate = function(){
 
+};
+
+HomeTemplate.prototype.init = function(){
+
+};
 $(window).ready(function(){
 
-  var sitewide = new Sitewide();
-
-  var template_name = $("[data-template]").data("template");
-
-  if(template_name === "home"){
-    require(["templates/Home"], function(HomeTemplate){
-      var template = new HomeTemplate();
-      template.init();
-    });
+  if(template === "home"){
+    template = new HomeTemplate();
   }
 
-  //test bryant hughes joseph here we go test
+  Sitewide.init();
+  
+  if (template !== undefined) {
+    template.init();
+  }
 
 });
