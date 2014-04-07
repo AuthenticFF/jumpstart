@@ -6711,15 +6711,15 @@ html, body {
   height: 100%; }
 
 /* line 11, ../sass/base/_layout.scss */
-.nix-pad {
+.no-pad {
   padding: 0; }
 
 /* line 15, ../sass/base/_layout.scss */
-.nix-pad-bot {
+.no-pad-bot {
   padding-bottom: 0; }
 
 /* line 19, ../sass/base/_layout.scss */
-.nix-pad-top {
+.no-pad-top {
   padding-top: 0; }
 
 /* line 23, ../sass/base/_layout.scss */
@@ -6778,6 +6778,45 @@ h1, h2, h3, h4, h5, h6 {
 /* line 31, ../sass/base/_typography.scss */
 .align-justify {
   text-align: justify; }
+
+/* line 35, ../sass/base/_typography.scss */
+.t1 {
+  font-size: 1.95313rem; }
+  /* line 38, ../sass/base/_typography.scss */
+  .t1.alt {
+    font-size: 1.331rem; }
+
+/* line 42, ../sass/base/_typography.scss */
+.t2 {
+  font-size: 1.5625rem; }
+  /* line 45, ../sass/base/_typography.scss */
+  .t2.alt {
+    font-size: 1.21rem; }
+
+/* line 49, ../sass/base/_typography.scss */
+.t3 {
+  font-size: 1.25rem; }
+  /* line 52, ../sass/base/_typography.scss */
+  .t3.alt {
+    font-size: 1.1rem; }
+
+/* line 56, ../sass/base/_typography.scss */
+.t4 {
+  font-size: 1rem; }
+
+/* line 59, ../sass/base/_typography.scss */
+.t5 {
+  font-size: 0.8rem; }
+  /* line 62, ../sass/base/_typography.scss */
+  .t5.alt {
+    font-size: 0.90909rem; }
+
+/* line 66, ../sass/base/_typography.scss */
+.t6 {
+  font-size: 0.64rem; }
+  /* line 69, ../sass/base/_typography.scss */
+  .t6.alt {
+    font-size: 0.82645rem; }
 
 /* line 3, ../sass/overrides/_shame.scss */
 .clearfix:before,
