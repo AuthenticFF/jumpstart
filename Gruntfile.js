@@ -45,10 +45,10 @@ module.exports = function(grunt) {
     concat: {
       dist: {
         src: [
+          'assets/scripts/built/bower.js',
           'assets/scripts/classes/*',
           'assets/scripts/templates/*',
           'assets/scripts/vendor/*',
-          'assets/scripts/built/bower.js',
           'assets/scripts/main.js'
         ],
         dest: 'assets/scripts/built/scripts.js',
