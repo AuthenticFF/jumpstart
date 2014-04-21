@@ -78,31 +78,38 @@ module.exports = function(grunt) {
           imagesDir: 'httpdocs/assets/images',
           javascriptsDir: 'httpdocs/assets/scripts',
           outputStyle: "nested",
-          environment: "development",
-          watch: true
+          environment: "development"
         }
       }
     },
 
     watch: {
-      options: {
-        livereload: true,
+      all: {
+        files: 'httpdocs/*.html',
+        options: {
+          livereload: true
+        }
       },
       sass: {
         files: ['httpdocs/assets/styles/sass/**/*.scss'],
-        tasks: ['compass']
+        tasks: ['compass'],
+        options: {
+          livereload: true
+        }
       },
       scripts: {
         files: ['httpdocs/assets/scripts/**/*.js', '!httpdocs/assets/scripts/built/*'],
-        tasks: ['concat']
-      }
-    },
-
-    concurrent: {
-      options: {
-        logConcurrentOutput: true
+        tasks: ['concat'],
+        options: {
+          livereload: true
+        }
       },
-      watch: ['compass', 'watch:scripts'],
+      configFiles: {
+        files: [ 'Gruntfile.js', 'config/*.js' ],
+        options: {
+          reload: true
+        }
+      }
     }
 
   });
@@ -124,7 +131,6 @@ module.exports = function(grunt) {
   grunt.registerTask('hookmeup', ['clean:hooks', 'shell:hooks']);
   grunt.registerTask("init", ["copy:plugins"]);
   grunt.registerTask("compile", ["bower_concat", "concat", "uglify"]);
-  grunt.registerTask("watchme", ["concurrent:watch"]);
 
   // grunt.registerTask("get-content", ["rsync:production"]);
   // grunt.registerTask('default', [""]);
