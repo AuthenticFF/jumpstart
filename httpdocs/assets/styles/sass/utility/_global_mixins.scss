@@ -1,0 +1,73 @@
+// helper padding/margin classes
+@for $i from 0 through 10 {
+
+  .pt#{$i * 10} {
+    padding-top: $i * 10px;
+  }
+  .pb#{$i * 10} {
+    padding-bottom: $i * 10px;
+  }
+  .pl#{$i * 10} {
+    padding-left: $i * 10px;
+  }
+  .pr#{$i * 10} {
+    padding-right: $i * 10px;
+  }
+  .mt#{$i * 10} {
+    margin-top: $i * 10px;
+  }
+  .mb#{$i * 10} {
+    margin-bottom: $i * 10px;
+  }
+  .ml#{$i * 10} {
+    margin-left: $i * 10px;
+  }
+  .mr#{$i * 10} {
+    margin-right: $i * 10px;
+  }
+}
+
+// keyframe animation mixin
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  } 
+}
+
+// animation mixin
+@mixin animation($animation-content) {
+  -webkit-animation: $animation-content;
+     -moz-animation: $animation-content;
+       -o-animation: $animation-content;
+          animation: $animation-content;
+}
+
+.prevent-select {
+  // prevent text select
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  * {
+    // prevent text select in all children
+    // use on lowest needed
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}

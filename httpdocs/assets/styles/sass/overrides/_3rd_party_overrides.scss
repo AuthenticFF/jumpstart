@@ -1,0 +1,7 @@
+// reset a color
+a {
+  color: inherit;
+  &:hover {
+    color: inherit;
+  }
+}
