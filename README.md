@@ -32,7 +32,7 @@ Grunt is a task runner used for automating tasks during a build process. Compile
 
 ### Compass
 
-Compass gives us super valuable SASS mixins so that we're not worrying browser prefixes as they change. It also watches concatenates on the fly. 
+Compass gives us super valuable SASS mixins so that we're not worrying browser prefixes as they change. It also watches concatenates on the fly.
 
 ## Setting up our codebase
 
@@ -51,7 +51,7 @@ Compass gives us super valuable SASS mixins so that we're not worrying browser p
 
 When you are writing code, you'll want Grunt to watch your files for changes.
 
-* Run `$ grunt watchme` to start the watch process.
+* Run `$ grunt watch` to start the watch process.
 * When running, each time you save a sass file compass will compile the changes.
 * When running, each time you save a javascript file, it will minify the JS
 
