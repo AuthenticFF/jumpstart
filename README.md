@@ -61,5 +61,7 @@ While writing code, if you install a new JS asset with Bower, you'll want to com
 
 When you commit your code, git hooks are setup to compile and minify your javascript, so that code run in production is optimized. You may see this happening after you commit. Don't worry it's normal.
 
+## Converting Jumpstart to EE Project
 
+You will need to cd into the config/converters directory, then run bash convertToEE.sh at the command line. This should copy over the EE repo assets.
 
