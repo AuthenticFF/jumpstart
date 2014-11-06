@@ -463,7 +463,7 @@
 			"file": "Gruntfile.js",
 			"settings":
 			{
-				"buffer_size": 3552,
+				"buffer_size": 3780,
 				"line_ending": "Unix"
 			}
 		},
@@ -479,15 +479,15 @@
 			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 557,
+				"buffer_size": 523,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Gemfile.lock",
+			"file": "httpdocs/index.html",
 			"settings":
 			{
-				"buffer_size": 642,
+				"buffer_size": 3418,
 				"line_ending": "Unix"
 			}
 		},
@@ -495,7 +495,7 @@
 			"file": "/Users/bryanthughes/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 			"settings":
 			{
-				"buffer_size": 1161,
+				"buffer_size": 1150,
 				"line_ending": "Unix"
 			}
 		}
@@ -981,15 +981,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3552,
+						"buffer_size": 3780,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1601,
-								1601
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1092,7 +1092,7 @@
 						"translation.y": 501.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -1123,13 +1123,13 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -1138,7 +1138,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 557,
+						"buffer_size": 523,
 						"regions":
 						{
 						},
@@ -1162,16 +1162,16 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "Gemfile.lock",
+					"file": "httpdocs/index.html",
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 642,
+						"buffer_size": 3418,
 						"regions":
 						{
 						},
@@ -1184,18 +1184,15 @@
 						],
 						"settings":
 						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1764.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -1204,15 +1201,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1161,
+						"buffer_size": 1150,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								747,
-								747
+								0,
+								0
 							]
 						],
 						"settings":

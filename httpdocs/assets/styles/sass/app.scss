@@ -1,10 +1,7 @@
 // Comment out this import if you don't want to use normalize
 @import "overrides/normalize";
 
-// Global Foundation Settings
-@import "config/foundation_settings";
-
-// Comment out this import if you are customizing you imports below
+// Foundation & Compass
 @import "foundation";
 @import "compass/css3";
 
@@ -27,13 +24,13 @@
 @import "base/interactions";
 
 // Repeating Components
-// @import "components/buttons";
-// @import "components/forms";
-// @import "components/lists";
+@import "components/buttons";
+@import "components/forms";
+@import "components/lists";
 
 // High Level Modules (eg: hero, footer, datepicker)
-// @import "modules/module";
-// @import "modules/layout/footer";
+@import "modules/footer";
+@import "modules/header";
 
 // :(
 @import "overrides/shame";
