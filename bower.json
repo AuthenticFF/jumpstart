@@ -12,6 +12,6 @@
   "dependencies": {
     "jquery": "~2.1",
     "underscore": "~1.5.1",
-    "foundation": "~5.3"
+    "foundation": "~5.5"
   }
 }

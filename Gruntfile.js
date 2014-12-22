@@ -6,7 +6,6 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     // deployments: grunt.file.readJSON("config/settings/deployments.json"),
-
     // rsync: grunt.file.readJSON("config/settings/rsync.json"),
 
     clean: {
@@ -78,14 +77,16 @@ module.exports = function(grunt) {
           imagesDir: 'httpdocs/assets/images',
           javascriptsDir: 'httpdocs/assets/scripts',
           outputStyle: "nested",
-          environment: "development"
+          environment: "development",
+          watch: true
         }
       }
     },
 
     watch: {
       all: {
-        files: 'httpdocs/*.html',
+        files: ['httpdocs/assets/styles/sass/**/*.scss'],
+        tasks: ['compass'],
         options: {
           livereload: true
         }
@@ -99,10 +100,7 @@ module.exports = function(grunt) {
       },
       scripts: {
         files: ['httpdocs/assets/scripts/**/*.js', '!httpdocs/assets/scripts/built/*'],
-        tasks: ['concat'],
-        options: {
-          livereload: true
-        }
+        tasks: ['concat']
       },
       configFiles: {
         files: [ 'Gruntfile.js', 'config/*.js' ],
@@ -110,6 +108,13 @@ module.exports = function(grunt) {
           reload: true
         }
       }
+    },
+
+    concurrent: {
+      options: {
+        logConcurrentOutput: true
+      },
+      watch: ['watch:sass', 'watch:scripts'],
     }
 
   });
