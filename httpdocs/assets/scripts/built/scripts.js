@@ -19019,7 +19019,7 @@ $(window).ready(function(){
   }
 
   Sitewide.init();
-  
+
   if (template !== undefined) {
     template.init();
   }

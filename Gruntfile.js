@@ -77,16 +77,26 @@ module.exports = function(grunt) {
           imagesDir: 'httpdocs/assets/images',
           javascriptsDir: 'httpdocs/assets/scripts',
           outputStyle: "nested",
-          environment: "development",
-          watch: true
+          environment: "development"
         }
+      }
+    },
+
+    cssmin: {
+      my_target: {
+        files: [{
+          expand: true,
+          cwd: 'httpdocs/assets/styles/css',
+          src: ['*.css', '!*.min.css'],
+          dest: 'httpdocs/assets/styles/css',
+          ext: '.min.css'
+        }]
       }
     },
 
     watch: {
       all: {
-        files: ['httpdocs/assets/styles/sass/**/*.scss'],
-        tasks: ['compass'],
+        files: ['site/**/*.php', 'httpdocs/content/**/*.txt'],
         options: {
           livereload: true
         }
@@ -100,7 +110,10 @@ module.exports = function(grunt) {
       },
       scripts: {
         files: ['httpdocs/assets/scripts/**/*.js', '!httpdocs/assets/scripts/built/*'],
-        tasks: ['concat']
+        tasks: ['concat'],
+        options: {
+          livereload: true
+        }
       },
       configFiles: {
         files: [ 'Gruntfile.js', 'config/*.js' ],
@@ -108,13 +121,6 @@ module.exports = function(grunt) {
           reload: true
         }
       }
-    },
-
-    concurrent: {
-      options: {
-        logConcurrentOutput: true
-      },
-      watch: ['watch:sass', 'watch:scripts'],
     }
 
   });
@@ -134,7 +140,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('hookmeup', ['clean:hooks', 'shell:hooks']);
   grunt.registerTask("init", ["copy:plugins"]);
-  grunt.registerTask("compile", ["bower_concat", "concat", "uglify"]);
+  grunt.registerTask("compile", ["bower_concat", "concat", "uglify", 'cssmin']);
 
   // grunt.registerTask("get-content", ["rsync:production"]);
   // grunt.registerTask('default', [""]);
