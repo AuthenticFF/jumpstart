@@ -14,7 +14,7 @@ mv ./TEMP/craft ./craft
 mv ./TEMP/assets ./public/assets
 
 # Combine README's
-cat ./TEMP/teadme.txt >> ./README.md
+cat ./TEMP/readme.txt >> ./README.md
 
 # Removing the EE repo
 rm -r -f ./TEMP
