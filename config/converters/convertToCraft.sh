@@ -23,5 +23,5 @@ cat ./TEMP/readme.txt >> ./README.md
 rm -r -f ./TEMP
 rm -r -f ./httpdocs
 
-sed -i 's/httpdocs/public/g' ./Gruntfile.js
-sed -i 's/httpdocs/public/g' ./.git/hooks/pre-commit
+# sed -i 's/httpdocs/public/g' ./Gruntfile.js
+# sed -i 's/httpdocs/public/g' ./.git/hooks/pre-commit
