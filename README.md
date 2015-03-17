@@ -65,3 +65,5 @@ When you commit your code, git hooks are setup to compile and minify your javasc
 
 You will need to cd into the config/converters directory, then run bash convertToEE.sh at the command line. This should copy over the EE repo assets.
 
+_Note:_ This will only work for internal Authentic F&F team members, as the repositories necessary to perform this conversion are private.
+
