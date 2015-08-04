@@ -24,13 +24,13 @@
 @import "base/interactions";
 
 // Repeating Components
-@import "components/buttons";
-@import "components/forms";
-@import "components/lists";
+@import "elements/buttons";
+@import "elements/forms";
+@import "elements/lists";
 
 // High Level Modules (eg: hero, footer, datepicker)
-@import "modules/footer";
-@import "modules/header";
+@import "component/footer";
+@import "component/header";
 
 // :(
 @import "overrides/shame";
