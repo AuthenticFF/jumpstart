@@ -17,14 +17,11 @@ Seriously though, NPM is to Node Packages what Bundler is to RubyGems. Each NPM 
 
 Packages we want installed are located in the `package.json` file.
 
-### Bower
+### Browserify
 
-Bower is a package manager for Javascript files that we use on our site. It tries to eliminate the pattern of:
-"oh I need jquery plugins XYZ, lets do a google search for it, then create a new file, then include it into our index.html code footer."
-It's essentially an interface to search for javascript plugins, download them, and include them in our site, using a few
-terminal commands.
-
-JS Libraries we want installed are found in the `bower.json` file.
+Browserify is a dependency/bundling manager for Javascript files that we use on our site. It tries to eliminate the pattern of:
+"oh I used this 5MB library on two pages of the 100 page site, I guess I better load it on all 100 pages even though its never used" which will happen if you concat and minify all your js.
+It's essentially a way to include and name dependencies at the top of a js file with "var foo = require('./magicJSFIle.js')". It can also be used to include common libraries (backbone, jquery, underscore) but more niche js files will have to be shimed in via [npm](https://github.com/thlorenz/browserify-shim).
 
 ### Grunt
 
@@ -39,8 +36,6 @@ Compass gives us super valuable SASS mixins so that we're not worrying browser p
 * Update package.json, adding any additional NPM packages we want
 * Install our NPM Packages, run `$ npm install`
 
-* Update bower.json, adding any additional JS plugins we want to use.
-* Install our bower files, run `$ bower install`
 
 * Update your pre-commit githook to lint JS before commiting, run `$ grunt hookmeup`
 
