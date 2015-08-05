@@ -19,9 +19,9 @@ Packages we want installed are located in the `package.json` file.
 
 ### Browserify
 
-Browserify is a dependency/bundling manager for Javascript files that we use on our site. It tries to eliminate the pattern of:
-"oh I used this 5MB library on two pages of the 100 page site, I guess I better load it on all 100 pages even though its never used" which will happen if you concat and minify all your js.
-It's essentially a way to include and name dependencies at the top of a js file with "var foo = require('./magicJSFIle.js')". It can also be used to include common libraries (backbone, jquery, underscore) but more niche js files will have to be shimed in via [npm](https://github.com/thlorenz/browserify-shim).
+Browserify is a dependency/bundling manager for JavaScript files that we use on our site. It tries to eliminate the pattern of:
+"Oh I used this 5MB library on two pages of the 100 page site, I guess I better load it on all 100 pages even though its never used" which happens if you concat and minify all your JavaScript.
+It's essentially a way to include and name dependencies at the top of a js file with "var foo = require('./magicJSFIle.js')". It can also be used to include common libraries (Backbone, jQuery, Underscore) but more niche JavaScript files will have to be shimed in via [NPM](https://github.com/thlorenz/browserify-shim).
 
 ### Grunt
 
