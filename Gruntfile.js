@@ -94,6 +94,19 @@ module.exports = function(grunt) {
       }
     },
 
+    browserify: {
+      dist: {
+        files: {
+          'httpdocs/assets/scripts/built/scripts.js': [
+            'httpdocs/assets/scripts/main.js'
+          ],
+        },
+        options: {
+        //  transform: ['babelify']
+        }
+      }
+    },
+
     watch: {
       all: {
         files: ['site/**/*.php', 'httpdocs/content/**/*.txt'],
@@ -138,10 +151,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-browserify');
 
   grunt.registerTask('hookmeup', ['clean:hooks', 'shell:hooks']);
   grunt.registerTask("init", ["copy:plugins"]);
-  grunt.registerTask("compile", ["bower_concat", "concat", "uglify", 'cssmin']);
+  grunt.registerTask("compile", ["browserify", "uglify", 'cssmin']);
 
   // grunt.registerTask("get-content", ["rsync:production"]);
   // grunt.registerTask('default', [""]);
