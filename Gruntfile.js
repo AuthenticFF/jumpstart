@@ -22,9 +22,9 @@ module.exports = function(grunt) {
       plugins: {
         files: [
           // Foundation
-          {cwd: "bower_components/foundation/scss/foundation", src: '**', dest: 'httpdocs/assets/styles/sass/foundation', expand: true, flatten: false},
-          {isFile: true, rename: function(dest, src){ return dest + "_" + src; }, cwd: "bower_components/foundation/scss", src: 'foundation.scss', dest: 'httpdocs/assets/styles/sass/', expand: true, flatten: false},
-          {isFile: true, rename: function(dest, src){ return dest + "_" + src; }, cwd: "bower_components/foundation/scss", src: 'normalize.scss', dest: 'httpdocs/assets/styles/sass/', expand: true, flatten: false},
+          {cwd: "node_modules/foundation-sites/scss/foundation", src: '**', dest: 'public/assets/styles/sass/foundation', expand: true, flatten: false},
+          {isFile: true, rename: function(dest, src){ return dest + "_" + src; }, cwd: "node_modules/foundation-sites/scss", src: 'foundation.scss', dest: 'public/assets/styles/sass/', expand: true, flatten: false},
+          {isFile: true, rename: function(dest, src){ return dest + "_" + src; }, cwd: "node_modules/foundation-sites/scss", src: 'normalize.scss', dest: 'public/assets/styles/sass/', expand: true, flatten: false},
         ]
       }
     },
