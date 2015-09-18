@@ -1,8 +1,7 @@
 {
 
   "options":{
-    "backups_dir" : "db",
-    "replace_url" : false
+    "target": "dev"
   },
 
   "local":{

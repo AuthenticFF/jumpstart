@@ -4,380 +4,236 @@
 		"selected_items":
 		[
 			[
-				"sub",
-				"submissionErrorMessage"
+				"dueTime",
+				"dueTimeText"
 			],
 			[
-				"alternate",
-				"alternateCourses"
+				"getDuetime",
+				"getDueTimeReal"
 			],
 			[
-				"selected",
-				"selectedCourses"
+				"lineI",
+				"lineItemModel"
 			],
 			[
-				"place",
-				"placeholderItemView"
+				"dispat",
+				"dispatchUpdate"
 			],
 			[
-				"program-requests",
-				"program-requests-choose"
-			],
-			[
-				"speci",
-				"specialNeedsData"
-			],
-			[
-				"spec",
-				"specialNeedsData"
-			],
-			[
-				"createStudent",
-				"createStudentPassword"
-			],
-			[
-				"success",
-				"successStudentData"
-			],
-			[
-				"load",
-				"loadParentForm"
-			],
-			[
-				"getStudent",
-				"getStudentRelationships"
-			],
-			[
-				"studentData",
-				"studentDataMatches"
-			],
-			[
-				"ent",
-				"entities"
-			],
-			[
-				"relation",
-				"relationshipMatch"
-			],
-			[
-				"poss",
-				"possibleStudents1"
-			],
-			[
-				"findStudnetByFirst",
-				"findStudentByFirstInitialLastNameAndEmptyBirthday"
-			],
-			[
-				"record",
-				"recordLookupModal"
-			],
-			[
-				"regist",
-				"registrationOpenNewStudents"
-			],
-			[
-				"array_ke",
-				"array_key_exists"
-			],
-			[
-				"erro",
-				"errorMessage"
-			],
-			[
-				"hijack",
-				"hijackAnchors"
-			],
-			[
-				"prospect",
-				"prospectEntity"
-			],
-			[
-				"new",
-				"newStudentEntity"
-			],
-			[
-				"fields",
-				"fieldsToMap"
-			],
-			[
-				"pros",
-				"prospectRecId"
-			],
-			[
-				"prospe",
-				"prospectEntity"
-			],
-			[
-				"gradeLe",
-				"gradeLevelsArr"
-			],
-			[
-				"grade",
-				"gradeLevels"
-			],
-			[
-				"parent",
-				"parentRecId"
-			],
-			[
-				"student",
-				"studentRecId"
-			],
-			[
-				"pare",
-				"parentRecId"
-			],
-			[
-				"stud",
-				"studentRecId"
-			],
-			[
-				"validat",
-				"validationMessages"
+				"backInStock",
+				"backInStockLoading"
 			],
 			[
 				"create",
-				"createPersonEntity"
+				"createProductModel"
 			],
 			[
-				"json_",
-				"json_encode"
+				"product_back_in_stock",
+				"product_back_in_stock_wrigleyvil"
+			],
+			[
+				"product",
+				"productCategoryEEModel"
+			],
+			[
+				"time",
+				"timeEstimate1"
+			],
+			[
+				"timeEstim",
+				"timeEstimate2"
 			],
 			[
 				"json",
 				"json_decode"
 			],
 			[
-				"course",
-				"courseRequestEntity"
+				"ana",
+				"analytic1"
 			],
 			[
-				"pre",
-				"prerequisiteGateway"
+				"getIn",
+				"getInstockTime"
 			],
 			[
-				"stude",
-				"studentEntity"
+				"dispatch",
+				"dispatchCallback"
 			],
 			[
-				"strp",
-				"strpos"
+				"timeEstimate",
+				"timeEstimate1"
 			],
 			[
-				"Servicelocater",
-				"ServicelocaterServiceProvider"
+				"font",
+				"font"
 			],
 			[
-				"simple",
-				"simpleFMAdapterRow"
+				"list-style",
+				"list-style-type"
 			],
 			[
-				"getAverage",
-				"getAverageVehicleMilesTraveledAttribute"
-			],
-			[
-				"getGas",
-				"getGasMtco2ePerYearAtSite"
-			],
-			[
-				"getEle",
-				"getElectricMtco2dPerYearAtSite"
-			],
-			[
-				"cateo",
-				"categoryCollection"
-			],
-			[
-				"categ",
-				"categoryCollection"
-			],
-			[
-				"getCate",
-				"getCategoryShort"
-			],
-			[
-				"get",
-				"getLut"
-			],
-			[
-				"landUse",
-				"landUseTypesCollection"
-			],
-			[
-				"init",
-				"initBg"
-			],
-			[
-				"acre",
-				"acreDistribution"
-			],
-			[
-				"show",
-				"showSidebar"
-			],
-			[
-				"lut",
-				"lut-distribution-chart"
-			],
-			[
-				"Compa",
-				"CompareChartLayout"
-			],
-			[
-				"zipcode",
-				"zipcodeContainer"
-			],
-			[
-				"setZip",
-				"setZipcodeError"
-			],
-			[
-				"validate",
-				"validateFields"
-			],
-			[
-				"has",
-				"hasValidatedZipcode"
-			],
-			[
-				"hasVal",
-				"hasValidatedAcreage"
-			],
-			[
-				"hasValida",
-				"hasValidatedZipcode"
-			],
-			[
-				"big-icon",
-				"big-input-helper-icon"
-			],
-			[
-				"dark",
-				"dark-highlight"
-			],
-			[
-				"goGreenPotne",
-				"goGreenPotentialReductionTotal"
-			],
-			[
-				"bau",
-				"bauEmissionsTotal"
-			],
-			[
-				"getGoGreenSta",
-				"getGoGreenStationaryReductionPercentage"
-			],
-			[
-				"getGoGreenMobile",
-				"getGoGreenMobileReductionPercentage"
-			],
-			[
-				"getGoGreenCon",
-				"getGoGreenWaterReductionAttribute"
-			],
-			[
-				"getGoGreen",
-				"getGoGreenWaterReductionAttribute"
-			],
-			[
-				"goGreen",
-				"getGoGreenMobileReductionAttribute"
-			],
-			[
-				"getBA",
-				"getBAUConstructionMtco2e"
-			],
-			[
-				"goGreenConstruct",
-				"getGoGreenConstructionReductionAttribute"
-			],
-			[
-				"getGoGreenMobil",
-				"getGoGreenMobileReductionPercentage"
-			],
-			[
-				"getGoGreenSt",
-				"getGoGreenStationaryReductionPercentage"
-			],
-			[
-				"getGoGreenWater",
-				"getGoGreenWaterReductionPercentage"
-			],
-			[
-				"percent",
-				"percentOpenSpace"
-			],
-			[
-				"category",
-				"category_short"
-			],
-			[
-				"cat",
-				"category_short"
-			],
-			[
-				"Land",
-				"landUseType"
-			],
-			[
-				"total",
-				"testTotalMtco2ePerYearAtSite"
-			],
-			[
-				"loca",
-				"locationData"
-			],
-			[
-				"number",
-				"number_of_units"
-			],
-			[
-				"galle",
-				"gallons_per_person_per_day"
+				"succ",
+				"successful_details"
 			],
 			[
 				"is_n",
 				"is_null"
 			],
 			[
-				"ser",
-				"service_population_unit"
+				"sxc",
+				"sxcCoords"
 			],
 			[
-				"gall",
-				"gallons_per_person_per_day"
+				"wrigl",
+				"wrigleyvilleCoords"
+			],
+			[
+				"wrigle",
+				"wrigleyvilleLatLngs"
+			],
+			[
+				"wrig",
+				"wrigleyvilleCoords"
+			],
+			[
+				"modifier",
+				"modifier_options"
+			],
+			[
+				"fav",
+				"favorites"
+			],
+			[
+				"mod",
+				"modifier_options"
+			],
+			[
+				"return",
+				"returnData"
+			],
+			[
+				"esti",
+				"estimateTimestamp"
+			],
+			[
+				"timeEsti",
+				"timeEstimatedNew"
+			],
+			[
+				"update",
+				"updateTimeDisplay"
+			],
+			[
+				"delivery",
+				"deliveryAdjustment"
+			],
+			[
+				"hideTip",
+				"hideTipCharge"
+			],
+			[
+				"Checkout",
+				"CheckoutTemplate"
+			],
+			[
+				"custom",
+				"order_custom2"
+			],
+			[
+				"is",
+				"isStoreOpen"
+			],
+			[
+				"vali",
+				"validateMinimumOrderAmount"
+			],
+			[
+				"hide",
+				"hideMinimumOrderError"
+			],
+			[
+				"today",
+				"todaysOrders"
+			],
+			[
+				"distri",
+				"distributionType"
+			],
+			[
+				"Check",
+				"CheckoutTemplate"
+			],
+			[
+				"strto",
+				"strtolower"
+			],
+			[
+				"Sta",
+				"StatusCollection"
+			],
+			[
+				"unbind",
+				"unbindEvents"
+			],
+			[
+				"founda",
+				"foundation_reveal"
+			],
+			[
+				"distribu",
+				"distribution-input"
+			],
+			[
+				"cart",
+				"cartTotal"
 			],
 			[
 				"str_re",
 				"str_replace"
 			],
 			[
-				"foreach",
-				"foreach	foreach …"
+				"delive",
+				"delivery-caption"
 			],
 			[
-				"num",
-				"numberOfPeople"
+				"has",
+				"hasPerformedInitialScroll"
 			],
 			[
-				"_getPer",
-				"_getPersonLeft"
+				"update-cart",
+				"update-cart-info-text"
 			],
 			[
-				"border",
-				"border-radius"
+				"location-button",
+				"location-button-border"
 			],
 			[
-				"upload",
-				"upload_preferences"
+				"pick",
+				"pickup-delivery-button"
 			],
 			[
-				"i",
-				"isScrolledIntoView"
+				"Vista",
+				"VistaSlab"
 			],
 			[
 				"back",
-				"backup_pro_config"
+				"backstretch-image"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"max",
+				"maxSiblingHeight"
+			],
+			[
+				"text-",
+				"text-transform"
+			],
+			[
+				"_init",
+				"_initGoogleMaps"
 			],
 			[
 				"vertical",
@@ -460,123 +316,128 @@
 	"buffers":
 	[
 		{
-			"file": "Gruntfile.js",
-			"settings":
-			{
-				"buffer_size": 3780,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "config/githooks/pre-commit",
-			"settings":
-			{
-				"buffer_size": 126,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 523,
+				"buffer_size": 973,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "httpdocs/index.html",
+			"file": "config/settings/deployments.json",
 			"settings":
 			{
-				"buffer_size": 3418,
+				"buffer_size": 607,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Users/bryanthughes/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+			"file": "Gruntfile.js",
 			"settings":
 			{
-				"buffer_size": 1150,
+				"buffer_size": 4267,
 				"line_ending": "Unix"
 			}
 		}
 	],
 	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
 	"command_palette":
 	{
-		"height": 118.0,
+		"height": 368.0,
+		"last_filter": "jsx",
 		"selected_items":
 		[
+			[
+				"jsx",
+				"Set Syntax: JSX"
+			],
+			[
+				"jsc",
+				"Set Syntax: JavaScript (JSX)"
+			],
+			[
+				"jxs",
+				"Set Syntax: JSX"
+			],
+			[
+				"todo",
+				"TodoReview: Project Files"
+			],
+			[
+				"todore",
+				"TodoReview: Project Files"
+			],
 			[
 				"install",
 				"Package Control: Install Package"
 			],
 			[
-				"package",
-				"Package Control: Install Package"
+				"pretty",
+				"Pretty JSON: Format (Pretty Print) JSON"
 			],
 			[
-				"back",
-				"SublimeLinter: Background Linting"
+				"set jsx",
+				"Set Syntax: JSX"
+			],
+			[
+				"scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"set scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"package",
+				"Preferences: Browse Packages"
+			],
+			[
+				"markdown",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"mark",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"json",
+				"Pretty JSON: Format (Pretty Print) JSON"
 			],
 			[
 				"linter",
-				"SublimeLinter: Lint Current File"
-			],
-			[
-				"disable",
-				"Package Control: Disable Package"
+				"SublimeLinter: Next Error"
 			],
 			[
 				"list",
 				"Package Control: List Packages"
 			],
 			[
-				"lint",
-				"SublimeLinter: Lint Current File"
+				"ce ima",
+				"Snippet: CE image"
 			],
 			[
-				"Package Control: ",
-				"Package Control: Enable Package"
+				"emm",
+				"Emmet: Expand Abbreviation"
 			],
 			[
-				"inst",
-				"Package Control: Install Package"
-			],
-			[
-				"dis",
-				"Package Control: Disable Package"
-			],
-			[
-				"packa",
-				"Package Control: Install Package"
-			],
-			[
-				"packages",
-				"Package Control: Upgrade/Overwrite All Packages"
-			],
-			[
-				"java",
-				"Set Syntax: JavaScript"
-			],
-			[
-				"set json",
-				"Set Syntax: JSON"
-			],
-			[
-				"php",
-				"Set Syntax: PHP"
-			],
-			[
-				"et laravel",
-				"Set Syntax: PHP - Laravel Blade"
-			],
-			[
-				"controller",
-				"Laravel Generate: Controller"
+				"express",
+				"Set Syntax: ExpressionEngine"
 			],
 			[
 				"gist",
 				"Gist: Insert Gist"
+			],
+			[
+				"set java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
 			],
 			[
 				"fetch",
@@ -585,6 +446,10 @@
 			[
 				"set html",
 				"Set Syntax: HTML5"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
 			],
 			[
 				"set php",
@@ -599,21 +464,22 @@
 				"Set Syntax: ExpressionEngine"
 			],
 			[
-				"express",
-				"Set Syntax: ExpressionEngine"
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
 			]
 		],
-		"width": 561.0
+		"width": 417.0
 	},
 	"console":
 	{
-		"height": 375.0,
+		"height": 115.0,
 		"history":
 		[
-			"clear()",
-			"clear",
-			"php l",
-			"php -l",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
 			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
 		]
 	},
@@ -626,136 +492,146 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/Users/bryanthughes/Sites/authentic-ff/tools/jumpstart",
+		"/Users/bryanthughes/Sites/authentic-ff/tools/jumpstart/config",
+		"/Users/bryanthughes/Sites/authentic-ff/tools/jumpstart/config/settings",
+		"/Users/bryanthughes/Sites/authentic-ff/tools/jumpstart/httpdocs",
+		"/Users/bryanthughes/Sites/authentic-ff/tools/jumpstart/httpdocs/assets",
+		"/Users/bryanthughes/Sites/authentic-ff/tools/jumpstart/httpdocs/assets/styles",
+		"/Users/bryanthughes/Sites/authentic-ff/tools/jumpstart/httpdocs/assets/styles/sass"
+	],
 	"file_history":
 	[
-		"/Users/bryanthughes/Sites/Authentic FF/Tools/jumpstart/assets/scripts/main.js",
-		"/Users/bryanthughes/Sites/Authentic FF/Tools/jumpstart/node_modules/grunt-contrib-uglify/node_modules/uglify-js/lib/mozilla-ast.js",
-		"/Users/bryanthughes/Sites/Authentic FF/Tools/jumpstart/node_modules/bower/Makefile",
-		"/Users/bryanthughes/Sites/Authentic FF/Tools/jumpstart/README.md",
-		"/Users/bryanthughes/Sites/Authentic FF/Tools/jumpstart/bower.json",
-		"/Users/bryanthughes/Sites/Authentic FF/Tools/jumpstart/Gruntfile.js",
-		"/Users/bryanthughes/Sites/Authentic FF/Tools/jumpstart/package.json",
-		"/Users/bryanthughes/Sites/Authentic FF/Tools/jumpstart/index.html",
-		"/Users/bryanthughes/Sites/Authentic FF/Tools/jumpstart/jumpstart.sublime-project",
-		"/Users/bryanthughes/Sites/Authentic FF/Tools/jumpstart/config/grunt_settings.json",
-		"/Users/bryanthughes/Sites/Authentic FF/Tools/jumpstart/.gitignore",
-		"/Users/bryanthughes/Sites/Authentic FF/Tools/jumpstart/config/bootstrap.php",
-		"/Users/bryanthughes/Sites/Authentic FF/Tools/jumpstart/config/compass.rb",
-		"/Users/bryanthughes/Sites/Authentic FF/Tools/jumpstart/config/config_local.php",
-		"/Users/bryanthughes/Sites/Authentic FF/Tools/jumpstart/config/TEMP_config_local.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/apps/App.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/controllers/AppController.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/artisan",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/styles/sass/components/_forms.scss",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/pageLayouts/ProgramRequestsAdditionalPageLayout.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/views/pageLayouts/programRequestsLandingPageLayout.blade.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/views/pageLayouts/programRequestsChoosePageLayout.blade.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/lib/repositories/interfaces/ProspectsRepository.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/phpunit.xml",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/pageLayouts/ProgramRequestsChoosePageLayout.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/views/templates/itemViews/emptyCoursesItemView.blade.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/styles/sass/modules/_modules.scss",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/views/itemViews/SortableCourseItemView.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/views/collectionViews/CoursesCollectionView.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/collections/CoursesCollection.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/controllers/CoursesController.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/views/templates/itemViews/courseItemView.blade.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/composer.json",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/views/itemViews/CourseItemView.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/views/itemViews/PlaceholderCourseItemView.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/views/templates/itemViews/placeholderCourseItemView.blade.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/vendor/monolog/monolog/tests/Monolog/PsrLogCompatTest.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/views/collectionViews/SortableCoursesCollectionView.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/vendor/mustache/mustache/test/fixtures/examples/section_objects/section_objects.mustache",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/slicing.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/node_modules/bower/templates/search-empty.mustache",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/collections/SelectedCoursesCollection.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/bower_components/foundation/js/vendor/placeholder.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/vendor/vendor/placeholder.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/models/CourseModel.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/tests/Gateways/PersonGatewayTest.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/bower_components/requirejs/tests/error/globalOnError.html",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/vendor/nikic/php-parser/lib/PHPParser/Node/Expr/GreaterOrEqual.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/PostgresGrammar.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/vendor/composer/autoload_psr4.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/.git/index",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/vendor/nesbot/carbon/tests/IsTest.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/collections/AlternateCoursesCollection.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/controllers/RoutingController.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/tests/Controllers/CourseRequestsControllerTest.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/tests/Entities/CourseRequestEntityTest.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/tests/Gateways/CourseRequestGatewayTest.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/vendor/mockery/mockery/library/Mockery/CountValidator/AtLeast.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/fonts/AlrightSans-Light.svg",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/README",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/routes.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/routers/Router.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/main.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/bower_components/jquery-validation/localization/messages_ar.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/views/templates/itemViews/sortableCourseItemView.blade.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/vendor/symfony/finder/Symfony/Component/Finder/Iterator/SortableIterator.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/node_modules/bower/node_modules/fstream/lib/socket-reader.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/bootstrap/start.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/views/templates/itemViews/alternateCourseItemView.blade.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/views/templates/itemViews/selectedCourseItemView.blade.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/views/collectionViews/AlternateCoursesCollectionView.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/views/itemViews/SelectedCourseItemView.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/views/itemViews/AlternateCourseItemView.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/node_modules/bower/LICENSE",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/views/collectionViews/SelectedCoursesCollectionView.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/models/CourseModel.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/SendListener.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/vendor/jquery-ui.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/bower_components/backbone.marionette/src/marionette.collectionview.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/bower_components/backbone/test/collection.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/node_modules/bower/node_modules/colors/colors.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/views/wrappers/master.blade.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/vendor/yui-min.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/vendor/UseYUI.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/bower_components/jquery-validation/localization/messages_it.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/node_modules/grunt-contrib-requirejs/tasks/requirejs.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/bower_components/requirejs/require.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/bower_components/backbone.marionette/src/marionette.itemview.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/bower_components/requirejs/tests/circular/complexPlugin/viewport.html",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/bower_components/backbone.marionette/src/marionette.view.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/bower_components/backbone.marionette/src/marionette.compositeview.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/workbench/authff/servicelocater/vendor/doctrine/dbal/docs/examples/sharding/view_federation_members.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/workbench/authff/servicelocater/vendor/laravel/framework/tests/View/ViewCompilerEngineTest.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/tests/main.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/scripts/pageLayouts/WelcomePageLayout.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/views/pageLayouts/welcomePageLayout.blade.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/assets/tests/specs/models/SiteModelTest.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/controllers/BaseController.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/views/partials/scriptTemplates.blade.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/.git/logs/refs/remotes/origin/master",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/.git/refs/remotes/origin/master",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/.git/logs/refs/heads/master",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/.git/refs/heads/master",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/BaseCommand.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/bower_components/modernizr/feature-detects/battery-api.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/bower.json",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/CharsetObserver.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/bower_components/modernizr/feature-detects/css-hyphens.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/start/global.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/lib/helpers/TemplateHelpers.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/bower_components/requirejs/tests/jquery/scripts/jquery-GPL-LICENSE.txt",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/Gruntfile.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/lib/repositories/storage/FmpTermsRepository.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/lib/repositories/interfaces/CoursesRepository.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/lib/repositories/storage/FmpCoursesRepository.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/tests/Repositories/CoursesRepositoryTest.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/tests/Repositories/TermsRepositoryTest.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/workbench/authff/servicelocater/src/Authff/Servicelocater/Entities/TermEntity.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/TODO.md",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/vendor/bin/phpunit",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/lib/repositories/interfaces/TermsRepository.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/lib/repositories/storage/FmpPeopleRepository.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/lib/repositories/storage/FmpRelationships.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/vendor/phpunit/phpunit/Tests/TextUI/filter-method.phpt",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/.git/FETCH_HEAD",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/views/pageLayouts/programRequestsAdditionalPageLayout.blade.php",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/public/bower_components/modernizr/feature-detects/elem-progress-meter.js",
-		"/Users/bryanthughes/Sites/Clients/marwen/registration/app/tests/Gateways/CourseGatewayTest.php"
+		"/Users/bryanthughes/Sites/authentic-ff/tools/jumpstart/jumpstart.sublime-project",
+		"/Users/bryanthughes/Sites/clients/broomfield/it-portal/public/assets/styles/sass/base/_typography.scss",
+		"/Users/bryanthughes/Sites/clients/broomfield/it-portal/public/assets/styles/sass/utility/_type_mixins.scss",
+		"/Users/bryanthughes/Sites/clients/broomfield/it-portal/craft/templates/_layout.html",
+		"/Users/bryanthughes/Sites/clients/broomfield/it-portal/public/assets/styles/sass/base/_layout.scss",
+		"/Users/bryanthughes/Sites/clients/broomfield/it-portal/public/assets/styles/sass/utility/_global_mixins.scss",
+		"/Users/bryanthughes/Sites/clients/broomfield/it-portal/public/assets/styles/sass/_settings.scss",
+		"/Users/bryanthughes/Sites/clients/broomfield/it-portal/public/assets/styles/sass/foundation/components/_grid.scss",
+		"/Users/bryanthughes/Sites/clients/broomfield/it-portal/public/assets/styles/sass/components/_hero.scss",
+		"/Users/bryanthughes/Sites/clients/broomfield/it-portal/public/assets/styles/sass/components/_nav.scss",
+		"/Users/bryanthughes/Sites/clients/broomfield/it-portal/public/assets/styles/sass/components/_search.scss",
+		"/Users/bryanthughes/Sites/clients/broomfield/it-portal/public/assets/styles/sass/components/_status.scss",
+		"/Users/bryanthughes/Sites/clients/broomfield/it-portal/public/assets/styles/sass/components/_get-help.scss",
+		"/Users/bryanthughes/Sites/clients/broomfield/it-portal/public/assets/styles/sass/components/__upcoming-events.scss",
+		"/Users/bryanthughes/Sites/clients/broomfield/it-portal/craft/templates/template-home/index.html",
+		"/Users/bryanthughes/Sites/clients/broomfield/it-portal/public/index.html",
+		"/Users/bryanthughes/Sites/clients/broomfield/it-portal/craft/config/db.php",
+		"/Users/bryanthughes/Sites/clients/broomfield/it-portal/craft/templates/home/index.html",
+		"/Users/bryanthughes/Sites/clients/broomfield/it-portal/craft/templates/index.html",
+		"/Users/bryanthughes/Sites/clients/broomfield/it-portal/public/assets/styles/sass/app.scss",
+		"/Users/bryanthughes/Sites/clients/broomfield/it-portal/public/assets/styles/sass/config/_typography.scss",
+		"/Users/bryanthughes/Sites/clients/broomfield/it-portal/Gruntfile.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/styles/sass/components/_navigation.scss",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/components/NavigationComponent.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/styles/sass/utility/_global_mixins.scss",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/styles/sass/components/_location-switcher.scss",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/styles/sass/base/_interactions.scss",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/controllers/OrdersRoutingController.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/components/ApplicationComponent.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/stores/OrdersStore.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/stores/SettingsStore.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/components/OrderCardComponent.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/components/UpdateStockAlertComponent.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/stores/ActiveProductsStore.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/components/ProductsStageComponent.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/components/ProductCategoriesContainerComponent.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/components/ProductComponent.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/components/ProductsCategoryContainerComponent.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/components/CompletedAlertModalComponent.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/components/OrdersStageComponent.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/components/UpdateOrderModalComponent.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/components/OrderStagesContainerComponent.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/styles/sass/components/_modals.scss",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/components/NewOrderAlertModalComponent.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/components/ModalComponent.js",
+		"/Users/bryanthughes/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/components/AlertingScrollableColumnComponent.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/components/NewOrderScrollableColumnComponent.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/components/ScrollableColumnComponent.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/components/ScrollableOrdersColumnComponent.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/styles/sass/components/_analytic.scss",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/components/AnalyticComponent.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/components/AnalyticsStageComponent.js",
+		"/Users/bryanthughes/Sites/clients/dimos/dims/public/assets/scripts/components/CompletedAlertModalComponent.js",
+		"/Users/bryanthughes/Sites/clients/dimos/dims/public/assets/scripts/components/UpdateOrderModalComponent.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/stores/CompletedOrderStore.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/components/CompletedOrderScrollableColumnComponent.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/stores/ProductsStore.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/controllers/AnalyticsRoutingController.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/controllers/ProductsRoutingController.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/app.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/stores/AnalyticsStore.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/stores/ProductCategoriesStore.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/components/NavigationStatComponent.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/styles/sass/components/_n-progress.scss",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/node_modules/nprogress-npm/nprogress.css",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/styles/sass/app.scss",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/resources/assets/sass/app.scss",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/styles/sass/components/_n_progress.scss",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/dev.todo",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/models/OrderModel.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/styles/sass/components/_order-card.scss",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/app/Lib/Services/OrdersService.php",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/app/Lib/Transformers/OrderTransformer.php",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/app/Lib/Transformers/LineItemTransformer.php",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/app/Lib/Transformers/ProductTransformer.php",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/app/LineItem.php",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/app/Product.php",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/.env.production",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/.env.staging",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/.env",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/config/database.php",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/app/Lib/Services/AnalyticsService.php",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/app/Lib/Services/ProductCategoriesService.php",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/app/Lib/Services/ProductsService.php",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/styles/sass/components/_navigation-stat.scss",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/stores/NewOrderStore.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/styles/sass/elements/_buttons.scss",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/app/Http/Controllers/Api/OrdersController.php",
+		"/Users/bryanthughes/Sites/clients/dimos/dims/public/assets/scripts/components/CompletedOrderScrollableColumnComponent.js",
+		"/Users/bryanthughes/Sites/clients/dimos/dims/public/assets/scripts/stores/NewOrderStore.js",
+		"/Users/bryanthughes/Sites/clients/dimos/dims/public/assets/scripts/components/NewOrderScrollableColumnComponent.js",
+		"/Users/bryanthughes/Sites/clients/dimos/dims/public/assets/scripts/components/AnalyticsStageComponent.js",
+		"/Users/bryanthughes/Sites/clients/dimos/dims/public/assets/scripts/components/NavigationComponent.js",
+		"/Users/bryanthughes/Sites/clients/dimos/dims/public/assets/scripts/components/ProductsStageComponent.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/app/Http/Controllers/Api/AnalyticsController.php",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/app/Lib/Transformers/AnalyticTransformer.php",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/index.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/app/Http/routes.php",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/app/Analytic.php",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/tests/Controllers/OrdersControllerTest.php",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/tests/Controllers/ProductsControllerTest.php",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/tests/ExternalApi/ExternalProductsApiTest.php",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/app/Http/Controllers/Api/ProductsController.php",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/tests/Controllers/ProductCategoriesControllerTest.php",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/app/Lib/Transformers/ProductCategoryTransformer.php",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/app/Http/Controllers/Api/ProductCategoriesController.php",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/app/Lib/Services/BaseApiService.php",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/tests/ExternalApi/ExternalOrdersApiTest.php",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/index.php",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/tests/TestCase.php",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/vendor/guzzlehttp/psr7/src/Response.php",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/vendor/psr/http-message/src/ResponseInterface.php",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/vendor/guzzlehttp/guzzle/src/Client.php",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/vendor/guzzlehttp/guzzle/src/ClientInterface.php",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/tests/Services/OrdersServiceTest.php",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/tests/ExternalApi/OrdersApiTest.php",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/styles/sass/base/_typography.scss",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/styles/sass/overrides/_shame.scss",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/styles/sass/config/_typography.scss",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/styles/sass/utility/_type_mixins.scss",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/auth-config/deploy.rb",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/Capfile",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/Gemfile",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/components/SettingsPanelComponent.js",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/styles/sass/components/_stage.scss",
+		"/Users/bryanthughes/Sites/clients/dimos/dims/public/assets/styles/sass/components/_panel.scss",
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/styles/sass/components/_order-stages-container.scss"
 	],
 	"find":
 	{
@@ -763,14 +639,45 @@
 	},
 	"find_in_files":
 	{
-		"height": 94.0,
+		"height": 154.0,
 		"where_history":
 		[
-			"/Users/bryanthughes/Sites/Clients/marwen/registration",
-			"/Users/bryanthughes/Sites/TGL Client Projects/greenhousego/ghg",
-			"/Users/bryanthughes/Sites/TGL Client Projects/foldcraft/foldcraft/httpdocs/assets/scripts",
-			"/Users/bryanthughes/Sites/TGL Client Projects/foldcraft/foldcraft",
-			"/Users/bryanthughes/Sites/TGL Client Projects/foldcraft/foldcraft/templates",
+			"/Users/bryanthughes/Sites/clients/dimos/dims/public/assets/scripts",
+			"/Users/bryanthughes/Sites/clients/dimos/dims/lib",
+			"/Users/bryanthughes/Sites/clients/dimos/dims/app",
+			"/Users/bryanthughes/Sites/clients/dimos/dims/public/assets/scripts",
+			"/Users/bryanthughes/Sites/clients/dimos/dims/public/assets/styles",
+			"/Users/bryanthughes/Sites/clients/dimos/dims/public/assets/scripts/components",
+			"/Users/bryanthughes/Sites/clients/dimos",
+			"/Users/bryanthughes/Sites/clients/dimos/third_party",
+			"/Users/bryanthughes/Sites/clients/dimos/third_party/store",
+			"/Users/bryanthughes/Sites/clients/dimos",
+			"/Users/bryanthughes/Sites/clients/dimos/third_party/store",
+			"/Users/bryanthughes/Sites/clients/dimos/third_party",
+			"/Users/bryanthughes/Sites/clients/dimos/third_party/mobile_checkout_api",
+			"/Users/bryanthughes/Sites/clients/dimos/httpdocs/assets/scripts/",
+			"/Users/bryanthughes/Sites/clients/dimos",
+			"/Users/bryanthughes/Sites/clients/dimos/third_party/mobile_checkout_api",
+			"/Users/bryanthughes/Sites/clients/dimos",
+			"/Users/bryanthughes/Sites/clients/dimos/third_party/store",
+			"/Users/bryanthughes/Sites/clients/dimos",
+			"/Users/bryanthughes/Sites/clients/dimos/templates",
+			"/Users/bryanthughes/Sites/clients/dimos",
+			"/Users/bryanthughes/Sites/clients/dimos/third_party",
+			"/Users/bryanthughes/Sites/clients/dimos",
+			"/Users/bryanthughes/Sites/clients/dimos/templates",
+			"/Users/bryanthughes/Sites/clients/dimos",
+			"/Users/bryanthughes/Sites/clients/dimos/templates",
+			"/Users/bryanthughes/Sites/clients/dimos/",
+			"/Users/bryanthughes/Sites/clients/dimos/templates",
+			"/Users/bryanthughes/Sites/clients/dimos/third_party",
+			"/Users/bryanthughes/Sites/clients/dimos/",
+			"/Users/bryanthughes/Sites/clients/dimos/templates",
+			"/Users/bryanthughes/Sites/TGL Client Projects/dimos/httpdocs/assets/scripts",
+			"/Users/bryanthughes/Sites/TGL Client Projects/dimos",
+			"/Users/bryanthughes/Sites/TGL Client Projects/dimos/templates",
+			"/Users/bryanthughes/Sites/TGL Client Projects/dimos",
+			"/Users/bryanthughes/Sites/TGL Client Projects/dimos/templates",
 			""
 		]
 	},
@@ -779,134 +686,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"cursor",
-			"/^[",
-			"Field",
-			"setError",
-			"specify",
-			"findByOne",
-			"ToParent",
-			"createStudent",
-			"createStudentTo",
-			"noMatchConti",
-			"terms",
-			"saveStu",
-			"noMatch",
-			"redirect",
+			"A49993",
+			"httpdocs/",
+			"this.stores",
+			"currentTimeEstimate",
+			"dueTextMinutes",
+			"duration",
+			"completedOrder-set",
+			"newOrder",
+			"completedOrder-set",
+			"newOrder-set",
+			"sixcorners",
+			"six corners",
+			"sixcorners",
+			".format(\"x\")",
+			".format(\"X\")",
+			"orderModel",
+			"asdf",
+			"=>",
+			"firstCategory",
+			"firstOrder",
+			" );",
+			"object",
+			"time_estimate_1",
+			"height: calc",
+			"should",
+			"stageName",
+			"name",
+			"W",
+			"order",
+			"state",
+			"name",
+			"class",
+			"Orders",
+			"console",
+			"x",
+			"unix",
+			"class",
+			"ScrollableOrdersColumnComponent",
+			"setInterval",
+			"=> arbon",
 			"App",
-			"events",
-			"terms",
-			"TermsRepository",
-			"studentData",
-			"getNewStudentEntity",
-			"validat",
-			"servicelocater",
-			"pages",
-			"getNewStudent",
-			"messages",
-			"set",
-			"Student",
-			"Prereq",
-			"Person",
-			"host",
-			"hostname",
-			"php",
-			"html",
-			"this.get(\"acreage\"",
-			"servicePop",
-			"Total",
-			"servicePop",
-			"jasmineAsync",
-			"populate",
-			"console",
-			"console.l",
-			"console.log(\"new\");",
+			"111",
+			"class",
+			"products",
+			"open",
+			"close",
+			".close",
+			"class",
 			"new",
+			"New",
+			"quantity",
+			"isOpening",
+			"class",
+			"customer",
+			"Carbon",
+			"class=",
+			"class",
+			"<br><br>",
+			"</br>",
+			"-->",
+			"<!--",
+			"class",
+			"httpdocs",
+			"class",
+			"reveal",
+			"data-reveal",
+			"reveal-modal tiny",
+			"data-reveal-id",
+			"update-order-alert",
+			"class=\"round black\"",
+			"breakpoint",
+			"gizmo",
+			"animation-fast",
+			"location-switcher",
+			"elements",
+			"components",
+			"nav-stat",
+			"shipping_phone",
+			"shipping_post",
+			"template",
+			"instagram",
 			"console",
-			"laravel",
-			"console",
-			"is-good",
-			"clearZipcodeHelpers",
-			"lower",
-			"backg",
-			"1000",
-			"cssTriangles",
-			"url('ss",
-			"url('",
-			"url('/assets/fonts/",
-			"bower_modules",
-			"acer",
-			"acre",
-			"acer",
-			"distri",
-			"Acerage",
-			"opens",
-			"$this->bau",
-			"roads",
-			"var_dum",
-			"var_Dump",
-			"\"electricity_percentage\"",
-			"\"pv_roof_area_factor\"",
-			"\"units_per_acre\"",
-			"\"service_population_per_unit\"",
-			"\"sf_per_employee\"",
-			"gfa_per_unit\":\"",
-			"getAverageNumber",
-			"return",
-			"bua",
-			"number_of_units",
-			"getGasMtco2ePerYearAtSite",
-			"gasCfPerSfPerYear",
-			"Attribute",
-			"getGas",
-			"getE",
-			"assign_to",
-			".com",
-			"waymar.com",
-			"content/",
-			"foldcraft.local",
-			"system",
+			"optional",
+			"validate",
+			"minimum_del",
+			"min_",
+			"minimum_",
 			"console.log",
-			"padding-top",
-			"address",
-			"family",
-			".subnav-select",
-			"hack",
-			"bryant",
-			"height",
-			"TGL",
-			"capability",
-			"services-slide",
-			".subnav-select",
-			".contact-form",
-			"hr",
-			"display_settings",
-			"grey",
-			".slide",
-			"slide",
-			"side",
-			"populate",
-			"Dough",
-			"capability",
-			"news_galler",
-			"index",
-			"slide_index",
-			"news-title",
-			"capabilities-gallery-pager",
-			"basic-gallery-pager",
-			"slide",
-			".contact",
-			"class=\"contact",
-			"emailModal",
-			"emailModeal",
-			"email",
-			"search-field",
-			"blue",
-			"sitemap",
-			"about-copy-section",
-			"green",
-			"k.push",
-			"sitemap"
+			"order_id",
+			"output_order_as_json",
+			"initForm",
+			"order",
+			"App.emptyCart",
+			"setCart",
+			"setCartCookie",
+			"exp_store_cart",
+			"csrf",
+			"act_checkout",
+			"Place Order",
+			"No thanks",
+			"validate",
+			"OrdersService",
+			"ordersService",
+			"ee()",
+			"localStorage",
+			"cookie",
+			"render",
+			"##",
+			"There was an error setting an order's status",
+			"currentStatus",
+			"this.timeNewEstimated.format(\"X\")",
+			"Bugsnag_Client",
+			"Note: Auth",
+			"Auth",
+			"isStoreOpen",
+			"undefined",
+			"timeNewEstimated",
+			"valid_payment_method",
+			"function show_user_error",
+			"show_user_error",
+			"valid_payment_method",
+			"Invalid payment method",
+			"Invalid payment method.",
+			"The Payment Method field is required.",
+			"CartException(lang('valid_payment_method'));",
+			"class RuntimeException",
+			"RuntimeException",
+			"valid_payment_method"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -914,35 +821,31 @@
 		"regex": false,
 		"replace_history":
 		[
-			"Form",
-			"findOneBy",
-			"pageLayouts",
-			"is-valid",
-			"url('/assets/fonts/ss",
-			"url('/assets/fonts/",
+			"<br>",
+			"<br></br>",
+			"*/}",
+			"{/*",
+			"data-modal-id",
+			"PLACE ORDER",
+			"trackerName",
+			"self.ecomTrackerName",
+			"this.ecomTrackerName",
+			"new App.OrderCollection.obj",
+			"httpdocs",
+			"false",
 			"bower_components",
-			"$this",
-			"\"electricity_percentage",
-			"\"pv_roof_area_factor",
-			"\"units_per_acre",
-			"\"service_population_per_unit",
-			"\"sf_per_employee",
-			"gfa_per_unit\":",
-			"bau",
-			"numberOfUnits",
-			"",
-			"gas",
-			"g",
-			"e",
-			"waymar",
-			"",
-			"waymar.local",
-			"slide_count",
-			"content-copy-section",
-			"{snippet:partials-_footer}",
-			"{snippet:partials-_code_footer}",
-			"{snippet:partials-_header}",
-			"{snippet:partials-_code_header}",
+			"{stash:embed:site:footer}",
+			"{stash:embed:site:header}",
+			"{stash:embed:site:code_header}",
+			"{stash:embed:site:code_footer}",
+			"CheckoutTemplate.prototype",
+			"url('/assets/fonts/ss-soc",
+			"class=\"large-listing-unit\"",
+			"class=\"listing-unit\"",
+			"class=\"blog-listing-unit\"",
+			"blog-listing-unit",
+			"260",
+			"url('/assets/fonts/",
 			"",
 			"/assets",
 			"",
@@ -972,124 +875,34 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Gruntfile.js",
+					"file": "package.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3780,
+						"buffer_size": 973,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								452,
+								452
 							]
 						],
 						"settings":
 						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110
-							],
-							"gjslint_options":
-							[
-							],
-							"incomplete_sync": null,
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"remote_loading": false,
-							"sublimelinter": true,
-							"sublimelinter_delay": 0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": true,
-							"sublimelinter_gutter_marks_theme": "simple",
-							"sublimelinter_mark_style": "none",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"Python Django": "python"
-							},
-							"sublimelinter_wrap_find": true,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 501.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -1097,63 +910,23 @@
 				},
 				{
 					"buffer": 1,
-					"file": "config/githooks/pre-commit",
+					"file": "config/settings/deployments.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 126,
+						"buffer_size": 607,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								106,
-								106
+								1,
+								1
 							]
 						],
 						"settings":
 						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 1,
-			"sheets":
-			[
-				{
-					"buffer": 2,
-					"file": "package.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 523,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
 							"syntax": "Packages/JavaScript/JSON.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
@@ -1166,65 +939,33 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "httpdocs/index.html",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 3418,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1764.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/Users/bryanthughes/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+					"buffer": 2,
+					"file": "Gruntfile.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1150,
+						"buffer_size": 4267,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								4159,
+								4099
 							]
 						],
 						"settings":
 						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.x": -0.0,
+						"translation.y": 1461.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1247,18 +988,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
@@ -1268,10 +1002,6 @@
 		]
 	},
 	"menu_visible": true,
-	"output.exec":
-	{
-		"height": 110.0
-	},
 	"output.find_results":
 	{
 		"height": 0.0
@@ -1280,6 +1010,7 @@
 	{
 		"height": 0.0
 	},
+	"pinned_build_system": "",
 	"project": "jumpstart.sublime-project",
 	"replace":
 	{
@@ -1289,519 +1020,520 @@
 	"select_file":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
-				"main.js",
-				"assets/scripts/main.js"
+				"globalmix",
+				"public/assets/styles/sass/utility/_global_mixins.scss"
 			],
 			[
-				"_config",
-				"public/assets/styles/sass/base/_config.scss"
+				"typemix",
+				"public/assets/styles/sass/utility/_type_mixins.scss"
 			],
 			[
-				"_modules",
-				"public/assets/styles/sass/modules/_modules.scss"
+				"typo",
+				"public/assets/styles/sass/base/_typography.scss"
 			],
 			[
-				"programreq",
-				"public/assets/scripts/pageLayouts/ProgramRequestsChoosePageLayout.js"
+				"_typemix",
+				"public/assets/styles/sass/utility/_type_mixins.scss"
 			],
 			[
-				"program",
-				"app/views/pageLayouts/programRequestsChoosePageLayout.blade.php"
+				"_grid",
+				"public/assets/styles/sass/foundation/components/_grid.scss"
 			],
 			[
-				"coursescollection",
-				"public/assets/scripts/views/collectionViews/CoursesCollectionView.js"
+				"_settings",
+				"public/assets/styles/sass/_settings.scss"
 			],
 			[
-				"courseitemview",
-				"public/assets/scripts/views/itemViews/CourseItemView.js"
+				"_lay",
+				"public/assets/styles/sass/base/_layout.scss"
 			],
 			[
-				"placeholder",
-				"public/assets/scripts/views/itemViews/PlaceholderCourseItemView.js"
+				"_layouts",
+				"public/assets/styles/sass/base/_layout.scss"
 			],
 			[
-				"sortable",
-				"public/assets/scripts/views/itemViews/SortableCourseItemView.js"
+				"layout",
+				"craft/templates/_layout.html"
 			],
 			[
-				"placed",
-				"app/views/templates/itemViews/placeholderCourseItemView.blade.php"
+				"typeix",
+				"public/assets/styles/sass/utility/_type_mixins.scss"
 			],
 			[
-				"programchoose",
-				"app/views/pageLayouts/programRequestsChoosePageLayout.blade.php"
+				"_typoh",
+				"public/assets/styles/sass/config/_typography.scss"
 			],
 			[
-				"appcontroll",
-				"app/controllers/AppController.php"
+				"app.scss",
+				"public/assets/styles/sass/app.scss"
 			],
 			[
-				"courseitem",
-				"app/views/templates/itemViews/courseItemView.blade.php"
+				"_colors",
+				"public/assets/styles/sass/config/_colors.scss"
 			],
 			[
-				"coursemodel",
-				"public/assets/scripts/models/CourseModel.js"
+				"typog",
+				"public/assets/styles/sass/base/_typography.scss"
 			],
 			[
-				"select",
-				"public/assets/scripts/collections/SelectedCoursesCollection.js"
+				"homeinde",
+				"craft/templates/template-home/index.html"
 			],
 			[
-				"alter",
-				"public/assets/scripts/collections/AlternateCoursesCollection.js"
+				"gruntfil",
+				"Gruntfile.js"
 			],
 			[
-				"routingcontro",
-				"public/assets/scripts/controllers/RoutingController.js"
+				"typoh",
+				"public/assets/styles/sass/base/_typography.scss"
+			],
+			[
+				"_inter",
+				"public/assets/styles/sass/base/_interactions.scss"
+			],
+			[
+				"navgi",
+				"public/assets/scripts/components/NavigationComponent.js"
+			],
+			[
+				"_locatin",
+				"public/assets/styles/sass/components/_location-switcher.scss"
+			],
+			[
+				"_nav",
+				"public/assets/styles/sass/components/_navigation.scss"
+			],
+			[
+				"ordersrouting",
+				"public/assets/scripts/controllers/OrdersRoutingController.js"
+			],
+			[
+				"application",
+				"public/assets/scripts/components/ApplicationComponent.js"
+			],
+			[
+				"ordersstore",
+				"public/assets/scripts/stores/OrdersStore.js"
+			],
+			[
+				"settingsstore",
+				"public/assets/scripts/stores/SettingsStore.js"
+			],
+			[
+				"naviga",
+				"public/assets/scripts/components/NavigationComponent.js"
+			],
+			[
+				"ordercard",
+				"public/assets/scripts/components/OrderCardComponent.js"
+			],
+			[
+				"productscate",
+				"public/assets/scripts/components/ProductsCategoryContainerComponent.js"
+			],
+			[
+				"activeproducts",
+				"public/assets/scripts/stores/ActiveProductsStore.js"
+			],
+			[
+				"orderstage",
+				"public/assets/scripts/components/OrderStagesContainerComponent.js"
+			],
+			[
+				"orders",
+				"public/assets/scripts/components/OrdersStageComponent.js"
+			],
+			[
+				"_modal",
+				"public/assets/styles/sass/components/_modals.scss"
+			],
+			[
+				"updateorder",
+				"public/assets/scripts/components/UpdateOrderModalComponent.js"
+			],
+			[
+				"ordercompon",
+				"public/assets/scripts/components/OrderCardComponent.js"
+			],
+			[
+				"analyticscss",
+				"public/assets/styles/sass/components/_analytic.scss"
+			],
+			[
+				"analyticcompon",
+				"public/assets/scripts/components/AnalyticComponent.js"
+			],
+			[
+				"analytics",
+				"public/assets/scripts/components/AnalyticsStageComponent.js"
+			],
+			[
+				"order",
+				"public/assets/scripts/components/OrdersStageComponent.js"
+			],
+			[
+				"completed",
+				"public/assets/scripts/components/CompletedAlertModalComponent.js"
+			],
+			[
+				"alerting",
+				"public/assets/scripts/components/AlertingScrollableColumnComponent.js"
+			],
+			[
+				"ordercomponent",
+				"public/assets/scripts/components/OrderCardComponent.js"
+			],
+			[
+				"analyticsrouting",
+				"public/assets/scripts/controllers/AnalyticsRoutingController.js"
+			],
+			[
+				"productsrouting",
+				"public/assets/scripts/controllers/ProductsRoutingController.js"
+			],
+			[
+				"ordersroutingcontro",
+				"public/assets/scripts/controllers/OrdersRoutingController.js"
 			],
 			[
 				"app.js",
-				"public/assets/scripts/apps/App.js"
+				"public/assets/scripts/app.js"
 			],
 			[
-				"sortableitem",
-				"public/assets/scripts/views/itemViews/SortableCourseItemView.js"
+				"productsstore",
+				"public/assets/scripts/stores/ProductsStore.js"
 			],
 			[
-				"selected",
-				"public/assets/scripts/views/itemViews/SelectedCourseItemView.js"
+				"analyticsstore",
+				"public/assets/scripts/stores/AnalyticsStore.js"
 			],
 			[
-				"selectedcourseitem",
-				"public/assets/scripts/views/itemViews/SelectedCourseItemView.js"
+				"productcategoriesstore",
+				"public/assets/scripts/stores/ProductCategoriesStore.js"
 			],
 			[
-				"selectedcourses",
-				"public/assets/scripts/views/collectionViews/SelectedCoursesCollectionView.js"
+				"productscategory",
+				"public/assets/scripts/components/ProductsCategoryContainerComponent.js"
 			],
 			[
-				"selectcoure",
-				"public/assets/scripts/views/collectionViews/SelectedCoursesCollectionView.js"
+				"scrollablecol",
+				"public/assets/scripts/components/ScrollableColumnComponent.js"
 			],
 			[
-				"selec",
-				"public/assets/scripts/collections/SelectedCoursesCollection.js"
+				"productcategories",
+				"public/assets/scripts/components/ProductCategoriesContainerComponent.js"
 			],
 			[
-				"main",
-				"public/assets/scripts/main.js"
+				"productsstage",
+				"public/assets/scripts/components/ProductsStageComponent.js"
 			],
 			[
-				"collectionview",
-				"public/assets/scripts/views/collectionViews/CoursesCollectionView.js"
+				"appcompon",
+				"public/assets/scripts/components/ApplicationComponent.js"
 			],
 			[
-				"master",
-				"app/views/wrappers/master.blade.php"
+				"ordersstage",
+				"public/assets/scripts/components/OrdersStageComponent.js"
 			],
 			[
-				"main.j",
-				"public/assets/scripts/main.js"
+				"products",
+				"public/assets/scripts/stores/ProductsStore.js"
 			],
 			[
-				"itemview",
-				"app/views/templates/itemViews/courseItemView.blade.php"
+				"nprogre",
+				"node_modules/nprogress-npm/nprogress.css"
 			],
 			[
-				"_forms",
-				"public/assets/styles/sass/components/_forms.scss"
+				"applicationcompon",
+				"public/assets/scripts/components/ApplicationComponent.js"
 			],
 			[
-				"welcome",
-				"public/assets/scripts/pageLayouts/WelcomePageLayout.js"
+				"orderssto",
+				"public/assets/scripts/stores/OrdersStore.js"
 			],
 			[
-				"master.blade",
-				"app/views/wrappers/master.blade.php"
+				"orderstages",
+				"public/assets/scripts/components/OrderStagesContainerComponent.js"
 			],
 			[
-				"basecon",
-				"app/controllers/BaseController.php"
+				"ordersstag",
+				"public/assets/scripts/components/OrdersStageComponent.js"
 			],
 			[
-				"choose",
-				"public/assets/scripts/pageLayouts/ProgramRequestsChoosePageLayout.js"
+				"navstat",
+				"public/assets/scripts/components/NavigationStatComponent.js"
 			],
 			[
-				"global",
-				"app/start/global.php"
+				"applicationcomp",
+				"public/assets/scripts/components/ApplicationComponent.js"
 			],
 			[
-				"terms",
-				"app/tests/Repositories/TermsRepositoryTest.php"
+				"orderscontroller",
+				"public/assets/scripts/controllers/OrdersRoutingController.js"
 			],
 			[
-				"composer",
-				"composer.json"
+				"dev.todo",
+				"dev.todo"
 			],
 			[
-				"termsrepos",
-				"app/lib/repositories/interfaces/TermsRepository.php"
+				"scrollablecolumn",
+				"public/assets/scripts/components/ScrollableColumnComponent.js"
 			],
 			[
-				"fmpterms",
-				"app/lib/repositories/storage/FmpTermsRepository.php"
+				"locationswitch",
+				"public/assets/styles/sass/components/_location-switcher.scss"
 			],
 			[
-				"programreques",
-				"app/views/pageLayouts/programRequestsChoosePageLayout.blade.php"
+				"ordermodel",
+				"public/assets/scripts/models/OrderModel.js"
 			],
 			[
-				"_form",
-				"public/assets/styles/sass/components/_forms.scss"
+				"stock",
+				"public/assets/scripts/components/UpdateStockAlertComponent.js"
 			],
 			[
-				"special",
-				"app/views/pageLayouts/specialNeedsPageLayout.blade.php"
+				"orderstore",
+				"public/assets/scripts/stores/OrdersStore.js"
 			],
 			[
-				"landing",
-				"public/assets/scripts/pageLayouts/ProgramRequestsLandingPageLayout.js"
+				"neworderscroll",
+				"public/assets/scripts/components/NewOrderScrollableColumnComponent.js"
 			],
 			[
-				"consent",
-				"app/views/pageLayouts/parentConsentPageLayout.blade.php"
+				"update",
+				"public/assets/scripts/components/UpdateOrderModalComponent.js"
 			],
 			[
-				"parent",
-				"app/views/pageLayouts/parentInfoPageLayout.blade.php"
+				"lineitem",
+				"app/Lib/Transformers/LineItemTransformer.php"
 			],
 			[
-				"programlanding",
-				"app/views/pageLayouts/programRequestsLandingPageLayout.blade.php"
+				"product.php",
+				"app/Product.php"
 			],
 			[
-				"routingcon",
-				"public/assets/scripts/controllers/RoutingController.js"
+				"ordersservice",
+				"app/Lib/Services/OrdersService.php"
 			],
 			[
-				"specialnee",
-				"app/views/pageLayouts/specialNeedsPageLayout.blade.php"
+				"producttrans",
+				"app/Lib/Transformers/ProductTransformer.php"
 			],
 			[
-				"parentconsen",
-				"app/views/pageLayouts/parentConsentPageLayout.blade.php"
+				"ordertrans",
+				"app/Lib/Transformers/OrderTransformer.php"
 			],
 			[
-				"fmppeople",
-				"app/lib/repositories/storage/FmpPeopleRepository.php"
+				".env",
+				".env"
 			],
 			[
-				"routes",
-				"app/routes.php"
+				"_nav-st",
+				"public/assets/styles/sass/components/_navigation-stat.scss"
 			],
 			[
-				"stud",
-				"public/assets/scripts/pageLayouts/StudentInfoPageLayout.js"
+				"navigationsta",
+				"public/assets/scripts/components/NavigationStatComponent.js"
 			],
 			[
-				"personent",
-				"workbench/authff/servicelocater/src/Authff/Servicelocater/Entities/PersonEntity.php"
+				"neworder",
+				"public/assets/scripts/stores/NewOrderStore.js"
 			],
 			[
-				"specialneeds",
-				"app/views/pageLayouts/specialNeedsPageLayout.blade.php"
+				"alertings",
+				"public/assets/scripts/components/AlertingScrollableColumnComponent.js"
 			],
 			[
-				"student",
-				"app/views/pageLayouts/studentInfoPageLayout.blade.php"
+				"completedord",
+				"public/assets/scripts/stores/CompletedOrderStore.js"
 			],
 			[
-				"parentform",
-				"app/views/partials/parentInfoForm.blade.php"
+				"interactions",
+				"public/assets/styles/sass/base/_interactions.scss"
 			],
 			[
-				"parentpage",
-				"public/assets/scripts/pageLayouts/ParentInfoPageLayout.js"
+				"_btton",
+				"public/assets/styles/sass/elements/_buttons.scss"
 			],
 			[
-				"peoplerepos",
-				"app/tests/Repositories/PeopleRepositoryTest.php"
+				"stockcompo",
+				"public/assets/scripts/components/UpdateStockAlertComponent.js"
 			],
 			[
-				"phpunit",
-				"phpunit.xml"
+				"ordercardscss",
+				"public/assets/styles/sass/components/_order-card.scss"
 			],
 			[
-				"people",
-				"app/lib/repositories/interfaces/PeopleRepository.php"
+				"ordercardcom",
+				"public/assets/scripts/components/OrderCardComponent.js"
 			],
 			[
-				"peoplere",
-				"app/tests/Repositories/PeopleRepositoryTest.php"
+				"orderscontroll",
+				"app/Http/Controllers/Api/OrdersController.php"
 			],
 			[
-				"fmpper",
-				"app/lib/repositories/storage/FmpPeopleRepository.php"
+				"dev",
+				"dev.todo"
 			],
 			[
-				"personenti",
-				"workbench/authff/servicelocater/src/Authff/Servicelocater/Entities/PersonEntity.php"
+				"completedorder",
+				"public/assets/scripts/components/CompletedOrderScrollableColumnComponent.js"
 			],
 			[
-				"fmppeop",
-				"app/lib/repositories/storage/FmpPeopleRepository.php"
+				"neworderscrollab",
+				"public/assets/scripts/components/NewOrderScrollableColumnComponent.js"
 			],
 			[
-				"fmprel",
-				"app/lib/repositories/storage/FmpRelationships.php"
+				"stages",
+				"public/assets/scripts/components/OrderStagesContainerComponent.js"
 			],
 			[
-				"studentinfo",
-				"public/assets/scripts/pageLayouts/StudentInfoPageLayout.js"
+				"ordersstages",
+				"public/assets/scripts/components/OrdersStageComponent.js"
 			],
 			[
-				"parentinfo",
-				"public/assets/scripts/pageLayouts/ParentInfoPageLayout.js"
+				"appcom",
+				"public/assets/scripts/components/ApplicationComponent.js"
 			],
 			[
-				"appcont",
-				"app/controllers/AppController.php"
+				"neworderstore",
+				"public/assets/scripts/stores/NewOrderStore.js"
 			],
 			[
-				"stu",
-				"public/assets/scripts/pageLayouts/StudentInfoPageLayout.js"
+				"neworderal",
+				"public/assets/scripts/components/NewOrderAlertModalComponent.js"
 			],
 			[
-				"studentinfobla",
-				"app/views/pageLayouts/studentInfoPageLayout.blade.php"
+				"navigation",
+				"public/assets/scripts/components/NavigationComponent.js"
 			],
 			[
-				"relationshiptest",
-				"app/tests/Repositories/RelationshipRepositoryTest.php"
+				"applicationcomponent",
+				"public/assets/scripts/components/ApplicationComponent.js"
 			],
 			[
-				"abstractgat",
-				"vendor/soliantconsulting/simplefm/library/Soliant/SimpleFM/ZF2/Gateway/AbstractGateway.php"
+				"alertingsc",
+				"public/assets/scripts/components/AlertingScrollableColumnComponent.js"
 			],
 			[
-				"appcontroller",
-				"app/controllers/AppController.php"
+				"navigationstt",
+				"public/assets/scripts/components/NavigationStatComponent.js"
 			],
 			[
-				"stude",
-				"app/views/pageLayouts/studentInfoPageLayout.blade.php"
+				"analytictrans",
+				"app/Lib/Transformers/AnalyticTransformer.php"
 			],
 			[
-				"abstractgateway",
-				"vendor/soliantconsulting/simplefm/library/Soliant/SimpleFM/ZF2/Gateway/AbstractGateway.php"
-			],
-			[
-				"peoplerep",
-				"app/lib/repositories/interfaces/PeopleRepository.php"
-			],
-			[
-				"peopletest",
-				"app/tests/Repositories/PeopleRepositoryTest.php"
-			],
-			[
-				"relation",
-				"workbench/authff/servicelocater/src/Authff/Servicelocater/Entities/RelationshipEntity.php"
-			],
-			[
-				"relationships",
-				"app/lib/repositories/storage/FmpRelationships.php"
-			],
-			[
-				"persongate",
-				"workbench/authff/servicelocater/src/Authff/Servicelocater/Gateways/PersonGateway.php"
-			],
-			[
-				"authgateway",
-				"workbench/authff/servicelocater/src/Authff/Servicelocater/Gateways/TermGateway.php"
-			],
-			[
-				"authentity",
-				"workbench/authff/servicelocater/src/Authff/Servicelocater/Entities/AuthEntity.php"
-			],
-			[
-				"abstractentity",
-				"vendor/soliantconsulting/simplefm/library/Soliant/SimpleFM/ZF2/Entity/AbstractEntity.php"
-			],
-			[
-				"abstractgate",
-				"vendor/soliantconsulting/simplefm/library/Soliant/SimpleFM/ZF2/Gateway/AbstractGateway.php"
-			],
-			[
-				"peoplerepis",
-				"app/tests/Repositories/PeopleRepositoryTest.php"
-			],
-			[
-				"fmppeo",
-				"app/lib/repositories/storage/FmpPeopleRepository.php"
-			],
-			[
-				"peope",
-				"app/tests/Repositories/PeopleRepositoryTest.php"
-			],
-			[
-				"relationgateway",
-				"app/tests/Gateways/RelationshipGatewayTest.php"
-			],
-			[
-				"fmprelation",
-				"app/lib/repositories/storage/FmpRelationships.php"
-			],
-			[
-				"peopleres",
-				"app/tests/Repositories/PeopleRepositoryTest.php"
-			],
-			[
-				"gatewat",
-				"workbench/authff/servicelocater/src/Authff/Servicelocater/Gateways/PersonGateway.php"
-			],
-			[
-				"relatipn",
-				"workbench/authff/servicelocater/src/Authff/Servicelocater/Gateways/RelationshipGateway.php"
-			],
-			[
-				"prospectsreps",
-				"app/lib/repositories/interfaces/ProspectsRepository.php"
-			],
-			[
-				"prospects",
-				"app/lib/repositories/storage/FmpProspectsRepository.php"
-			],
-			[
-				"app",
-				"app/controllers/AppController.php"
-			],
-			[
-				"welcomelayout",
-				"public/assets/scripts/pageLayouts/WelcomePageLayout.js"
-			],
-			[
-				"welcomeblad",
-				"app/views/pageLayouts/welcomePageLayout.blade.php"
-			],
-			[
-				"persongateway",
-				"workbench/authff/servicelocater/src/Authff/Servicelocater/Gateways/PersonGateway.php"
-			],
-			[
-				"gateway",
-				"app/tests/Gateways/PersonGatewayTest.php"
-			],
-			[
-				"prospectsrepos",
-				"app/lib/repositories/storage/FmpProspectsRepository.php"
-			],
-			[
-				"read",
-				"README"
-			],
-			[
-				"prospect",
-				"workbench/authff/servicelocater/src/Authff/Servicelocater/Gateways/ProspectGateway.php"
-			],
-			[
-				"prospectgate",
-				"workbench/authff/servicelocater/src/Authff/Servicelocater/Gateways/ProspectGateway.php"
-			],
-			[
-				"repositorytest",
-				"app/tests/Repositories/PeopleRepositoryTest.php"
-			],
-			[
-				"prospectgateway",
-				"workbench/authff/servicelocater/src/Authff/Servicelocater/Gateways/ProspectGateway.php"
-			],
-			[
-				"abstractenti",
-				"vendor/soliantconsulting/simplefm/library/Soliant/SimpleFM/ZF2/Entity/AbstractEntity.php"
-			],
-			[
-				"adapter",
-				"vendor/soliantconsulting/simplefm/library/Soliant/SimpleFM/Adapter.php"
-			],
-			[
-				"fmp",
-				"app/lib/repositories/storage/FmpPeopleRepository.php"
-			],
-			[
-				"fmppeopel",
-				"app/lib/repositories/storage/FmpPeopleRepository.php"
-			],
-			[
-				"_buttons",
-				"public/assets/styles/sass/components/_buttons.scss"
-			],
-			[
-				"configbugsnag",
-				"app/config/packages/bugsnag/bugsnag-laravel/config.php"
-			],
-			[
-				"wrappersmaster",
-				"app/views/wrappers/master.blade.php"
-			],
-			[
-				"slicing",
-				"public/assets/scripts/slicing.js"
+				"analyticscontrol",
+				"app/Http/Controllers/Api/AnalyticsController.php"
 			],
 			[
 				"routingcontroller",
-				"public/assets/scripts/controllers/RoutingController.js"
+				"public/assets/scripts/controllers/OrdersRoutingController.js"
 			],
 			[
-				"view",
-				"vendor/laravel/framework/src/Illuminate/View/View.php"
+				"analyticscontro",
+				"app/Http/Controllers/Api/AnalyticsController.php"
 			],
 			[
-				"welcomepagelayout",
-				"public/assets/scripts/pageLayouts/WelcomePageLayout.js"
+				"navigationcom",
+				"public/assets/scripts/components/NavigationComponent.js"
 			],
 			[
-				"welcomeblade",
-				"app/views/pageLayouts/welcomePageLayout.blade.php"
+				"navcompon",
+				"public/assets/scripts/components/NavigationStatComponent.js"
 			],
 			[
-				"wrappersmas",
-				"app/views/wrappers/master.blade.php"
+				"applica",
+				"public/assets/scripts/components/ApplicationComponent.js"
 			],
 			[
-				"sidebar",
-				"app/views/partials/sidebarLayout.blade.php"
+				"analyticstage",
+				"public/assets/scripts/components/AnalyticsStageComponent.js"
 			],
 			[
-				"_sidebar",
-				"public/assets/styles/sass/components/_sidebar.scss"
+				"_navigation",
+				"public/assets/styles/sass/components/_navigation-stat.scss"
 			],
 			[
-				"termgateway",
-				"workbench/authff/servicelocater/src/Authff/Servicelocater/Gateways/TermGateway.php"
+				"analytic.php",
+				"app/Analytic.php"
 			],
 			[
-				"termentit",
-				"workbench/authff/servicelocater/src/Authff/Servicelocater/Entities/TermEntity.php"
+				"routes",
+				"app/Http/routes.php"
 			],
 			[
-				"basecontroller",
-				"app/controllers/BaseController.php"
+				"product",
+				"public/assets/scripts/components/ProductComponent.js"
 			],
 			[
-				"peoplec",
-				"app/controllers/PeopleController.php"
+				"ordersserv",
+				"app/Lib/Services/OrdersService.php"
 			],
 			[
-				"appcon",
-				"app/controllers/AppController.php"
+				"activeprod",
+				"public/assets/scripts/stores/ActiveProductsStore.js"
 			],
 			[
-				"termscon",
-				"app/controllers/TermsController.php"
+				"ordercontroller",
+				"tests/Controllers/OrdersControllerTest.php"
 			],
 			[
-				"peoplecon",
-				"app/controllers/PeopleController.php"
+				"orderservi",
+				"app/Lib/Services/OrdersService.php"
 			],
 			[
-				"peoplecontroller",
-				"app/tests/Controllers/PeopleControllerTest.php"
+				"productsservi",
+				"app/Lib/Services/ProductsService.php"
+			],
+			[
+				"productscontroller",
+				"app/Http/Controllers/Api/ProductsController.php"
+			],
+			[
+				"ordersser",
+				"app/Lib/Services/OrdersService.php"
+			],
+			[
+				"productcategorytrans",
+				"app/Lib/Transformers/ProductCategoryTransformer.php"
+			],
+			[
+				"dev.o",
+				"dev.todo"
+			],
+			[
+				"index.php",
+				"public/index.php"
+			],
+			[
+				"responseinterface",
+				"vendor/psr/http-message/src/ResponseInterface.php"
+			],
+			[
+				"guzzleresponse",
+				"vendor/guzzlehttp/psr7/src/Response.php"
+			],
+			[
+				"clientinterface",
+				"vendor/guzzlehttp/guzzle/src/ClientInterface.php"
+			],
+			[
+				"clie",
+				"vendor/guzzlehttp/guzzle/src/Client.php"
+			],
+			[
+				"guzzleclient",
+				"vendor/guzzlehttp/guzzle/src/Client.php"
+			],
+			[
+				"test",
+				"tests/TestCase.php"
 			]
 		],
 		"width": 0.0
@@ -1809,18 +1541,115 @@
 	"select_project":
 	{
 		"height": 500.0,
+		"last_filter": "peo",
 		"selected_items":
 		[
 			[
-				"plymold",
+				"peo",
+				"~/Sites/clients/peoplefoundry/website/peoplefoundry.sublime-project"
+			],
+			[
+				"regis",
+				"~/Sites/Clients/marwen/registration/registration.sublime-project"
+			],
+			[
+				"js",
+				"~/Sites/Clients/jsheld/website/jsheld.sublime-project"
+			],
+			[
+				"marwen",
+				"~/Sites/Clients/marwen/website/marwen.sublime-project"
+			],
+			[
+				"rit",
+				"~/Sites/clients/ritual/website/ritual-website.sublime-project"
+			],
+			[
+				"proj",
+				"~/Sites/authentic-ff/tools/project-intro/project-intro.sublime-project"
+			],
+			[
+				"ghg",
+				"~/Sites/Clients/greenhousego/ghg-v2/ghg-v2.sublime-project"
+			],
+			[
+				"ritual",
+				"~/Sites/clients/ritual/website/ritual-website.sublime-project"
+			],
+			[
+				"fold",
 				"~/Sites/Clients/foldcraft/plymold/plymold.sublime-project"
 			],
 			[
-				"dimos",
-				"~/Sites/Clients/dimos/dimos.sublime-project"
+				"proje",
+				"~/Sites/authentic-ff/tools/project-intro/project-intro.sublime-project"
 			],
 			[
-				"crowd",
+				"ghg-",
+				"~/Sites/Clients/greenhousego/ghg-v2/ghg-v2.sublime-project"
+			],
+			[
+				"hdl",
+				"~/Sites/Clients/jsheld/website/jsheld.sublime-project"
+			],
+			[
+				"held",
+				"~/Sites/Clients/jsheld/website/jsheld.sublime-project"
+			],
+			[
+				"plym",
+				"~/Sites/Clients/foldcraft/plymold/plymold.sublime-project"
+			],
+			[
+				"authen",
+				"~/Sites/authentic-ff/website-v2/AuthWebsiteII.sublime-project"
+			],
+			[
+				"people",
+				"~/Sites/clients/peoplefoundry/website/peoplefoundry.sublime-project"
+			],
+			[
+				"green",
+				"~/Sites/Clients/greenhousego/ghg-v2/app/ghg-v2.sublime-workspace"
+			],
+			[
+				"auth",
+				"~/Sites/authentic-ff/website-v2/AuthWebsiteII.sublime-project"
+			],
+			[
+				"website",
+				"~/Sites/authentic-ff/website-v2/AuthWebsiteII.sublime-project"
+			],
+			[
+				"dimos",
+				"~/Sites/Clients/dimos/website/dimos.sublime-project"
+			],
+			[
+				"epste",
+				"~/Sites/Clients/epstein/website/epstein.sublime-project"
+			],
+			[
+				"open",
+				"~/Sites/Clients/broomfield/openspaces-app/openspaces.sublime-project"
+			],
+			[
+				"bod",
+				"~/Sites/Clients/bodypleasures/website/bodypleasures.sublime-project"
+			],
+			[
+				"broom",
+				"~/Sites/Clients/broomfield/openspaces-app/openspaces.sublime-project"
+			],
+			[
+				"jump",
+				"~/Sites/Authentic FF/Tools/jumpstart/jumpstart.sublime-project"
+			],
+			[
+				"parks",
+				"~/Sites/Clients/broomfield/parksapp/parks.sublime-project"
+			],
+			[
+				"corw",
 				"~/Sites/Clients/crowdnoize/website/crowdnoize-website.sublime-project"
 			],
 			[
@@ -1828,56 +1657,76 @@
 				"~/Sites/Clients/crowdnoize/rsvp/rsvp.sublime-project"
 			],
 			[
-				"auth",
-				"~/Sites/Authentic FF/Website/authffwebsite.sublime-project"
+				"ju",
+				"~/Sites/Authentic FF/Tools/jumpstart/jumpstart.sublime-project"
 			],
 			[
-				"parks",
+				"ply",
+				"~/Sites/Clients/foldcraft/plymold/plymold.sublime-project"
+			],
+			[
+				"ghg-web",
+				"~/Sites/Clients/greenhousego/website/ghg-website.sublime-project"
+			],
+			[
+				"plymold",
+				"~/Sites/Clients/foldcraft/plymold/plymold.sublime-project"
+			],
+			[
+				"plymo",
+				"~/Sites/Clients/foldcraft/plymold/plymold.sublime-project"
+			],
+			[
+				"regist",
+				"~/Sites/Clients/marwen/registration/registration.sublime-project"
+			],
+			[
+				"TCF",
+				"~/Sites/TGL Client Projects/TCFM/TCFM.sublime-project"
+			],
+			[
+				"landing",
+				"~/Sites/TGL Client Projects/crowdnoize/landing/Crowdnoize-landing.sublime-project"
+			],
+			[
+				"",
+				"~/Sites/TGL Client Projects/foldcraft/plymold/plymold.sublime-project"
+			],
+			[
+				"app",
 				"~/Sites/TGL Client Projects/broomfield/parksapp/parks.sublime-project"
 			],
 			[
-				"ghg",
-				"~/Sites/TGL Client Projects/greenhousego/ghg/ghg.sublime-project"
-			],
-			[
-				"marwen",
-				"~/Sites/TGL Client Projects/marwen/marwen.sublime-workspace"
-			],
-			[
-				"way",
-				"~/Documents/waymarjhcarr.sublime-project"
-			],
-			[
-				"fold",
+				"fo",
 				"~/Sites/TGL Client Projects/foldcraft/foldcraft/foldcraft.sublime-project"
-			],
-			[
-				"refac",
-				"/Users/bryanthughes/Sites/Crowdnoize/mobile-refactor/mobile-refactor.sublime-project"
-			],
-			[
-				"401",
-				"/Users/bryanthughes/Sites/TGL Client Projects/personalcapital/401k/401k.sublime-project"
-			],
-			[
-				"ee",
-				"/Users/bryanthughes/Sites/sublime_projects/ee-template.sublime-project"
 			],
 			[
 				"ref",
 				"/Users/bryanthughes/Sites/Crowdnoize/mobile-refactor/mobile-refactor.sublime-project"
 			],
 			[
-				"sound",
-				"/Users/bryanthughes/Sites/sublime_projects/soundset2012.sublime-project"
+				"viayou",
+				"/Users/bryanthughes/Sites/sublime_projects/viayou.sublime-project"
 			],
 			[
-				"person",
-				"/Users/bryanthughes/Sites/sublime_projects/personalcapital-poc.sublime-project"
-			],
-			[
-				"mob",
+				"refac",
 				"/Users/bryanthughes/Sites/Crowdnoize/mobile-refactor/mobile-refactor.sublime-project"
+			],
+			[
+				"refa",
+				"/Users/bryanthughes/Sites/Crowdnoize/mobile-refactor/mobile-refactor.sublime-project"
+			],
+			[
+				"via",
+				"/Users/bryanthughes/Sites/sublime_projects/viayou.sublime-project"
+			],
+			[
+				"dim",
+				"/Users/bryanthughes/Sites/dimos/dimos.sublime-project"
+			],
+			[
+				"crowd",
+				"/Users/bryanthughes/Sites/sublime_projects/crowdnoize.sublime-project"
 			],
 			[
 				"erwin",
@@ -1913,6 +1762,10 @@
 			],
 			[
 				"sond",
+				"/Users/bryanthughes/Sites/sublime_projects/soundset2012.sublime-project"
+			],
+			[
+				"sound",
 				"/Users/bryanthughes/Sites/sublime_projects/soundset2012.sublime-project"
 			],
 			[
@@ -1952,10 +1805,6 @@
 				"/Users/bryanthughes/Sites/sublime_projects/addons.sublime-project"
 			],
 			[
-				"",
-				"/Users/bryanthughes/Sites/sublime_projects/smarter_planet_prototype.sublime-project"
-			],
-			[
 				"smart",
 				"/Users/bryanthughes/Sites/sublime_projects/smarter_planet_prototype.sublime-project"
 			],
@@ -1970,10 +1819,6 @@
 			[
 				"smar",
 				"/Users/bryanthughes/Sites/sublime_projects/smarter_planet_prototype.sublime-project"
-			],
-			[
-				"via",
-				"/Users/bryanthughes/Sites/sublime_projects/viayou.sublime-project"
 			],
 			[
 				"thepost",
@@ -1997,11 +1842,13 @@
 	"select_symbol":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
 		"width": 0.0
 	},
+	"selected_group": 0,
 	"settings":
 	{
 	},
@@ -2009,7 +1856,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 290.0,
+	"side_bar_width": 347.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
