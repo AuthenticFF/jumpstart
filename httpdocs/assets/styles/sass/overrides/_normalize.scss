@@ -8,29 +8,16 @@
  * Correct `block` display not defined in IE 8/9.
  */
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
-    display: block;
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
 }
 
 /**
  * Correct `inline-block` display not defined in IE 8/9.
  */
 
-audio,
-canvas,
-video {
-    display: inline-block;
+audio, canvas, video {
+  display: inline-block;
 }
 
 /**
@@ -39,8 +26,8 @@ video {
  */
 
 audio:not([controls]) {
-    display: none;
-    height: 0;
+  display: none;
+  height: 0;
 }
 
 /**
@@ -48,9 +35,8 @@ audio:not([controls]) {
  * Hide the `template` element in IE, Safari, and Firefox < 22.
  */
 
-[hidden],
-template {
-    display: none;
+[hidden], template {
+  display: none;
 }
 
 script {
@@ -68,9 +54,10 @@ script {
  */
 
 html {
-    font-family: sans-serif; /* 1 */
-    -ms-text-size-adjust: 100%; /* 2 */
-    -webkit-text-size-adjust: 100%; /* 2 */
+  font-family: sans-serif; /* 1 */
+
+  -webkit-text-size-adjust: 100%; /* 2 */
+      -ms-text-size-adjust: 100%; /* 2 */
 }
 
 /**
@@ -78,7 +65,7 @@ html {
  */
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 /* ==========================================================================
@@ -90,7 +77,7 @@ body {
  */
 
 a {
-    background: transparent;
+  background: transparent;
 }
 
 /**
@@ -98,16 +85,15 @@ a {
  */
 
 a:focus {
-    outline: thin dotted;
+  outline: thin dotted;
 }
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
 
-a:active,
-a:hover {
-    outline: 0;
+a:active, a:hover {
+  outline: 0;
 }
 
 /* ==========================================================================
@@ -120,8 +106,8 @@ a:hover {
  */
 
 h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
 /**
@@ -129,16 +115,15 @@ h1 {
  */
 
 abbr[title] {
-    border-bottom: 1px dotted;
+  border-bottom: 1px dotted;
 }
 
 /**
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
 
-b,
-strong {
-    font-weight: bold;
+b, strong {
+  font-weight: bold;
 }
 
 /**
@@ -146,7 +131,7 @@ strong {
  */
 
 dfn {
-    font-style: italic;
+  font-style: italic;
 }
 
 /**
@@ -154,9 +139,9 @@ dfn {
  */
 
 hr {
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    height: 0;
+  -moz-box-sizing: content-box;
+       box-sizing: content-box;
+  height: 0;
 }
 
 /**
@@ -164,20 +149,17 @@ hr {
  */
 
 mark {
-    background: #ff0;
-    color: #000;
+  background: #ffff00;
+  color: #000000;
 }
 
 /**
  * Correct font family set oddly in Safari 5 and Chrome.
  */
 
-code,
-kbd,
-pre,
-samp {
-    font-family: monospace, serif;
-    font-size: 1em;
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
 }
 
 /**
@@ -185,7 +167,7 @@ samp {
  */
 
 pre {
-    white-space: pre-wrap;
+  white-space: pre-wrap;
 }
 
 /**
@@ -193,7 +175,7 @@ pre {
  */
 
 q {
-    quotes: "\201C" "\201D" "\2018" "\2019";
+  quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
 /**
@@ -201,27 +183,26 @@ q {
  */
 
 small {
-    font-size: 80%;
+  font-size: 80%;
 }
 
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
 
-sub,
-sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
 }
 
 sup {
-    top: -0.5em;
+  top: -0.5em;
 }
 
 sub {
-    bottom: -0.25em;
+  bottom: -0.25em;
 }
 
 /* ==========================================================================
@@ -233,7 +214,7 @@ sub {
  */
 
 img {
-    border: 0;
+  border: 0;
 }
 
 /**
@@ -241,7 +222,7 @@ img {
  */
 
 svg:not(:root) {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 /* ==========================================================================
@@ -253,7 +234,7 @@ svg:not(:root) {
  */
 
 figure {
-    margin: 0;
+  margin: 0;
 }
 
 /* ==========================================================================
@@ -265,9 +246,9 @@ figure {
  */
 
 fieldset {
-    border: 1px solid #c0c0c0;
-    margin: 0 2px;
-    padding: 0.35em 0.625em 0.75em;
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
 }
 
 /**
@@ -276,8 +257,8 @@ fieldset {
  */
 
 legend {
-    border: 0; /* 1 */
-    padding: 0; /* 2 */
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
@@ -286,13 +267,10 @@ legend {
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
  */
 
-button,
-input,
-select,
-textarea {
-    font-family: inherit; /* 1 */
-    font-size: 100%; /* 2 */
-    margin: 0; /* 3 */
+button, input, select, textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 2 */
+  margin: 0; /* 3 */
 }
 
 /**
@@ -300,9 +278,8 @@ textarea {
  * the UA stylesheet.
  */
 
-button,
-input {
-    line-height: normal;
+button, input {
+  line-height: normal;
 }
 
 /**
@@ -312,9 +289,8 @@ input {
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
 
-button,
-select {
-    text-transform: none;
+button, select {
+  text-transform: none;
 }
 
 /**
@@ -325,21 +301,19 @@ select {
  *    `input` and others.
  */
 
-button,
-html input[type="button"], /* 1 */
-input[type="reset"],
-input[type="submit"] {
-    -webkit-appearance: button; /* 2 */
-    cursor: pointer; /* 3 */
+button, html input[type="button"], /* 1 */
+input[type="reset"], input[type="submit"] {
+  cursor: pointer; /* 3 */
+
+  -webkit-appearance: button; /* 2 */
 }
 
 /**
  * Re-set default cursor for disabled elements.
  */
 
-button[disabled],
-html input[disabled] {
-    cursor: default;
+button[disabled], html input[disabled] {
+  cursor: default;
 }
 
 /**
@@ -347,10 +321,9 @@ html input[disabled] {
  * 2. Remove excess padding in IE 8/9.
  */
 
-input[type="checkbox"],
-input[type="radio"] {
-    box-sizing: border-box; /* 1 */
-    padding: 0; /* 2 */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
@@ -360,10 +333,11 @@ input[type="radio"] {
  */
 
 input[type="search"] {
-    -webkit-appearance: textfield; /* 1 */
-    -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box; /* 2 */
-    box-sizing: content-box;
+  -webkit-box-sizing: content-box; /* 2 */
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+
+  -webkit-appearance: textfield; /* 1 */
 }
 
 /**
@@ -371,19 +345,17 @@ input[type="search"] {
  * on OS X.
  */
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none;
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
 }
 
 /**
  * Remove inner padding and border in Firefox 4+.
  */
 
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-    border: 0;
-    padding: 0;
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
 }
 
 /**
@@ -392,8 +364,8 @@ input::-moz-focus-inner {
  */
 
 textarea {
-    overflow: auto; /* 1 */
-    vertical-align: top; /* 2 */
+  overflow: auto; /* 1 */
+  vertical-align: top; /* 2 */
 }
 
 /* ==========================================================================
@@ -405,6 +377,6 @@ textarea {
  */
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }

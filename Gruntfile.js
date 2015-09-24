@@ -57,6 +57,8 @@ module.exports = function(grunt) {
       }
     },
 
+    //http://compass-style.org/
+    //sass framework + mixin library
     compass: {
       dist: {
         options: {
@@ -70,6 +72,40 @@ module.exports = function(grunt) {
       }
     },
 
+
+    //https://github.com/csscomb/csscomb.js
+    //formats scss/css
+    csscomb: {
+        dynamic_mappings: {
+            expand: true,
+            cwd: 'httpdocs/assets/styles/sass/',
+            src: ['**/*.scss', '!**/foundation/**/*.scss', '!**/utility/**/*.scss'],
+            dest: 'httpdocs/assets/styles/sass/',
+            ext: '.scss'
+        }
+    },
+
+    //https://github.com/katiefenn/parker
+    //analyzes CSS
+    parker: {
+      options: {
+        metrics: [
+          "TotalStylesheetSize",
+          "TotalRules",
+          "TotalSelectors",
+          "TotalIdentifiers",
+          "TotalDeclarations"
+        ],
+        file: "report.md",
+        colophon: true,
+        usePackage: true
+      },
+      src: [
+        'httpdocs/assets/styles/css/*.min.css'
+      ]
+    },
+
+    //css minifier
     cssmin: {
       my_target: {
         files: [{
@@ -82,6 +118,8 @@ module.exports = function(grunt) {
       }
     },
 
+    //http://browserify.org/
+    //js dependency bundler
     browserify: {
       dist: {
         files: {
@@ -90,7 +128,6 @@ module.exports = function(grunt) {
           ],
         },
         options: {
-        //  transform: ['babelify']
         }
       }
     },
@@ -104,14 +141,14 @@ module.exports = function(grunt) {
       },
       sass: {
         files: ['httpdocs/assets/styles/sass/**/*.scss'],
-        tasks: ['compass'],
+        tasks: [ 'csscomb', 'compass', 'cssmin', 'parker'],
         options: {
           livereload: true
         }
       },
       scripts: {
         files: ['httpdocs/assets/scripts/**/*.js', '!httpdocs/assets/scripts/built/*'],
-        tasks: ['concat'],
+        tasks: ['browserify'],
         options: {
           livereload: true
         }
@@ -140,10 +177,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-browserify');
+  grunt.loadNpmTasks('grunt-csscomb');
+  grunt.loadNpmTasks('grunt-parker');
+
 
   grunt.registerTask('hookmeup', ['clean:hooks', 'shell:hooks']);
   grunt.registerTask("init", ["copy:plugins"]);
-  grunt.registerTask("compile", ["browserify", "uglify", 'cssmin']);
+  grunt.registerTask("compile", ["browserify", "uglify", 'cssmin', 'parker']);
 
   // grunt.registerTask("get-content", ["rsync:production"]);
   // grunt.registerTask('default', [""]);

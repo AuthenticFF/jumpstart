@@ -9,7 +9,7 @@ html, body {
 
 // set line length only here
 h1, h2, h3, h4, h5, h6 {
-	line-height: $line-height-header;
+  line-height: $line-height-header;
 }
 
 
@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: (1rem * $type-scale-ratio);
 
   &.t-alt {
-    font-size: (0.875rem * $type-scale-ratio)
+    font-size: (0.875rem * $type-scale-ratio);
   }
 }
 .t-4 {
