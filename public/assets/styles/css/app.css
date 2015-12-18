@@ -3544,6 +3544,27 @@ h1, h2, h3, h4, h5, h6 {
 .clickable {
   cursor: pointer; }
 
+.selector {
+  background-color: #000000;
+  height: 100%;
+  top: 0;
+  right: 0;
+  width: 0; }
+  @media screen and (min-width: 40em) {
+    .selector {
+      width: 50%; } }
+  .selector.fade-out {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0; }
+  .selector.is-hidden {
+    display: none; }
+  .selector .nested-selector {
+    background-color: #ffffff;
+    font-size: 10px; }
+
+.another-selector, .selector {
+  border: none; }
+
 .clearfix:before, .clearfix:after {
   content: "";
   display: table; }

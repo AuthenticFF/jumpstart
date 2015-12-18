@@ -57,7 +57,7 @@ html {
   font-family: sans-serif; /* 1 */
 
   -webkit-text-size-adjust: 100%; /* 2 */
-      -ms-text-size-adjust: 100%; /* 2 */
+  -ms-text-size-adjust: 100%; /* 2 */
 }
 
 /**
@@ -140,7 +140,7 @@ dfn {
 
 hr {
   -moz-box-sizing: content-box;
-       box-sizing: content-box;
+  box-sizing: content-box;
   height: 0;
 }
 
@@ -334,8 +334,8 @@ input[type="checkbox"], input[type="radio"] {
 
 input[type="search"] {
   -webkit-box-sizing: content-box; /* 2 */
-     -moz-box-sizing: content-box;
-          box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
 
   -webkit-appearance: textfield; /* 1 */
 }
