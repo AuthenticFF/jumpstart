@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
 
   require('load-grunt-tasks')(grunt); // npm install --save-dev load-grunt-tasks
+  var compass = require('compass-importer')
   // Project configuration.
   grunt.initConfig({
 
@@ -23,9 +24,9 @@ module.exports = function(grunt) {
       plugins: {
         files: [
           // Foundation
-          {cwd: "node_modules/foundation-sites/scss/foundation", src: '**', dest: 'httpdocs/assets/styles/sass/foundation', expand: true, flatten: false},
-          {isFile: true, rename: function(dest, src){ return dest + "_" + src; }, cwd: "node_modules/foundation-sites/foundation/scss", src: 'foundation.scss', dest: 'httpdocs/assets/styles/sass/', expand: true, flatten: false},
-          {isFile: true, rename: function(dest, src){ return dest + "_" + src; }, cwd: "node_modules/foundation-sites/foundation/scss", src: 'normalize.scss', dest: 'httpdocs/assets/styles/sass/', expand: true, flatten: false},
+          {cwd: "node_modules/foundation-sites/scss/foundation", src: '**', dest: 'public/assets/styles/sass/foundation', expand: true, flatten: false},
+          {isFile: true, rename: function(dest, src){ return dest + "_" + src; }, cwd: "node_modules/foundation-sites/foundation/scss", src: 'foundation.scss', dest: 'public/assets/styles/sass/', expand: true, flatten: false},
+          {isFile: true, rename: function(dest, src){ return dest + "_" + src; }, cwd: "node_modules/foundation-sites/foundation/scss", src: 'normalize.scss', dest: 'public/assets/styles/sass/', expand: true, flatten: false},
         ]
       }
     },
@@ -33,13 +34,13 @@ module.exports = function(grunt) {
     concat: {
       dist: {
         src: [
-          'httpdocs/assets/scripts/built/bower.js',
-          'httpdocs/assets/scripts/vendor/*',
-          'httpdocs/assets/scripts/classes/*',
-          'httpdocs/assets/scripts/templates/*',
-          'httpdocs/assets/scripts/main.js'
+          'public/assets/scripts/built/bower.js',
+          'public/assets/scripts/vendor/*',
+          'public/assets/scripts/classes/*',
+          'public/assets/scripts/templates/*',
+          'public/assets/scripts/main.js'
         ],
-        dest: 'httpdocs/assets/scripts/built/scripts.js',
+        dest: 'public/assets/scripts/built/scripts.js',
       },
     },
 
@@ -51,40 +52,39 @@ module.exports = function(grunt) {
       },
       my_target: {
         files: {
-          'httpdocs/assets/scripts/built/built.js': [
-            'httpdocs/assets/scripts/built/scripts.js'
+          'public/assets/scripts/built/built.js': [
+            'public/assets/scripts/built/scripts.js'
             ]
         }
       }
     },
 
-    //https://github.com/sindresorhus/grunt-sass
-    //sass compiler
     sass: {
-        options: {
-            sourceMap: true
-        },
+      options: {
+        sourceMap: true,
+        importer: compass,
+        outputStyle: 'nested',
+        quite: false
+      },
       dist: {
-        options: {
-          sassDir: 'public/assets/styles/sass',
-          cssDir: 'public/assets/styles/css',
-          imagesDir: 'public/assets/images',
-          javascriptsDir: 'public/assets/scripts',
-          outputStyle: "nested",
-          environment: "development"
-        }
+        files: [{
+            expand: true,
+            cwd: 'public/assets/styles/sass',
+            src: ['app.scss'],
+            dest: 'public/assets/styles/css',
+            ext: '.css'
+        }]
       }
     },
-
 
     //https://github.com/csscomb/csscomb.js
     //formats scss/css
     csscomb: {
         dynamic_mappings: {
             expand: true,
-            cwd: 'httpdocs/assets/styles/sass/',
+            cwd: 'public/assets/styles/sass/',
             src: ['**/*.scss', '!**/foundation/**/*.scss', '!**/utility/**/*.scss'],
-            dest: 'httpdocs/assets/styles/sass/',
+            dest: 'public/assets/styles/sass/',
             ext: '.scss'
         }
     },
@@ -105,7 +105,7 @@ module.exports = function(grunt) {
         usePackage: true
       },
       src: [
-        'httpdocs/assets/styles/css/*.min.css'
+        'public/assets/styles/css/*.min.css'
       ]
     },
 
@@ -114,9 +114,9 @@ module.exports = function(grunt) {
       my_target: {
         files: [{
           expand: true,
-          cwd: 'httpdocs/assets/styles/css',
+          cwd: 'public/assets/styles/css',
           src: ['*.css', '!*.min.css'],
-          dest: 'httpdocs/assets/styles/css',
+          dest: 'public/assets/styles/css',
           ext: '.min.css'
         }]
       }
@@ -127,8 +127,8 @@ module.exports = function(grunt) {
     browserify: {
       dist: {
         files: {
-          'httpdocs/assets/scripts/built/scripts.js': [
-            'httpdocs/assets/scripts/main.js'
+          'public/assets/scripts/built/scripts.js': [
+            'public/assets/scripts/main.js'
           ],
         },
         options: {
@@ -138,20 +138,20 @@ module.exports = function(grunt) {
 
     watch: {
       all: {
-        files: ['site/**/*.php', 'httpdocs/content/**/*.txt'],
+        files: ['site/**/*.php', 'public/content/**/*.txt'],
         options: {
           livereload: true
         }
       },
       sass: {
-        files: ['httpdocs/assets/styles/sass/**/*.scss'],
-        tasks: [ 'csscomb', 'sass', 'cssmin', 'parker'],
+        files: ['public/assets/styles/sass/**/*.scss'],
+        tasks: [ 'sass' ],
         options: {
           livereload: true
         }
       },
       scripts: {
-        files: ['httpdocs/assets/scripts/**/*.js', '!httpdocs/assets/scripts/built/*'],
+        files: ['public/assets/scripts/**/*.js', '!public/assets/scripts/built/*'],
         tasks: ['browserify'],
         options: {
           livereload: true
@@ -177,17 +177,14 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-bower-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-browserify');
   grunt.loadNpmTasks('grunt-csscomb');
-  grunt.loadNpmTasks('grunt-parker');
-
 
   grunt.registerTask('hookmeup', ['clean:hooks', 'shell:hooks']);
   grunt.registerTask("init", ["copy:plugins"]);
-  grunt.registerTask("compile", ["browserify", "uglify", 'cssmin', 'parker']);
+  grunt.registerTask("compile", ["browserify", 'sass', "uglify", 'cssmin', 'csscomb' ]);
 
   // grunt.registerTask("get-content", ["rsync:production"]);
   // grunt.registerTask('default', [""]);
