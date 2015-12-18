@@ -1,5 +1,6 @@
 module.exports = function(grunt) {
 
+  require('load-grunt-tasks')(grunt); // npm install --save-dev load-grunt-tasks
   // Project configuration.
   grunt.initConfig({
 
@@ -57,15 +58,18 @@ module.exports = function(grunt) {
       }
     },
 
-    //http://compass-style.org/
-    //sass framework + mixin library
-    compass: {
+    //https://github.com/sindresorhus/grunt-sass
+    //sass compiler
+    sass: {
+        options: {
+            sourceMap: true
+        },
       dist: {
         options: {
-          sassDir: 'httpdocs/assets/styles/sass',
-          cssDir: 'httpdocs/assets/styles/css',
-          imagesDir: 'httpdocs/assets/images',
-          javascriptsDir: 'httpdocs/assets/scripts',
+          sassDir: 'public/assets/styles/sass',
+          cssDir: 'public/assets/styles/css',
+          imagesDir: 'public/assets/images',
+          javascriptsDir: 'public/assets/scripts',
           outputStyle: "nested",
           environment: "development"
         }
@@ -141,7 +145,7 @@ module.exports = function(grunt) {
       },
       sass: {
         files: ['httpdocs/assets/styles/sass/**/*.scss'],
-        tasks: [ 'csscomb', 'compass', 'cssmin', 'parker'],
+        tasks: [ 'csscomb', 'sass', 'cssmin', 'parker'],
         options: {
           livereload: true
         }
