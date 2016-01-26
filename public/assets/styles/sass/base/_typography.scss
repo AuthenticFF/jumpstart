@@ -1,0 +1,73 @@
+// REM IS FOR LAYOUT LEVEL ADJUSTMENTS
+// EM IS FOR TYPE RELATIVE ADJUSTMENTS
+
+html, body {
+  font-size: $font-size;
+  font-weight: 400;
+  line-height: $line-height-body;
+}
+
+// set line length only here
+h1, h2, h3, h4, h5, h6 {
+  line-height: $line-height-header;
+}
+
+
+.t-left {
+  text-align: left;
+}
+.t-right {
+  text-align: right;
+}
+.t-center {
+  text-align: center;
+}
+.t-justify {
+  text-align: justify;
+}
+
+
+// modular type scale
+// use this to extend modules
+.t-1 {
+  font-size: (1rem * $type-scale-ratio * $type-scale-ratio * $type-scale-ratio);
+
+  &.t-alt {
+    font-size: (0.875rem * $type-scale-ratio * $type-scale-ratio * $type-scale-ratio);
+  }
+}
+.t-2 {
+  font-size: (1rem * $type-scale-ratio * $type-scale-ratio);
+
+  &.t-alt {
+    font-size: (0.875rem * $type-scale-ratio * $type-scale-ratio);
+  }
+}
+.t-3 {
+  font-size: (1rem * $type-scale-ratio);
+
+  &.t-alt {
+    font-size: (0.875rem * $type-scale-ratio);
+  }
+}
+.t-4 {
+  font-size: 1rem;
+
+  &.t-alt {
+    font-size: 0.875rem;
+  }
+}
+.t-5 {
+  font-size: (1rem / $type-scale-ratio);
+
+  &.t-alt {
+    font-size: (0.875rem / $type-scale-ratio);
+  }
+}
+.t-6 {
+  font-size: (1rem / $type-scale-ratio / $type-scale-ratio);
+
+  &.t-alt {
+    font-size: (0.875rem / $type-scale-ratio / $type-scale-ratio);
+  }
+}

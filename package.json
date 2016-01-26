@@ -2,36 +2,45 @@
   "name": "",
   "version": "0.1.0",
   "devDependencies": {
+    "browserify-shim": "~3.8.10",
+    "compass-importer": "^0.1.3",
+    "foundation-sites": "^6.0.6",
     "grunt": "~0.4.1",
     "grunt-bower-concat": "~0.2.4",
     "grunt-browserify": "^3.8.0",
     "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-compass": "~0.7.0",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-copy": "~0.4.1",
     "grunt-contrib-cssmin": "^0.10.0",
     "grunt-contrib-uglify": "~0.3.2",
     "grunt-contrib-watch": "~0.5.3",
+<<<<<<< HEAD
     "grunt-deployments": "~0.2.0",
+=======
+    "grunt-csscomb": "^3.1.0",
+    "grunt-deployments": "~0.1.5",
+    "grunt-parker": "^0.1.3",
+>>>>>>> d756a27a03debd61b91b27b16fef993ad246bc8e
     "grunt-rsync": "~0.2.1",
-    "underscore": "^1.8.3",
-    "browserify-shim": "~3.8.10",
+    "grunt-sass": "^1.1.0",
     "grunt-shell": "~0.6.4",
-    "foundation-sites": "^5.5.2",
-    "jquery": "^2.1.4"
+    "jquery": "^2.1.4",
+    "load-grunt-tasks": "^3.3.0",
+    "underscore": "^1.8.3"
   },
   "scripts": {
-    "postinstall": "grunt hookmeup"
   },
   "browser": {
     "jquery": "./node_modules/jquery/dist/jquery.js",
-    "foundation": "./node_modules/foundation-sites/js/foundation.js"
+    "foundation": "./node_modules/foundation-sites/dist/foundation.js"
   },
   "browserify-shim": {
     "jquery": "$",
     "foundation": "foundation"
   },
   "browserify": {
-    "transform": ["browserify-shim"]
+    "transform": [
+      "browserify-shim"
+    ]
   }
 }

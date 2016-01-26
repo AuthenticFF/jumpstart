@@ -1,0 +1,107 @@
+// Font-Face Mixin
+@mixin font-face($font-family, $font-filename, $font-weight: 400, $font-style :normal) {
+  @font-face {
+    font-family: "#{$font-family}";
+    font-style: $font-style;
+    font-weight: $font-weight;
+    src: url("/assets/fonts/#{$font-filename}.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/#{$font-filename}.woff") format("woff"),
+    url("/assets/fonts/#{$font-filename}.ttf") format("truetype"),
+    url("/assets/fonts/#{$font-filename}.otf") format("opentype"),
+    url("/assets/fonts/#{$font-filename}.svg##{$font-family}") format("svg");
+    src: url("/assets/fonts/#{$font-filename}.eot");
+  }
+}
+
+@mixin font($font-name: "Helvetica", $font-size: false, $font-weight: false, $line-height:false, $font-style: false, $text-decoration: false, $text-transform: false) {
+  font-family: $font-name;
+
+  @if $font-size != false {
+    font-size: $font-size;
+  }
+
+  @if $font-style != false {
+    font-style: $font-style;
+  }
+
+  @if $font-weight != false {
+    font-weight: $font-weight;
+  }
+  @else {
+    font-weight: 300;
+  }
+
+  @if $line-height != false {
+    line-height: $line-height;
+  }
+  @else {
+    line-height: $font-size * 1.45; // modularscale.com
+  }
+
+  @if $text-decoration != false {
+    text-decoration: $text-decoration;
+  }
+
+  @if $text-transform != false {
+    text-transform: $text-transform;
+  }
+}
+
+// @include .font('Helvetica', )
+
+// opentype stuff
+.ligatures {
+  -webkit-font-feature-settings: "liga", "dlig";
+     -moz-font-feature-settings: "liga=1, dlig=1";
+      -ms-font-feature-settings: "liga", "dlig";
+       -o-font-feature-settings: "liga", "dlig";
+          font-feature-settings: "liga", "dlig";
+}
+.fractions {
+  -webkit-font-feature-settings: "frac" 1;
+     -moz-font-feature-settings: "frac=1";
+     -moz-font-feature-settings: "frac" 1;
+      -ms-font-feature-settings: "frac" 1;
+       -o-font-feature-settings: "frac" 1;
+          font-feature-settings: "frac" 1;
+}
+.little-numbers {
+  -webkit-font-feature-settings: "onum" 1;
+     -moz-font-feature-settings: "onum=1";
+     -moz-font-feature-settings: "onum" 1;
+      -ms-font-feature-settings: "onum" 1;
+       -o-font-feature-settings: "onum" 1;
+          font-feature-settings: "onum" 1;
+}
+.big-numbers {
+  -webkit-font-feature-settings: "lnum" 1;
+     -moz-font-feature-settings: "lnum=1";
+     -moz-font-feature-settings: "lnum" 1;
+      -ms-font-feature-settings: "lnum" 1;
+       -o-font-feature-settings: "lnum" 1;
+          font-feature-settings: "lnum" 1;
+}
+.small-caps {
+  -webkit-font-feature-settings: "smcp" 1;
+     -moz-font-feature-settings: "smcp=1";
+     -moz-font-feature-settings: "smcp" 1;
+      -ms-font-feature-settings: "smcp" 1;
+       -o-font-feature-settings: "smcp" 1;
+          font-feature-settings: "smcp" 1;
+}
+.sub-script {
+  -webkit-font-feature-settings: "subs" 1;
+     -moz-font-feature-settings: "subs=1";
+     -moz-font-feature-settings: "subs" 1;
+      -ms-font-feature-settings: "subs" 1;
+       -o-font-feature-settings: "subs" 1;
+          font-feature-settings: "subs" 1;
+}
+.super-script {
+  -webkit-font-feature-settings: "sups" 1;
+     -moz-font-feature-settings: "sups=1";
+     -moz-font-feature-settings: "sups" 1;
+      -ms-font-feature-settings: "sups" 1;
+       -o-font-feature-settings: "sups" 1;
+          font-feature-settings: "sups" 1;
+}

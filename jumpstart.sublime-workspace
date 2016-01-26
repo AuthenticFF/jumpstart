@@ -316,26 +316,10 @@
 	"buffers":
 	[
 		{
-			"file": "package.json",
+			"file": "config/deploy.rb",
 			"settings":
 			{
-				"buffer_size": 973,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "config/settings/deployments.json",
-			"settings":
-			{
-				"buffer_size": 607,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Gruntfile.js",
-			"settings":
-			{
-				"buffer_size": 4267,
+				"buffer_size": 1530,
 				"line_ending": "Unix"
 			}
 		}
@@ -496,14 +480,14 @@
 	[
 		"/Users/bryanthughes/Sites/authentic-ff/tools/jumpstart",
 		"/Users/bryanthughes/Sites/authentic-ff/tools/jumpstart/config",
-		"/Users/bryanthughes/Sites/authentic-ff/tools/jumpstart/config/settings",
-		"/Users/bryanthughes/Sites/authentic-ff/tools/jumpstart/httpdocs",
-		"/Users/bryanthughes/Sites/authentic-ff/tools/jumpstart/httpdocs/assets",
-		"/Users/bryanthughes/Sites/authentic-ff/tools/jumpstart/httpdocs/assets/styles",
-		"/Users/bryanthughes/Sites/authentic-ff/tools/jumpstart/httpdocs/assets/styles/sass"
+		"/Users/bryanthughes/Sites/authentic-ff/tools/jumpstart/config/converters"
 	],
 	"file_history":
 	[
+		"/Users/bryanthughes/Sites/authentic-ff/tools/jumpstart/config/converters/convertToCraft.sh",
+		"/Users/bryanthughes/Sites/authentic-ff/tools/jumpstart/Gruntfile.js",
+		"/Users/bryanthughes/Sites/authentic-ff/tools/jumpstart/config/settings/deployments.json",
+		"/Users/bryanthughes/Sites/authentic-ff/tools/jumpstart/package.json",
 		"/Users/bryanthughes/Sites/authentic-ff/tools/jumpstart/jumpstart.sublime-project",
 		"/Users/bryanthughes/Sites/clients/broomfield/it-portal/public/assets/styles/sass/base/_typography.scss",
 		"/Users/bryanthughes/Sites/clients/broomfield/it-portal/public/assets/styles/sass/utility/_type_mixins.scss",
@@ -627,11 +611,7 @@
 		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/styles/sass/utility/_type_mixins.scss",
 		"/Users/bryanthughes/Sites/Clients/dimos/dims/auth-config/deploy.rb",
 		"/Users/bryanthughes/Sites/Clients/dimos/dims/Capfile",
-		"/Users/bryanthughes/Sites/Clients/dimos/dims/Gemfile",
-		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/scripts/components/SettingsPanelComponent.js",
-		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/styles/sass/components/_stage.scss",
-		"/Users/bryanthughes/Sites/clients/dimos/dims/public/assets/styles/sass/components/_panel.scss",
-		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/styles/sass/components/_order-stages-container.scss"
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/Gemfile"
 	],
 	"find":
 	{
@@ -875,94 +855,34 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "package.json",
+					"file": "config/deploy.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 973,
+						"buffer_size": 1530,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								452,
-								452
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "config/settings/deployments.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 607,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1,
-								1
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Gruntfile.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4267,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4159,
-								4099
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": -0.0,
-						"translation.y": 1461.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1023,6 +943,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"deploy",
+				"config/deploy.rb"
+			],
 			[
 				"globalmix",
 				"public/assets/styles/sass/utility/_global_mixins.scss"
@@ -1530,10 +1454,6 @@
 			[
 				"guzzleclient",
 				"vendor/guzzlehttp/guzzle/src/Client.php"
-			],
-			[
-				"test",
-				"tests/TestCase.php"
 			]
 		],
 		"width": 0.0
@@ -1541,9 +1461,13 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "peo",
+		"last_filter": "bryan",
 		"selected_items":
 		[
+			[
+				"bryan",
+				"~/Sites/clients/Personal/bryanthughes/bryanthughes.sublime-project"
+			],
 			[
 				"peo",
 				"~/Sites/clients/peoplefoundry/website/peoplefoundry.sublime-project"
