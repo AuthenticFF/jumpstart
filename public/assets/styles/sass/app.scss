@@ -1,11 +1,11 @@
-// Comment out this import if you don't want to use normalize
-//@import "overrides/normalize";
 
-// Foundation & Compass
-@import "foundation/foundation";
-@include foundation-everything;
+@import "overrides/normalize";
+@import "settings";
 
-@import "compass/css3";
+@charset "UTF-8";
+
+@import "foundation";
+@import "bourbon";
 
 // 3rd Party Overrides
 @import "overrides/3rd_party_overrides";
@@ -31,8 +31,8 @@
 @import "elements/lists";
 
 // High Level Modules (eg: hero, footer, datepicker)
-@import "component/footer";
-@import "component/header";
+@import "components/footer";
+@import "components/header";
 
 // :(
 @import "overrides/shame";
