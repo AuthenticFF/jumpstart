@@ -14,13 +14,9 @@
     "grunt-contrib-cssmin": "^0.10.0",
     "grunt-contrib-uglify": "~0.3.2",
     "grunt-contrib-watch": "~0.5.3",
-<<<<<<< HEAD
-    "grunt-deployments": "~0.2.0",
-=======
     "grunt-csscomb": "^3.1.0",
     "grunt-deployments": "~0.1.5",
     "grunt-parker": "^0.1.3",
->>>>>>> d756a27a03debd61b91b27b16fef993ad246bc8e
     "grunt-rsync": "~0.2.1",
     "grunt-sass": "^1.1.0",
     "grunt-shell": "~0.6.4",
