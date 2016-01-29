@@ -4,12 +4,12 @@
     font-family: "#{$font-family}";
     font-style: $font-style;
     font-weight: $font-weight;
+    src: url("/assets/fonts/#{$font-filename}.eot");
     src: url("/assets/fonts/#{$font-filename}.eot?#iefix") format("embedded-opentype"),
     url("/assets/fonts/#{$font-filename}.woff") format("woff"),
     url("/assets/fonts/#{$font-filename}.ttf") format("truetype"),
     url("/assets/fonts/#{$font-filename}.otf") format("opentype"),
     url("/assets/fonts/#{$font-filename}.svg##{$font-family}") format("svg");
-    src: url("/assets/fonts/#{$font-filename}.eot");
   }
 }
 

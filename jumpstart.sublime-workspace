@@ -316,10 +316,10 @@
 	"buffers":
 	[
 		{
-			"file": "config/deploy.rb",
+			"file": "public/assets/styles/sass/utility/_type_mixins.scss",
 			"settings":
 			{
-				"buffer_size": 1530,
+				"buffer_size": 3319,
 				"line_ending": "Unix"
 			}
 		}
@@ -480,10 +480,16 @@
 	[
 		"/Users/bryanthughes/Sites/authentic-ff/tools/jumpstart",
 		"/Users/bryanthughes/Sites/authentic-ff/tools/jumpstart/config",
-		"/Users/bryanthughes/Sites/authentic-ff/tools/jumpstart/config/converters"
+		"/Users/bryanthughes/Sites/authentic-ff/tools/jumpstart/config/converters",
+		"/Users/bryanthughes/Sites/authentic-ff/tools/jumpstart/public",
+		"/Users/bryanthughes/Sites/authentic-ff/tools/jumpstart/public/assets",
+		"/Users/bryanthughes/Sites/authentic-ff/tools/jumpstart/public/assets/styles",
+		"/Users/bryanthughes/Sites/authentic-ff/tools/jumpstart/public/assets/styles/sass"
 	],
 	"file_history":
 	[
+		"/Users/bryanthughes/Sites/authentic-ff/tools/jumpstart/public/assets/scripts/main.js",
+		"/Users/bryanthughes/Sites/authentic-ff/tools/jumpstart/config/deploy.rb",
 		"/Users/bryanthughes/Sites/authentic-ff/tools/jumpstart/config/converters/convertToCraft.sh",
 		"/Users/bryanthughes/Sites/authentic-ff/tools/jumpstart/Gruntfile.js",
 		"/Users/bryanthughes/Sites/authentic-ff/tools/jumpstart/config/settings/deployments.json",
@@ -609,9 +615,7 @@
 		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/styles/sass/overrides/_shame.scss",
 		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/styles/sass/config/_typography.scss",
 		"/Users/bryanthughes/Sites/Clients/dimos/dims/public/assets/styles/sass/utility/_type_mixins.scss",
-		"/Users/bryanthughes/Sites/Clients/dimos/dims/auth-config/deploy.rb",
-		"/Users/bryanthughes/Sites/Clients/dimos/dims/Capfile",
-		"/Users/bryanthughes/Sites/Clients/dimos/dims/Gemfile"
+		"/Users/bryanthughes/Sites/Clients/dimos/dims/auth-config/deploy.rb"
 	],
 	"find":
 	{
@@ -860,24 +864,24 @@
 			[
 				{
 					"buffer": 0,
-					"file": "config/deploy.rb",
+					"file": "public/assets/styles/sass/utility/_type_mixins.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1530,
+						"buffer_size": 3319,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								635,
+								635
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -943,6 +947,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"type",
+				"public/assets/styles/sass/utility/_type_mixins.scss"
+			],
+			[
+				"main.",
+				"public/assets/scripts/main.js"
+			],
 			[
 				"deploy",
 				"config/deploy.rb"
@@ -1446,14 +1458,6 @@
 			[
 				"clientinterface",
 				"vendor/guzzlehttp/guzzle/src/ClientInterface.php"
-			],
-			[
-				"clie",
-				"vendor/guzzlehttp/guzzle/src/Client.php"
-			],
-			[
-				"guzzleclient",
-				"vendor/guzzlehttp/guzzle/src/Client.php"
 			]
 		],
 		"width": 0.0
@@ -1461,9 +1465,13 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "bryan",
+		"last_filter": "dims",
 		"selected_items":
 		[
+			[
+				"dims",
+				"~/Sites/clients/dimos/dims/dims.sublime-project"
+			],
 			[
 				"bryan",
 				"~/Sites/clients/Personal/bryanthughes/bryanthughes.sublime-project"
