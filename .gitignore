@@ -9,7 +9,6 @@ bower_components
 /db/local/*
 /db/production/*
 
-/public/assets/styles/sass/_foundation*
 /public/assets/styles/sass/_normalize*
 
 *.sublime-project
