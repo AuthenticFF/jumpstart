@@ -13,38 +13,40 @@
   }
 }
 
-@mixin font($font-name: "Helvetica", $font-size: false, $font-weight: false, $line-height:false, $font-style: false, $text-decoration: false, $text-transform: false) {
+@mixin font($font-name: "Helvetica", $font-size: false, $font-weight: false, $line-height: false, $font-style: false, $text-decoration: false, $text-transform: false) {
+
   font-family: $font-name;
 
-  @if $font-size != false {
-    font-size: $font-size;
+  @if $font-size != false{
+    font-size: $font-size/$em-ratio;
   }
 
-  @if $font-style != false {
+  @if $font-style != false{
     font-style: $font-style;
   }
 
-  @if $font-weight != false {
+  @if $font-weight != false{
     font-weight: $font-weight;
   }
-  @else {
+  @else{
     font-weight: 300;
   }
 
-  @if $line-height != false {
+  @if $line-height != false{
     line-height: $line-height;
   }
-  @else {
-    line-height: $font-size * 1.45; // modularscale.com
+  @else{
+    line-height: $font-size; // modularscale.com
   }
 
-  @if $text-decoration != false {
+  @if $text-decoration != false{
     text-decoration: $text-decoration;
   }
 
-  @if $text-transform != false {
+  @if $text-transform != false{
     text-transform: $text-transform;
   }
+
 }
 
 // @include .font('Helvetica', )

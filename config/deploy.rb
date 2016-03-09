@@ -56,7 +56,6 @@ namespace :deploy do
 
     # standard image upload directories
     # run "ln -s #{deploy_to}/#{shared_dir}/content #{current_release}"
-    # run "ln -s #{deploy_to}/#{shared_dir}/images #{current_release}"
   end
 
   desc "Remove files after deployment"
