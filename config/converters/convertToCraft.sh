@@ -1,5 +1,3 @@
-cd ../../
-
 # Getting our EE repo
 git clone git@codebasehq.com:thegoodlab/internal/craft-template.git TEMP
 
