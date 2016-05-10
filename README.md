@@ -1,5 +1,7 @@
 # Authentic F&F Project Jumpstart
 
+![Hello Bear](https://media.giphy.com/media/aSd5EtcwHqeuA/giphy.gif)
+
 Welcome! This is the guide you'll use to get your project up and running within our codebase. It goes over all of the ins and outs of getting set up, useful commands, and how to best optimize your development workflow. Let's get started!
 
 ## Setting up our codebase
