@@ -5,6 +5,13 @@
 
 # Installs all dependencies and converts the project to a craft project
 install:
+	# -- Git --
+	# Remove existing git repo
+	rm -rf .git
+
+	# Initialize a new repository
+	git init
+
 	# -- Node.js --
 	# Install node dependencies
 	npm install
@@ -31,7 +38,7 @@ install:
 
 	# -- Grunt --
 	# Update pre-commit hook to lint JS before commiting
-  grunt hookmeup
+	grunt hookmeup
 
 	# Copy over Foundation files
 	grunt init
