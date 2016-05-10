@@ -2,17 +2,23 @@
 
 ![Hello Bear](https://media.giphy.com/media/aSd5EtcwHqeuA/giphy.gif)
 
-Welcome! This is the guide you'll use to get your project up and running within our codebase. It goes over all of the ins and outs of getting set up, useful commands, and how to best optimize your development workflow. Let's get started!
+Welcome! This is the guide you'll use to get your project up and running within our codebase. It goes over all of the ins and outs of getting set up, useful commands, and how to best optimize your development workflow.
+
+_**A couple of things to note:** This README assumes that you have already set up a database with Sequel Pro as well as a local development server with MAMP. If you haven't done that already, please do that before going any farther._
+
+Let's get started!
 
 ## Setting up our codebase
 
 To install the required packages, setup Grunt, and convert the project over to a [craft](https://craftcms.com/) project, run `make install`
 
-_Note:_ This will only work for internal Authentic F&F team members, as the repositories necessary to perform this conversion are private.
+_**Note:**_ This will only work for internal Authentic F&F team members, as the repositories necessary to perform this conversion are private.
 
 In order to get Foundation set up and configured, please:
 * Copy the contents of ```/public/assets/styles/scss/_foundation_clean.scss``` into ```/public/assets/styles/scss/_foundation.scss```
 * Copy the contents of ```/public/assets/styles/scss/foundation/_settings.scss``` into ```/public/assets/styles/scss/_settings.scss```
+
+Once you're up and running, you'll have to go into the `db.php` file, which can be located in the `craft/config` directory and update the database name to correlate with the one you created in Sequel Pro.
 
 ## Watching your files
 
@@ -45,7 +51,7 @@ All three of these tasks are run automatically when setting up the project using
 ### Other Tasks  
 These tasks are useful later on in the development process when you'll be migrating content to and from the staging server. They are turned off by default.  
 
-In order to turn them on, go into the `gruntfile.js` file and uncomment lines 149 and 150 down at the bottom.
+In order to turn them on, go into the `gruntfile.js` file and uncomment lines 10, 11, 149, and 150.
 
 ```sh
 $ grunt sync-down
@@ -57,7 +63,9 @@ $ grunt get-content
 ```
 The `get-content` task provides a similar function to the one above with the difference being that it pulls any new assets from the staging server and puts them into your local content directory. You'll probably have to run this one less often, but it's good to keep in mind.
 
-* Compile to make sure everything is working, run `$ grunt compile`
+_**Important:**_ In order for these tasks to work, you'll have to configure both the `deployments.json` and `rsync.json` files which can be found in `./config/settings/...`
+
+You'll have to update the `database` field in the `deployments.json` file as well as the source path in the `rsync.json` file in order to get the commands to work properly.
 
 ## Commiting
 
