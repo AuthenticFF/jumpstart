@@ -148,6 +148,5 @@ module.exports = function(grunt) {
 
   // grunt.registerTask("sync-down", ["db_pull","rsync:dev"]);
   // grunt.registerTask("get-content", ["rsync:production"]);
-  // grunt.registerTask('default', [""]);
 
 };
