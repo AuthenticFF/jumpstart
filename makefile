@@ -21,7 +21,7 @@ install:
 	# composer install
 
 	# Update PHP dependencies
-	# composer Update
+	# composer update
 
 	# PHP migrations
 	# php artisan migrate --env=local/testing
@@ -52,31 +52,5 @@ install:
 	# Pull Content
 	# grunt rsync:production/staging
 
-	# Get the EE repo
-	git clone git@codebasehq.com:thegoodlab/internal/craft-template.git
-
-	# Save our current assets dir
-	mkdir tmp
-
-	mv ./craft-template/craft ./tmp/craft
-	mv ./craft-template/public ./tmp/public
-
-	mv ./public/assets ./tmp/assets
-	mv ./public/lib ./tmp/lib
-	mv ./public/index.html ./tmp/index.html
-
-	rm -r ./public
-
-	# Move everything from the EE repo into our project
-	mkdir public
-
-	mv ./tmp/public ./public
-	mv ./tmp/craft ./craft
-
-	# Move our assets dir back into our project
-	mv ./tmp/assets ./public/assets
-	mv ./tmp/lib ./public/lib
-	mv ./tmp/index.html ./public/index.html
-
-	# Remove the EE repo
-	rm -rf ./tmp
+	# Convert to Craft
+	sh config/converters/convertToCraft.sh
