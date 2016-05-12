@@ -1,12 +1,16 @@
 # Authentic F&F Project Jumpstart
 
-![Hello Bear](https://media.giphy.com/media/aSd5EtcwHqeuA/giphy.gif)
+![Hello Bear](https://media.giphy.com/media/LBp3nxFfLFddu/giphy.gif)
 
 Welcome! This is the guide you'll use to get your project up and running within our codebase. It goes over all of the ins and outs of getting set up, useful commands, and how to best optimize your development workflow.
 
-_**A couple of things to note:** This README assumes that you have already set up a database with Sequel Pro as well as a local development server with MAMP. If you haven't done that already, please do that before going any farther._
-
 Let's get started!
+
+## Setting up our local environment  
+Inside the project directory, you'll find a `craft-template.sql` file. This SQL
+file contains all of the basic configuration settings in order to get our craft
+project up and running. Using Sequel Pro, create a database for your project,
+and import the `craft-template.sql` file into the newly created database.  
 
 ## Setting up our codebase
 
@@ -14,11 +18,18 @@ To install the required packages, setup Grunt, and convert the project over to a
 
 _**Note:**_ This will only work for internal Authentic F&F team members, as the repositories necessary to perform this conversion are private.
 
-In order to get Foundation set up and configured, please:
+In order to get your project set up and configured, please:
 * Copy the contents of ```/public/assets/styles/scss/_foundation_clean.scss``` into ```/public/assets/styles/scss/_foundation.scss```
 * Copy the contents of ```/public/assets/styles/scss/foundation/_settings.scss``` into ```/public/assets/styles/scss/_settings.scss```
+* Copy the contents of ```/public/index.html``` into ```craft/templates/_layout.html``` and then rename ```/public/index.html``` to ```/public/_index.html``` so that templates are served correctly. 
 
 Once you're up and running, you'll have to go into the `db.php` file, which can be located in the `craft/config` directory and update the database name to correlate with the one you created in Sequel Pro.
+
+Finally, you'll have to configure a local Apache server with MAMP and point it
+to the ```projectname/public``` directory in order to serve your project.  
+
+If done correctly, you can now navigate to ```projectname.local``` and your
+project should be live and ready to work on.
 
 ## Watching your files
 
@@ -70,3 +81,10 @@ You'll have to update the `database` field in the `deployments.json` file as wel
 ## Commiting
 
 When you commit your code, git hooks are setup to compile and minify your javascript, so that code run in production is optimized. You may see this happening after you commit. Don't worry it's normal.
+
+## Documentation Resources 
+* [Craft CMS](https://craftcms.com/docs/introduction)
+* [ZURB Foundation](http://foundation.zurb.com/sites/docs/v/5.5.3/)
+* [Twig Templating Language](http://twig.sensiolabs.org/documentation)
+* [Sequel Pro](http://www.sequelpro.com/docs/category/getting-connected)
+* [MAMP](https://www.mamp.info/en/documentation/)

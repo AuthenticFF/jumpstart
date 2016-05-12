@@ -46,11 +46,5 @@ install:
 	# Compile and concat JS
 	grunt compile
 
-	# Pull Database
-  # grunt db_pull --target=production/staging
-
-	# Pull Content
-	# grunt rsync:production/staging
-
 	# Convert to Craft
 	sh config/converters/convertToCraft.sh
