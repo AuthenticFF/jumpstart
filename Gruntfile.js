@@ -1,3 +1,5 @@
+var mozjpeg = require('imagemin-mozjpeg');
+
 module.exports = function(grunt) {
 
   require('load-grunt-tasks')(grunt); // npm install --save-dev load-grunt-tasks
@@ -12,6 +14,16 @@ module.exports = function(grunt) {
 
     clean: {
       hooks: ['.git/hooks/pre-commit']
+    },
+
+    cacheBust: {
+      options: {
+        assets: [
+          'public/assets/images/**',
+          'public/assets/fonts/**'
+        ]
+      },
+      src:['craft/templates/_layout.html']
     },
 
     shell: {
@@ -85,6 +97,29 @@ module.exports = function(grunt) {
       }
     },
 
+    imagemin: {
+      static: {
+        options: {
+          optimizationLevel: 3,
+          svgoPlugins: [{ removeViewBox: false }],
+          use: [mozjpeg()]
+        },
+        files: {
+          'public/assets/images/**/*.png': 'public/assets/images/**/*.png',
+          'public/assets/images/**/*.jpg': 'public/assets/images/**/*.jpg',
+          'public/assets/images/**/*.gif': 'public/assets/images/**/*.gif'
+        }
+      },
+      dynamic: {
+        files: [{
+          expand: true,
+          cwd: 'public/assets/images/',
+          src: ['**/*.{png,jpg,gif}'],
+          dest: 'public/assets/images/'
+        }]
+      }
+    },
+
     //http://browserify.org/
     //js dependency bundler
     browserify: {
@@ -132,6 +167,7 @@ module.exports = function(grunt) {
 
   // TASKS
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-cache-bust');
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-deployments');
   grunt.loadNpmTasks("grunt-rsync");
@@ -139,12 +175,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-browserify');
   grunt.loadNpmTasks('grunt-csscomb');
 
   grunt.registerTask('hookmeup', ['clean:hooks', 'shell:hooks']);
   grunt.registerTask("init", ["copy:plugins"]);
-  grunt.registerTask("compile", ["browserify", 'sass', "uglify", 'cssmin']);
+  grunt.registerTask("compile", ["browserify", 'sass', "uglify", 'cssmin', "imagemin"]);
 
   // grunt.registerTask("sync-down", ["db_pull","rsync:dev"]);
   // grunt.registerTask("get-content", ["rsync:production"]);

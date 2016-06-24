@@ -12,6 +12,10 @@ file contains all of the basic configuration settings in order to get our craft
 project up and running. Using Sequel Pro, create a database for your project,
 and import the `craft-template.sql` file into the newly created database.  
 
+You'll also want to make sure that you are up to date with `Node`, `Ruby`, and `PHP`.  
+
+To check your Node version, run `node -v` in your terminal. At the time of writing this documentation, we're currently using Node `4.3.1`, so you'll want to have at least that or higher. To check your Ruby version, run `ruby -v`. You'll at least want to have `2.0.0` in order to get things running. Finally, for PHP it's much of the same. Run `php -v`. You version should at least look like `5.5.34`. If you need to update any of those, do so before going on. Good to go? Let's move on.
+
 ## Setting up our codebase
 
 To install the required packages, setup Grunt, and convert the project over to a [craft](https://craftcms.com/) project, run `make install`
@@ -21,7 +25,7 @@ _**Note:**_ This will only work for internal Authentic F&F team members, as the 
 In order to get your project set up and configured, please:
 * Copy the contents of ```/public/assets/styles/scss/_foundation_clean.scss``` into ```/public/assets/styles/scss/_foundation.scss```
 * Copy the contents of ```/public/assets/styles/scss/foundation/_settings.scss``` into ```/public/assets/styles/scss/_settings.scss```
-* Copy the contents of ```/public/index.html``` into ```craft/templates/_layout.html``` and then rename ```/public/index.html``` to ```/public/_index.html``` so that templates are served correctly. 
+* Copy the contents of ```/public/index.html``` into ```craft/templates/_layout.html``` and then rename ```/public/index.html``` to ```/public/_index.html``` so that templates are served correctly.
 
 Once you're up and running, you'll have to go into the `db.php` file, which can be located in the `craft/config` directory and update the database name to correlate with the one you created in Sequel Pro.
 
@@ -82,7 +86,23 @@ You'll have to update the `database` field in the `deployments.json` file as wel
 
 When you commit your code, git hooks are setup to compile and minify your javascript, so that code run in production is optimized. You may see this happening after you commit. Don't worry it's normal.
 
-## Documentation Resources 
+## Deploying
+
+In the `config` directory, you'll find a file named `deploy.rb`. This is where all of our deployments are handled, the settings for which can be found in the `deployments.json` file in the `settings` directory.  
+
+We deploy our code with one simple command:
+```
+bundle exec cap deploy
+```
+
+This tells ruby to execute all of the commands listed out in our deploy file. I usually do this in conjunction with a push to master when working with our staging server, so that command looks something like this:
+```
+git push && bundle exec cap deploy
+```
+
+That's everything you need to know to get up and running the Authentic way. Need more information? Check the resources below.
+
+## Documentation Resources
 * [Craft CMS](https://craftcms.com/docs/introduction)
 * [ZURB Foundation](http://foundation.zurb.com/sites/docs/v/5.5.3/)
 * [Twig Templating Language](http://twig.sensiolabs.org/documentation)

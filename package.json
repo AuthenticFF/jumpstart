@@ -8,10 +8,12 @@
     "grunt": "~0.4.5",
     "grunt-bower-concat": "~0.2.4",
     "grunt-browserify": "^3.8.0",
+    "grunt-cache-bust": "^1.3.0",
     "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-copy": "~0.4.1",
     "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-imagemin": "^1.0.1",
     "grunt-contrib-uglify": "~0.3.2",
     "grunt-contrib-watch": "~0.5.3",
     "grunt-csscomb": "^3.1.0",
@@ -21,11 +23,10 @@
     "grunt-shell": "~0.6.4",
     "jquery": "^2.1.4",
     "load-grunt-tasks": "^3.3.0",
-    "underscore": "^1.8.3",
-    "node-bourbon": "^4.2.3"
+    "node-bourbon": "^4.2.3",
+    "underscore": "^1.8.3"
   },
-  "scripts": {
-  },
+  "scripts": {},
   "browser": {
     "jquery": "./node_modules/jquery/dist/jquery.js",
     "foundation": "./node_modules/foundation-sites/dist/foundation.js"
@@ -38,5 +39,8 @@
     "transform": [
       "browserify-shim"
     ]
+  },
+  "dependencies": {
+    "mozjpeg": "^4.1.1"
   }
 }

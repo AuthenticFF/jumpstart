@@ -8,7 +8,7 @@
 
   <title>Jumpstart</title>
 
-  <link rel="stylesheet" href="/assets/styles/css/app.css">
+  <link rel="stylesheet" href="/assets/styles/css/app.css?v={{ craft.config.cacheBustValue }}">
 
   <!--LR plugin, remove in production-->
   <script src="http://localhost:35729/livereload.js"></script>
@@ -64,6 +64,15 @@
 
  <body>
 
+   <!-- Twig content -->
+   <!--
+
+   {% block content %}
+	 {% endblock %}
+
+   -->
+
+   <!-- begin Foundation content -->
     <div class="row">
       <div class="large-12 columns">
         <h1>Welcome to Foundation for Sites 6</h1>
@@ -216,9 +225,9 @@
   <script>
     var template = 'home';
   </script>
+  <!-- end Foundation content -->
 
-  <script src="/assets/scripts/built/scripts.js"></script>
+  <script src="/assets/scripts/built/scripts.js?v={{ craft.config.cacheBustValue }}"></script>
 
 </body>
 </html>
-
