@@ -10,9 +10,9 @@ Let's get started!
 Inside the project directory, you'll find a `craft-template.sql` file. This SQL
 file contains all of the basic configuration settings in order to get our craft
 project up and running. Using Sequel Pro, create a database for your project,
-and import the `craft-template.sql` file into the newly created database.  
+and import the `craft-template.sql` file into the newly created database. Once you've imported the database, you can delete it from your project's repository; we won't need it any more.
 
-You'll also want to make sure that you are up to date with `Node`, `Ruby`, and `PHP`.  
+Be sure your Node, Ruby, and PHP versions line up with the rest of the team. Please double check with us!
 
 To check your Node version, run `node -v` in your terminal. At the time of writing this documentation, we're currently using Node `4.3.1`, so you'll want to have at least that or higher. To check your Ruby version, run `ruby -v`. You'll at least want to have `2.0.0` in order to get things running. Finally, for PHP it's much of the same. Run `php -v`. You version should at least look like `5.5.34`. If you need to update any of those, do so before going on. Good to go? Let's move on.
 
@@ -23,9 +23,9 @@ To install the required packages, setup Grunt, and convert the project over to a
 _**Note:**_ This will only work for internal Authentic F&F team members, as the repositories necessary to perform this conversion are private.
 
 In order to get your project set up and configured, please:
-* Copy the contents of ```/public/assets/styles/scss/_foundation_clean.scss``` into ```/public/assets/styles/scss/_foundation.scss```
-* Copy the contents of ```/public/assets/styles/scss/foundation/_settings.scss``` into ```/public/assets/styles/scss/_settings.scss```
-* Copy the contents of ```/public/index.html``` into ```craft/templates/_layout.html``` and then rename ```/public/index.html``` to ```/public/_index.html``` so that templates are served correctly.
+* Copy the contents of ```/public/assets/styles/sass/_foundation_clean.scss``` into ```/public/assets/styles/sass/_foundation.scss```
+* Copy the contents of ```/public/assets/styles/sass/foundation/_settings.scss``` into ```/public/assets/styles/sass/_settings.scss```
+* Copy the contents of ```/public/index.html``` into ```craft/templates/_layout.html``` and then delete ```/public/index.html```. We won't need it anymore.
 
 Once you're up and running, you'll have to go into the `db.php` file, which can be located in the `craft/config` directory and update the database name to correlate with the one you created in Sequel Pro.
 
@@ -34,13 +34,6 @@ to the ```projectname/public``` directory in order to serve your project.
 
 If done correctly, you can now navigate to ```projectname.local``` and your
 project should be live and ready to work on.
-
-## Watching your files
-
-When you are writing code, you'll want Grunt to watch your files for changes.
-
-* Run `$ grunt watch` to start the watch process.
-* When running, each time you save a sass or JS file grunt will compile the changes and automatically reload the browser window with your changes.
 
 ## Grunt Tasks  
 The majority of the behind the scenes work is done by our task runner, [Grunt](http://gruntjs.com/). If you're not already familiar with Grunt, take a quick look at the documentation to familiarize yourself with the syntax and how it works.
@@ -81,6 +74,14 @@ The `get-content` task provides a similar function to the one above with the dif
 _**Important:**_ In order for these tasks to work, you'll have to configure both the `deployments.json` and `rsync.json` files which can be found in `./config/settings/...`
 
 You'll have to update the `database` field in the `deployments.json` file as well as the source path in the `rsync.json` file in order to get the commands to work properly.
+
+
+## Watching your files
+
+When you are writing code, you'll want Grunt to watch your files for changes.
+
+* Run `$ grunt watch` to start the watch process.
+* When running, each time you save a sass or JS file grunt will compile the changes and automatically reload the browser window with your changes.
 
 ## Commiting
 
