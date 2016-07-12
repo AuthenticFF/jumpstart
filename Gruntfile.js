@@ -181,7 +181,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('hookmeup', ['clean:hooks', 'shell:hooks']);
   grunt.registerTask("init", ["copy:plugins"]);
-  grunt.registerTask("compile", ["browserify", 'sass', "uglify", 'cssmin', "imagemin"]);
+  grunt.registerTask("compile", ["browserify", 'sass', "uglify", 'cssmin']);
 
   // grunt.registerTask("sync-down", ["db_pull","rsync:dev"]);
   // grunt.registerTask("get-content", ["rsync:production"]);
