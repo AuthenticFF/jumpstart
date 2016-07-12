@@ -5,6 +5,10 @@ Gemfile.lock
 node_modules
 bower_components
 
+report.md
+
+public/content/*
+
 /db/staging/*
 /db/local/*
 /db/production/*
@@ -13,7 +17,3 @@ bower_components
 
 *.sublime-project
 *.sublime-workspace
-
-
-
-

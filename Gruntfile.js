@@ -1,4 +1,4 @@
-var mozjpeg = require('imagemin-mozjpeg');
+// var mozjpeg = require('imagemin-mozjpeg');
 
 module.exports = function(grunt) {
 
@@ -16,15 +16,15 @@ module.exports = function(grunt) {
       hooks: ['.git/hooks/pre-commit']
     },
 
-    cacheBust: {
-      options: {
-        assets: [
-          'public/assets/images/**',
-          'public/assets/fonts/**'
-        ]
-      },
-      src:['craft/templates/_layout.html']
-    },
+    // cacheBust: {
+    //   options: {
+    //     assets: [
+    //       'public/assets/images/**',
+    //       'public/assets/fonts/**'
+    //     ]
+    //   },
+    //   src:['craft/templates/_layout.html']
+    // },
 
     shell: {
       hooks: {
@@ -97,28 +97,28 @@ module.exports = function(grunt) {
       }
     },
 
-    imagemin: {
-      static: {
-        options: {
-          optimizationLevel: 3,
-          svgoPlugins: [{ removeViewBox: false }],
-          use: [mozjpeg()]
-        },
-        files: {
-          'public/assets/images/**/*.png': 'public/assets/images/**/*.png',
-          'public/assets/images/**/*.jpg': 'public/assets/images/**/*.jpg',
-          'public/assets/images/**/*.gif': 'public/assets/images/**/*.gif'
-        }
-      },
-      dynamic: {
-        files: [{
-          expand: true,
-          cwd: 'public/assets/images/',
-          src: ['**/*.{png,jpg,gif}'],
-          dest: 'public/assets/images/'
-        }]
-      }
-    },
+    // imagemin: {
+    //   static: {
+    //     options: {
+    //       optimizationLevel: 3,
+    //       svgoPlugins: [{ removeViewBox: false }],
+    //       use: [mozjpeg()]
+    //     },
+    //     files: {
+    //       'public/assets/images/**/*.png': 'public/assets/images/**/*.png',
+    //       'public/assets/images/**/*.jpg': 'public/assets/images/**/*.jpg',
+    //       'public/assets/images/**/*.gif': 'public/assets/images/**/*.gif'
+    //     }
+    //   },
+    //   dynamic: {
+    //     files: [{
+    //       expand: true,
+    //       cwd: 'public/assets/images/',
+    //       src: ['**/*.{png,jpg,gif}'],
+    //       dest: 'public/assets/images/'
+    //     }]
+    //   }
+    // },
 
     //http://browserify.org/
     //js dependency bundler
