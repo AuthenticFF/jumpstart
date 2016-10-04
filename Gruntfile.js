@@ -9,22 +9,9 @@ module.exports = function(grunt) {
 
     pkg: grunt.file.readJSON('package.json'),
 
-    // deployments: grunt.file.readJSON("config/settings/deployments.json"),
-    // rsync: grunt.file.readJSON("config/settings/rsync.json"),
-
     clean: {
       hooks: ['.git/hooks/pre-commit']
     },
-
-    // cacheBust: {
-    //   options: {
-    //     assets: [
-    //       'public/assets/images/**',
-    //       'public/assets/fonts/**'
-    //     ]
-    //   },
-    //   src:['craft/templates/_layout.html']
-    // },
 
     shell: {
       hooks: {
@@ -61,7 +48,10 @@ module.exports = function(grunt) {
     sass: {
       options: {
         sourceMap: true,
-        includePaths: require('node-bourbon').includePaths,
+        includePaths: [
+          require('node-bourbon').includePaths,
+          'node_modules/foundation-sites/scss'
+        ],
         outputStyle: 'nested',
         quite: false
       },
@@ -71,18 +61,6 @@ module.exports = function(grunt) {
         },
       }
     },
-
-    //https://github.com/csscomb/csscomb.js
-    //formats scss/css
-    // csscomb: {
-    //     dynamic_mappings: {
-    //         expand: true,
-    //         cwd: 'public/assets/styles/sass/',
-    //         src: ['**/*.scss', '!**/foundation/**/*.scss', '!**/utility/**/*.scss'],
-    //         dest: 'public/assets/styles/sass/',
-    //         ext: '.scss'
-    //     }
-    // },
 
     //css minifier
     cssmin: {
@@ -96,29 +74,6 @@ module.exports = function(grunt) {
         }]
       }
     },
-
-    // imagemin: {
-    //   static: {
-    //     options: {
-    //       optimizationLevel: 3,
-    //       svgoPlugins: [{ removeViewBox: false }],
-    //       use: [mozjpeg()]
-    //     },
-    //     files: {
-    //       'public/assets/images/**/*.png': 'public/assets/images/**/*.png',
-    //       'public/assets/images/**/*.jpg': 'public/assets/images/**/*.jpg',
-    //       'public/assets/images/**/*.gif': 'public/assets/images/**/*.gif'
-    //     }
-    //   },
-    //   dynamic: {
-    //     files: [{
-    //       expand: true,
-    //       cwd: 'public/assets/images/',
-    //       src: ['**/*.{png,jpg,gif}'],
-    //       dest: 'public/assets/images/'
-    //     }]
-    //   }
-    // },
 
     //http://browserify.org/
     //js dependency bundler
@@ -167,23 +122,15 @@ module.exports = function(grunt) {
 
   // TASKS
   grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-cache-bust');
   grunt.loadNpmTasks('grunt-shell');
-  grunt.loadNpmTasks('grunt-deployments');
-  grunt.loadNpmTasks("grunt-rsync");
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-browserify');
-  grunt.loadNpmTasks('grunt-csscomb');
 
   grunt.registerTask('hookmeup', ['clean:hooks', 'shell:hooks']);
   grunt.registerTask("init", ["copy:plugins"]);
   grunt.registerTask("compile", ["browserify", 'sass', "uglify", 'cssmin']);
-
-  // grunt.registerTask("sync-down", ["db_pull","rsync:dev"]);
-  // grunt.registerTask("get-content", ["rsync:production"]);
 
 };

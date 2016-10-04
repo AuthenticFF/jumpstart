@@ -1,8 +1,8 @@
-var Sitewide = {
+var Sitewide = function(){
 
 };
 
-Sitewide.init = function(){
+Sitewide.prototype.init = function(){
 
 };
 

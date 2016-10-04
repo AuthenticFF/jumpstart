@@ -1,11 +1,12 @@
 
-@import "overrides/normalize";
-@import "settings";
-
 @charset "UTF-8";
 
 @import "foundation";
+@import "settings";
 @import "bourbon";
+
+$flex: false;
+@include foundation-everything($flex);
 
 // 3rd Party Overrides
 @import "overrides/3rd_party_overrides";
