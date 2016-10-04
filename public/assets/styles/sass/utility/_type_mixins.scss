@@ -13,12 +13,12 @@
   }
 }
 
-@mixin font($font-name: "Helvetica", $font-size: false, $font-weight: false, $line-height: false, $font-style: false, $text-decoration: false, $text-transform: false) {
+@mixin font($font-size: false, $font-weight: false, $line-height: false, $font-style: false, $text-decoration: false, $text-transform: false) {
 
   font-family: $font-name;
 
   @if $font-size != false{
-    font-size: $font-size/$em-ratio;
+    font-size: #{$font-size/$global-font-size}em;
   }
 
   @if $font-style != false{
