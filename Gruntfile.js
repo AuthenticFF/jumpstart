@@ -131,6 +131,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('hookmeup', ['clean:hooks', 'shell:hooks']);
   grunt.registerTask("init", ["copy:plugins"]);
-  grunt.registerTask("compile", ["browserify", 'sass', "uglify", 'cssmin']);
+  // grunt.registerTask("compile", ["browserify", 'sass', "uglify", 'cssmin']);
+  grunt.registerTask("compile", ["browserify", 'sass', 'cssmin']);
 
 };
