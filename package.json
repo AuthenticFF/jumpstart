@@ -2,20 +2,25 @@
   "name": "",
   "version": "0.1.0",
   "devDependencies": {
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babelify": "^7.3.0",
     "browserify-shim": "~3.8.10",
     "foundation-sites": "6.2.3",
     "grunt": "~0.4.5",
-    "grunt-browserify": "^3.8.0",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-browserify": "^5.0.0",
     "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-copy": "~0.4.1",
-    "grunt-contrib-cssmin": "^0.10.0",
-    "grunt-contrib-uglify": "~0.3.2",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-uglify": "~2.0.0",
     "grunt-contrib-watch": "~0.5.3",
     "grunt-sass": "^1.1.0",
     "grunt-shell": "~0.6.4",
     "jquery": "^2.1.4",
     "load-grunt-tasks": "^3.3.0",
     "node-bourbon": "^4.2.3",
+    "pre-commit": "^1.2.2",
     "underscore": "^1.8.3"
   },
   "scripts": {},
@@ -29,7 +34,16 @@
   },
   "browserify": {
     "transform": [
-      "browserify-shim"
+      "browserify-shim",
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015",
+            "react"
+          ]
+        }
+      ]
     ]
   }
 }

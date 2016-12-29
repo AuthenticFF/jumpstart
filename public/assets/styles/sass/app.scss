@@ -9,7 +9,7 @@ $flex: false;
 @include foundation-everything($flex);
 
 // 3rd Party Overrides
-@import "overrides/3rd_party_overrides";
+@import "overrides/vendor-overrides";
 
 // Mixins
 @import "utility/global_mixins";
@@ -28,7 +28,7 @@ $flex: false;
 // Repeating Components
 @import "elements/buttons";
 @import "elements/forms";
-@import "elements/lists";
+@import "elements/elements";
 
 // High Level Modules (eg: hero, footer, datepicker)
 @import "components/footer";

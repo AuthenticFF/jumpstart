@@ -2,6 +2,7 @@
 
 global.$ = global.jQuery = require('jquery');
 global._ = window._ = require('underscore');
+
 require("./foundation-init");
 
 // The sitewide include, for modules and things happening on multiple pages

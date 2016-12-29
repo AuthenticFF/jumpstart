@@ -1,19 +1,13 @@
 .sass-cache/*
 .DS_STORE
 
-Gemfile.lock
 node_modules
-bower_components
-
-report.md
 
 public/content/*
 
 /db/staging/*
 /db/local/*
 /db/production/*
-
-/public/assets/styles/sass/_normalize*
 
 *.sublime-project
 *.sublime-workspace

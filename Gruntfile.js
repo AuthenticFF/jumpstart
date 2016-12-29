@@ -9,42 +9,24 @@ module.exports = function(grunt) {
 
     pkg: grunt.file.readJSON('package.json'),
 
-    clean: {
-      hooks: ['.git/hooks/pre-commit']
-    },
-
-    shell: {
-      hooks: {
-        command: ['cp config/githooks/pre-commit .git/hooks/', 'chmod 755 .git/hooks/pre-commit'].join(";")
-      }
-    },
-
+    //
+    // We're using a Git pre-commit hook to compile our code each time we make a Git commit.
+    // this task moves the contents of the .pre-commit-sample file into the pre-commit file within
+    // the .git directory
+    //
     copy: {
-      plugins: {
+      main:{
         files: [
-          // Foundation
-          {cwd: "node_modules/foundation-sites/scss/foundation", src: '**', dest: 'public/assets/styles/sass/foundation', expand: true, flatten: false},
-          {isFile: true, rename: function(dest, src){ return dest + "_" + src; }, cwd: "node_modules/foundation-sites/scss", src: 'foundation.scss', dest: 'public/assets/styles/sass/', expand: true, flatten: false},
-          {isFile: true, rename: function(dest, src){ return dest + "_" + src; }, cwd: "node_modules/foundation-sites/scss", src: 'normalize.scss', dest: 'public/assets/styles/sass/', expand: true, flatten: false},
+          {src: '.pre-commit-sample', dest: '.git/hooks/pre-commit'},
         ]
       }
     },
 
-    uglify: {
-      options: {
-        mangle: false,
-        compress: false,
-        beautify: false
-      },
-      my_target: {
-        files: {
-          'public/assets/scripts/built/built.js': [
-            'public/assets/scripts/built/scripts.js'
-            ]
-        }
-      }
-    },
+    //
+    // Style Tasks
+    //
 
+    // Compiling our SCSS into CSS
     sass: {
       options: {
         sourceMap: true,
@@ -52,8 +34,7 @@ module.exports = function(grunt) {
           require('node-bourbon').includePaths,
           'node_modules/foundation-sites/scss'
         ],
-        outputStyle: 'nested',
-        quite: false
+        outputStyle: 'nested'
       },
       dist: {
         files: {
@@ -62,58 +43,66 @@ module.exports = function(grunt) {
       }
     },
 
-    //css minifier
+    // Compressing CSS into minified file
     cssmin: {
-      my_target: {
-        files: [{
-          expand: true,
-          cwd: 'public/assets/styles/css',
-          src: ['*.css', '!*.min.css'],
-          dest: 'public/assets/styles/css',
-          ext: '.min.css'
-        }]
+      dist: {
+        files: {
+          "public/assets/styles/css/app.min.css": "public/assets/styles/css/app.css"
+        }
       }
     },
 
-    //http://browserify.org/
-    //js dependency bundler
+
+    //
+    // Javascript Tasks
+    //
+
+    // Compile javascript into a single file`
     browserify: {
-      dist: {
-        files: {
-          'public/assets/scripts/built/scripts.js': [
-            'public/assets/scripts/main.js'
-          ],
-        },
-        options: {
+      dist:{
+        files:{
+          "public/assets/scripts/built/scripts.js": "public/assets/scripts/main.js"
+        }
+      }
+    },
+
+    // When we commit our code, compress it for production
+    uglify: {
+      dist:{
+        files:{
+          "public/assets/scripts/built/built.js": "public/assets/scripts/built/scripts.js"
         }
       }
     },
 
     watch: {
-      all: {
-        files: ['site/**/*.php', 'public/content/**/*.txt'],
-        options: {
-          livereload: true
-        }
-      },
+      // all: {
+      //   files: ['craft/**/*.php', 'public/content/**/*.txt'],
+      //   options: {
+      //     livereload: true
+      //   }
+      // },
       sass: {
         files: ['public/assets/styles/sass/**/*.scss'],
-        tasks: [ 'sass' ],
-        options: {
-          livereload: true
-        }
+        tasks: [ 'sass' ]
       },
       scripts: {
         files: ['public/assets/scripts/**/*.js', '!public/assets/scripts/built/*'],
-        tasks: ['browserify'],
+        tasks: ['browserify']
+      }
+    },
+
+    browserSync: {
+      dev: {
+        bsFiles: {
+          src : [
+            'public/assets/scripts/built/scripts.js',
+            'public/assets/styles/css/app.css'
+          ]
+        },
         options: {
-          livereload: true
-        }
-      },
-      configFiles: {
-        files: [ 'Gruntfile.js', 'config/*.js' ],
-        options: {
-          reload: true
+          watchTask: true,
+          proxy: "jumpstart.local"
         }
       }
     }
@@ -121,17 +110,15 @@ module.exports = function(grunt) {
   });
 
   // TASKS
-  grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-shell');
-  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-browserify');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-browser-sync');
 
-  grunt.registerTask('hookmeup', ['clean:hooks', 'shell:hooks']);
-  grunt.registerTask("init", ["copy:plugins"]);
+  grunt.registerTask('dev', ['browserSync', 'watch']);
+
   // grunt.registerTask("compile", ["browserify", 'sass', "uglify", 'cssmin']);
-  grunt.registerTask("compile", ["browserify", 'sass', 'cssmin']);
+  // grunt.registerTask("compile", ["browserify", 'sass', 'cssmin']);
 
 };

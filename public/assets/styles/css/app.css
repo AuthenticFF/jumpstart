@@ -1509,49 +1509,8 @@ html, body {
   line-height: 1.45em; }
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1.25em; }
-
-.t-left {
-  text-align: left; }
-
-.t-right {
-  text-align: right; }
-
-.t-center {
-  text-align: center; }
-
-.t-justify {
-  text-align: justify; }
-
-.t-1 {
-  font-size: 1.953125rem; }
-  .t-1.t-alt {
-    font-size: 1.708984375rem; }
-
-.t-2 {
-  font-size: 1.5625rem; }
-  .t-2.t-alt {
-    font-size: 1.3671875rem; }
-
-.t-3 {
-  font-size: 1.25rem; }
-  .t-3.t-alt {
-    font-size: 1.09375rem; }
-
-.t-4 {
-  font-size: 1rem; }
-  .t-4.t-alt {
-    font-size: 0.875rem; }
-
-.t-5 {
-  font-size: 0.8rem; }
-  .t-5.t-alt {
-    font-size: 0.7rem; }
-
-.t-6 {
-  font-size: 0.64rem; }
-  .t-6.t-alt {
-    font-size: 0.56rem; }
+  margin: 0;
+  padding: 0; }
 
 .clickable {
   cursor: pointer; }
