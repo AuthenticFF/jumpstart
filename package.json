@@ -20,7 +20,6 @@
     "jquery": "^2.1.4",
     "load-grunt-tasks": "^3.3.0",
     "node-bourbon": "^4.2.3",
-    "pre-commit": "^1.2.2",
     "underscore": "^1.8.3"
   },
   "scripts": {},

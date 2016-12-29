@@ -1,0 +1,12 @@
+#!/bin/sh
+#
+# Pre-commit hooks
+
+# Compile stuff before committing
+grunt uglify
+grunt cssmin
+
+git add -f public/assets/scripts/built
+git add -f public/assets/styles/css
+
+exit 0

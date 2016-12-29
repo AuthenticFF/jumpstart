@@ -1,0 +1,12 @@
+// override foundation column floating
+[class*="column"] + [class*="column"]:last-child {
+  float: left;
+}
+
+// reset a color
+a {
+  color: inherit;
+  &:hover {
+    color: inherit;
+  }
+}
