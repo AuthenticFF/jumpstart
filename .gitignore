@@ -1,5 +1,6 @@
 .sass-cache/*
 .DS_STORE
+.tmp/*
 
 node_modules
 

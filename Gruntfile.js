@@ -15,7 +15,7 @@ module.exports = function(grunt) {
     // the .git directory
     //
     copy: {
-      main:{
+      dist:{
         files: [
           {src: '.pre-commit-sample', dest: '.git/hooks/pre-commit'},
         ]
@@ -75,13 +75,35 @@ module.exports = function(grunt) {
       }
     },
 
+
+
+    //
+    // Images and Icons
+    //
+
+    // compiling svg icons
+    grunticon: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: 'public/assets/icons/original',
+          src: ['*.svg', '*.png'],
+          dest: "public/assets/icons/built"
+        }],
+        options: {
+          enhanceSVG: true
+        }
+      }
+    },
+
+
+    //
+    // Setting up our watch events
+    //
     watch: {
-      // all: {
-      //   files: ['craft/**/*.php', 'public/content/**/*.txt'],
-      //   options: {
-      //     livereload: true
-      //   }
-      // },
+      all: {
+        files: ['app/**/*.html', 'app/**/*.twig'],
+      },
       sass: {
         files: ['public/assets/styles/sass/**/*.scss'],
         tasks: [ 'sass' ]
@@ -92,6 +114,10 @@ module.exports = function(grunt) {
       }
     },
 
+
+    //
+    // Setting up Browser Sync
+    //
     browserSync: {
       dev: {
         bsFiles: {
@@ -105,6 +131,40 @@ module.exports = function(grunt) {
           proxy: "jumpstart.local"
         }
       }
+    },
+
+
+    //
+    // Deployments
+    //
+    shipit: {
+
+      options: {
+
+        workspace: '.tmp',
+        deployTo: '/var/www/jumpstart',
+        repositoryUrl: 'git@codebasehq.com:thegoodlab/internal/project-jumpstart.git',
+        branch: 'master',
+        ignores: ['.git'],
+        keepReleases: 2,
+        key: '~/.ssh/id_rsa',
+        shallowClone: true,
+
+        shared: {
+          overwrite: true,
+          dirs: ['public/uploads']
+          // You can symlink files too
+          // files: ['public/uploads']
+        }
+
+      },
+
+      staging: {
+        servers: [
+          'root@198.58.109.239:24'
+        ]
+      }
+
     }
 
   });
@@ -115,10 +175,14 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-browserify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
+  grunt.loadNpmTasks('grunt-grunticon');
+  grunt.loadNpmTasks('grunt-shipit');
+  grunt.loadNpmTasks('shipit-deploy');
+  grunt.loadNpmTasks('shipit-shared');
+  // grunt.registerTask('pwd', function () {
+  //   grunt.shipit.remote('pwd', this.async());
+  // });
 
-  grunt.registerTask('dev', ['browserSync', 'watch']);
-
-  // grunt.registerTask("compile", ["browserify", 'sass', "uglify", 'cssmin']);
-  // grunt.registerTask("compile", ["browserify", 'sass', 'cssmin']);
+  grunt.registerTask('dev', ['copy', 'grunticon', 'browserSync', 'watch']);
 
 };
