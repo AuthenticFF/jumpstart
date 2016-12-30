@@ -24,7 +24,7 @@
     "node-bourbon": "^4.2.3",
     "shipit-assets": "^1.3.6",
     "shipit-cli": "^1.5.2",
-    "shipit-db": "^1.8.1",
+    "shipit-db": "git@github.com:bryantAXS/shipit-db.git",
     "shipit-deploy": "^2.4.0",
     "shipit-shared": "^4.4.2",
     "underscore": "^1.8.3"

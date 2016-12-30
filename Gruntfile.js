@@ -2,7 +2,7 @@
 
 module.exports = function(grunt) {
 
-  require('load-grunt-tasks')(grunt); // npm install --save-dev load-grunt-tasks
+  require('load-grunt-tasks')(grunt);
 
   // Project configuration.
   grunt.initConfig({
@@ -13,6 +13,9 @@ module.exports = function(grunt) {
     // We're using a Git pre-commit hook to compile our code each time we make a Git commit.
     // this task moves the contents of the .pre-commit-sample file into the pre-commit file within
     // the .git directory
+    //
+    // This technically only needs to be done once, but we have it triggered each time the dev task starts
+    // to ensure it's not forgotten
     //
     copy: {
       dist:{
@@ -27,6 +30,9 @@ module.exports = function(grunt) {
     //
 
     // Compiling our SCSS into CSS
+    //
+    // Note: our Bourbon and Foundation packages are being included
+    //
     sass: {
       options: {
         sourceMap: true,
@@ -141,6 +147,7 @@ module.exports = function(grunt) {
 
       options: {
 
+        // Codebase details
         workspace: '.tmp',
         deployTo: '/var/www/jumpstart',
         repositoryUrl: 'git@codebasehq.com:thegoodlab/internal/project-jumpstart.git',
@@ -150,19 +157,50 @@ module.exports = function(grunt) {
         key: '~/.ssh/id_rsa',
         shallowClone: true,
 
+        // Shared directory details
         shared: {
           overwrite: true,
           dirs: ['public/uploads']
           // You can symlink files too
           // files: ['public/uploads']
+        },
+
+        // DB details
+        db: {
+          local: {
+            host     : 'localhost',
+            // For servers using MySQL v 5.6_ we need to set the credentials inside the mysql_config_editor or else we get a warning
+            // username: '',
+            // passwprd" '',
+            database : 'jumpstart-test',
+            adapter  : 'mysql',
+            socket   : '/Applications/MAMP/tmp/mysql/mysql.sock',
+          }
+        },
+
+        assets: {
+          paths: ['public/uploads']
         }
 
       },
 
+      // Staging Server
       staging: {
-        servers: [
-          'root@198.58.109.239:24'
-        ]
+
+        // server address and credentials
+        servers: ['root@198.58.109.239:24'],
+
+        // Database connections
+        db: {
+          remote: {
+            host     : '127.0.0.1',
+            username : 'root',
+            password : 'udh4756fhdknd8',
+            database : 'jumpstart-test',
+            adapter  : 'mysql',
+          }
+        }
+
       }
 
     }
@@ -179,9 +217,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-shipit');
   grunt.loadNpmTasks('shipit-deploy');
   grunt.loadNpmTasks('shipit-shared');
-  // grunt.registerTask('pwd', function () {
-  //   grunt.shipit.remote('pwd', this.async());
-  // });
+  grunt.loadNpmTasks('shipit-db');
+  grunt.loadNpmTasks('shipit-assets');
+
 
   grunt.registerTask('dev', ['copy', 'grunticon', 'browserSync', 'watch']);
 

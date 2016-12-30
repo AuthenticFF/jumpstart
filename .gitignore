@@ -2,9 +2,9 @@
 .DS_STORE
 .tmp/*
 
-node_modules
+/node_modules
 
-public/content/*
+/public/content/*
 
 /db/staging/*
 /db/local/*
