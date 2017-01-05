@@ -4,6 +4,14 @@ module.exports = function(grunt) {
 
   require('load-grunt-tasks')(grunt);
 
+  //
+  // We use this to monitor when our processes are killed, so we can make sure we're halting vagrant
+  //
+  var ShutdownManager = require('node-shutdown-manager');
+  var shutdownManager = ShutdownManager.createShutdownManager({
+      timeout: 10000
+  });
+
   // Project configuration.
   grunt.initConfig({
 
@@ -203,6 +211,21 @@ module.exports = function(grunt) {
 
       }
 
+    },
+
+    //
+    // Some shell commands we're using to help with Vagrant and converting things to Craft
+    //
+    shell: {
+      options: {
+        stdout: true
+      },
+      vagrantup: {
+        command: 'vagrant up'
+      },
+      converttocraft: {
+        command: 'bash ./config/converttocraft'
+      }
     }
 
   });
@@ -219,8 +242,29 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('shipit-shared');
   grunt.loadNpmTasks('shipit-db');
   grunt.loadNpmTasks('shipit-assets');
+  grunt.loadNpmTasks('grunt-shell');
 
+  //
+  // Halting vagrant when the watch process is killed
+  //
+  shutdownManager.addShutdownAction(function() {
 
-  grunt.registerTask('dev', ['copy', 'grunticon', 'browserSync', 'watch']);
+    grunt.util.spawn({
+      cmd: 'vagrant',
+      args: ['halt']
+    });
+
+    grunt.log.writeln('\n' + "Halting Vagrant");
+
+  });
+
+  // Converting our project to a Craft project
+  grunt.registerTask('converttocraft', ['shell:converttocraft']);
+
+  // Compiling our Icons, Javascript, and SCSS
+  grunt.registerTask('compile', ['grunticon','uglify','cssmin']);
+
+  // Launching our Dev environment
+  grunt.registerTask('dev', ['copy', 'grunticon', 'shell:vagrantup','browserSync', 'watch']);
 
 };

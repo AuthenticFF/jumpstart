@@ -1,9 +1,0 @@
-{
-  "production": {
-    "options": {
-      "args": ["-e ssh -p24","--recursive","-avz","--progress", "--verbose"],
-      "src": "user@0.0.0.0:/content/",
-      "dest": "./content",
-    }
-  }
-}

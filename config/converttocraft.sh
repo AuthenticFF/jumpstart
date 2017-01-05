@@ -22,6 +22,3 @@ cat ./TEMP/readme.txt >> ./README.md
 
 # Removing the EE repo
 rm -r -f ./TEMP
-
-# sed -i 's/httpdocs/public/g' ./Gruntfile.js
-# sed -i 's/httpdocs/public/g' ./.git/hooks/pre-commit

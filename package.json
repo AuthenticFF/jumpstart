@@ -17,8 +17,9 @@
     "grunt-contrib-watch": "~0.5.3",
     "grunt-grunticon": "^2.3.1",
     "grunt-sass": "^1.1.0",
-    "grunt-shell": "~0.6.4",
+    "grunt-shell": "^0.6.4",
     "grunt-shipit": "^1.0.0",
+    "grunt-vagrantup": "^0.2.0",
     "jquery": "^2.1.4",
     "load-grunt-tasks": "^3.3.0",
     "node-bourbon": "^4.2.3",
@@ -51,5 +52,8 @@
         }
       ]
     ]
+  },
+  "dependencies": {
+    "node-shutdown-manager": "^0.1.2"
   }
 }
