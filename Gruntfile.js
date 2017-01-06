@@ -76,6 +76,12 @@ module.exports = function(grunt) {
       dist:{
         files:{
           "public/assets/scripts/built/scripts.js": "public/assets/scripts/main.js"
+        },
+        options: {
+          watch : true,
+          browserifyOptions : {
+            debug : true
+          }
         }
       }
     },
@@ -142,7 +148,7 @@ module.exports = function(grunt) {
         },
         options: {
           watchTask: true,
-          proxy: "jumpstart.local"
+          proxy: "localhost:8888"
         }
       }
     },
@@ -224,7 +230,7 @@ module.exports = function(grunt) {
         command: 'vagrant up'
       },
       converttocraft: {
-        command: 'bash ./config/converttocraft'
+        command: 'bash ./config/converttocraft.sh'
       }
     }
 
@@ -265,6 +271,6 @@ module.exports = function(grunt) {
   grunt.registerTask('compile', ['grunticon','uglify','cssmin']);
 
   // Launching our Dev environment
-  grunt.registerTask('dev', ['copy', 'grunticon', 'shell:vagrantup','browserSync', 'watch']);
+  grunt.registerTask('dev', ['copy', 'grunticon', 'shell:vagrantup', 'browserify', 'browserSync', 'watch']);
 
 };

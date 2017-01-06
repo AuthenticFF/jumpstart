@@ -79,6 +79,7 @@ EOF
 	a2dismod mpm_event
 	a2enmod mpm_prefork
 	a2enmod rewrite
+	a2enmod mbstring
 
 	a2dissite 000-default
 	a2ensite vagrant_vhost
@@ -89,7 +90,7 @@ EOF
 
 php_go() {
 	apt-get -y install php libapache2-mod-php php-xdebug
-	apt-get -y install php-cli php-common php-gd php-mysql php-curl php-imagick php-json php-log php-mcrypt
+	apt-get -y install php-cli php-common php-gd php-mysql php-curl php-imagick php-json php-log php-mcrypt apt-get php7.0-mbstring php-mbstring
 
 	sed -i "s/display_startup_errors = Off/display_startup_errors = On/g" ${php_config_file}
 	sed -i "s/display_errors = Off/display_errors = On/g" ${php_config_file}

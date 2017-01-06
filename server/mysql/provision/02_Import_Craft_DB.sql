@@ -5,10 +5,11 @@
 # http://www.sequelpro.com/
 # https://github.com/sequelpro/sequelpro
 #
-# Host: 127.0.0.1 (MySQL 5.5.38)
+# Host: 127.0.0.1 (MySQL 5.6.33)
 # Database: craft-template
-# Generation Time: 2016-05-12 4:29:59 PM +0000
+# Generation Time: 2017-01-06 3:24:14 AM +0000
 # ************************************************************
+
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -18,13 +19,12 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
+CREATE DATABASE IF NOT EXISTS `craft-template`;
+
+USE `craft-template`;
 
 # Dump of table craft_assetfiles
 # ------------------------------------------------------------
-
-CREATE DATABASE IF NOT EXISTS `local-db`;
-
-USE `local-db`;
 
 DROP TABLE IF EXISTS `craft_assetfiles`;
 
@@ -36,7 +36,7 @@ CREATE TABLE `craft_assetfiles` (
   `kind` varchar(50) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'unknown',
   `width` int(11) unsigned DEFAULT NULL,
   `height` int(11) unsigned DEFAULT NULL,
-  `size` int(11) unsigned DEFAULT NULL,
+  `size` bigint(20) unsigned DEFAULT NULL,
   `dateModified` datetime DEFAULT NULL,
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
@@ -86,8 +86,8 @@ CREATE TABLE `craft_assetindexdata` (
   `sessionId` varchar(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `sourceId` int(10) NOT NULL,
   `offset` int(10) NOT NULL,
-  `uri` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `size` int(10) DEFAULT NULL,
+  `uri` text COLLATE utf8_unicode_ci,
+  `size` bigint(20) unsigned DEFAULT NULL,
   `recordId` int(10) DEFAULT NULL,
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
@@ -631,8 +631,7 @@ LOCK TABLES `craft_fieldlayouts` WRITE;
 INSERT INTO `craft_fieldlayouts` (`id`, `type`, `dateCreated`, `dateUpdated`, `uid`)
 VALUES
 	(1,'Tag','2014-12-22 23:19:06','2014-12-22 23:19:06','5f12fe56-4be1-4424-beea-85cea94f40a4'),
-	(3,'Entry','2014-12-22 23:19:06','2014-12-22 23:19:06','c7a6ec34-2829-4e76-b1fe-f6181cb86af2'),
-	(5,'Entry','2014-12-22 23:19:06','2014-12-22 23:19:06','3aea567c-e72f-4247-a4d1-1d2d79f5f715');
+	(3,'Entry','2014-12-22 23:19:06','2014-12-22 23:19:06','c7a6ec34-2829-4e76-b1fe-f6181cb86af2');
 
 /*!40000 ALTER TABLE `craft_fieldlayouts` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -662,8 +661,7 @@ LOCK TABLES `craft_fieldlayouttabs` WRITE;
 
 INSERT INTO `craft_fieldlayouttabs` (`id`, `layoutId`, `name`, `sortOrder`, `dateCreated`, `dateUpdated`, `uid`)
 VALUES
-	(1,3,'Content',1,'2014-12-22 23:19:06','2014-12-22 23:19:06','a12eb727-2ca4-4822-8a9e-c55b53eff063'),
-	(2,5,'Content',1,'2014-12-22 23:19:06','2014-12-22 23:19:06','041cde36-578b-4818-b9a9-0844f2cd764e');
+	(1,3,'Content',1,'2014-12-22 23:19:06','2014-12-22 23:19:06','a12eb727-2ca4-4822-8a9e-c55b53eff063');
 
 /*!40000 ALTER TABLE `craft_fieldlayouttabs` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -726,17 +724,14 @@ DROP TABLE IF EXISTS `craft_info`;
 
 CREATE TABLE `craft_info` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `version` varchar(15) COLLATE utf8_unicode_ci NOT NULL,
-  `build` int(11) unsigned NOT NULL,
+  `version` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `schemaVersion` varchar(15) COLLATE utf8_unicode_ci NOT NULL,
-  `releaseDate` datetime NOT NULL,
   `edition` tinyint(1) unsigned NOT NULL DEFAULT '0',
   `siteName` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `siteUrl` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `timezone` varchar(30) COLLATE utf8_unicode_ci DEFAULT NULL,
   `on` tinyint(1) unsigned NOT NULL DEFAULT '0',
   `maintenance` tinyint(1) unsigned NOT NULL DEFAULT '0',
-  `track` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0',
@@ -746,9 +741,9 @@ CREATE TABLE `craft_info` (
 LOCK TABLES `craft_info` WRITE;
 /*!40000 ALTER TABLE `craft_info` DISABLE KEYS */;
 
-INSERT INTO `craft_info` (`id`, `version`, `build`, `schemaVersion`, `releaseDate`, `edition`, `siteName`, `siteUrl`, `timezone`, `on`, `maintenance`, `track`, `dateCreated`, `dateUpdated`, `uid`)
+INSERT INTO `craft_info` (`id`, `version`, `schemaVersion`, `edition`, `siteName`, `siteUrl`, `timezone`, `on`, `maintenance`, `dateCreated`, `dateUpdated`, `uid`)
 VALUES
-	(1,'2.6',2773,'2.6.2','2016-03-09 04:03:19',2,'Craft Template','http://craft-template.local','UTC',1,0,'stable','2014-12-22 23:19:01','2016-03-09 15:35:53','24c2f91a-0c38-4c43-b6d3-31b5686c894e');
+	(1,'2.6.2958','2.6.9',2,'Craft Template','http://craft-template.local','UTC',1,0,'2014-12-22 23:19:01','2017-01-06 03:23:42','24c2f91a-0c38-4c43-b6d3-31b5686c894e');
 
 /*!40000 ALTER TABLE `craft_info` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -889,7 +884,15 @@ VALUES
 	(27,NULL,'m160114_000000_asset_sources_public_url_default_true','2016-03-09 15:35:53','2016-03-09 15:35:53','2016-03-09 15:35:53','cca39f7a-e464-4e44-8be5-66268527b7a2'),
 	(28,NULL,'m160223_000000_sortorder_to_smallint','2016-03-09 15:35:53','2016-03-09 15:35:53','2016-03-09 15:35:53','216fee6a-bb3c-4219-9c78-7083d3fc064c'),
 	(29,NULL,'m160229_000000_set_default_entry_statuses','2016-03-09 15:35:53','2016-03-09 15:35:53','2016-03-09 15:35:53','1eed9523-8d2a-4bf6-863e-531d87744655'),
-	(30,NULL,'m160304_000000_client_permissions','2016-03-09 15:35:53','2016-03-09 15:35:53','2016-03-09 15:35:53','13dba505-6020-4d02-93e5-f9a8f3308752');
+	(30,NULL,'m160304_000000_client_permissions','2016-03-09 15:35:53','2016-03-09 15:35:53','2016-03-09 15:35:53','13dba505-6020-4d02-93e5-f9a8f3308752'),
+	(31,NULL,'m160322_000000_asset_filesize','2017-01-06 03:23:42','2017-01-06 03:23:42','2017-01-06 03:23:42','32b76c1e-101e-4bd8-8614-e3e295b1803f'),
+	(32,NULL,'m160503_000000_orphaned_fieldlayouts','2017-01-06 03:23:42','2017-01-06 03:23:42','2017-01-06 03:23:42','02c19e4d-6811-4464-a399-468cf3f90190'),
+	(33,NULL,'m160510_000000_tasksettings','2017-01-06 03:23:42','2017-01-06 03:23:42','2017-01-06 03:23:42','11d3c0b6-875b-462f-926e-d1cfc5e70a63'),
+	(34,NULL,'m160829_000000_pending_user_content_cleanup','2017-01-06 03:23:42','2017-01-06 03:23:42','2017-01-06 03:23:42','9a23cac4-871f-44a7-9463-668e7c0ec645'),
+	(35,NULL,'m160830_000000_asset_index_uri_increase','2017-01-06 03:23:42','2017-01-06 03:23:42','2017-01-06 03:23:42','34d754c7-7f53-485f-991a-2b688c94c1e0'),
+	(36,NULL,'m160919_000000_usergroup_handle_title_unique','2017-01-06 03:23:42','2017-01-06 03:23:42','2017-01-06 03:23:42','c721a19e-364b-466a-98a3-029c55099ab5'),
+	(37,NULL,'m161108_000000_new_version_format','2017-01-06 03:23:42','2017-01-06 03:23:42','2017-01-06 03:23:42','8f503ee2-3d10-4c42-9aa1-88f7b0b05cb9'),
+	(38,NULL,'m161109_000000_index_shuffle','2017-01-06 03:23:42','2017-01-06 03:23:42','2017-01-06 03:23:42','57a73d08-0ec8-4f5f-97a4-43dce0f15486');
 
 /*!40000 ALTER TABLE `craft_migrations` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -1120,7 +1123,8 @@ VALUES
 	(3,1,'33bd53b5face024d83c4946b79f71442e4b626e6czozNjoiZWJjZWQ2ZDktZWNhZS00ZGJhLWExMjMtNzVjZDk2MDkwMTczIjs=','2015-05-06 18:45:10','2015-05-06 18:45:10','69066fb1-9c0f-4067-b187-cff40792bdd2'),
 	(4,1,'5ab2a554b758e3146d2a6e0c8de43cbf211a0884czozMjoiWVU4OVVpNkUxNXoyX3lFdFpQQXBBM2dNTjZiVzB+V0oiOw==','2015-09-03 15:58:58','2015-09-03 15:58:58','71db691c-393e-4ed4-b791-37a89981788f'),
 	(5,1,'cd28e690a100f6aba5c07ae6fdc96e74b78a485aczozMjoiNzhkZ0xWeFRCbHNGMVBjQmFHOHhVbnZjd0t3aXNjWWsiOw==','2015-09-03 20:06:05','2015-09-03 20:06:05','d66abb81-d4b4-4b25-9cb3-41615b488a1f'),
-	(6,1,'ce6ce478bd4264b1fb841bb93888d418ff0d5c4bczozMjoibndqVFRKSjk4Q3BQdHZYTDE3cm1aaG1xQldzWFZnV24iOw==','2016-03-09 15:34:54','2016-03-09 15:34:54','e4ab83b4-057b-4d46-a15c-fb2ff168d223');
+	(6,1,'ce6ce478bd4264b1fb841bb93888d418ff0d5c4bczozMjoibndqVFRKSjk4Q3BQdHZYTDE3cm1aaG1xQldzWFZnV24iOw==','2016-03-09 15:34:54','2016-03-09 15:34:54','e4ab83b4-057b-4d46-a15c-fb2ff168d223'),
+	(7,1,'f7465d58d527e94f68aa17e56bba56760410aa7cczozMjoieUpoWGRHeUhHY240ZmJueW1MeU5xNktVMU9uMDRabDQiOw==','2017-01-06 03:22:41','2017-01-06 03:22:41','1f6dc100-7e4d-4753-bcd5-af57a206e75f');
 
 /*!40000 ALTER TABLE `craft_sessions` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -1284,7 +1288,7 @@ CREATE TABLE `craft_tasks` (
   `status` enum('pending','error','running') COLLATE utf8_unicode_ci DEFAULT NULL,
   `type` varchar(150) COLLATE utf8_unicode_ci NOT NULL,
   `description` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `settings` text COLLATE utf8_unicode_ci,
+  `settings` mediumtext COLLATE utf8_unicode_ci,
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0',
@@ -1344,8 +1348,7 @@ CREATE TABLE `craft_templatecaches` (
   `expiryDate` datetime NOT NULL,
   `body` mediumtext COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `craft_templatecaches_expiryDate_cacheKey_locale_path_idx` (`expiryDate`,`cacheKey`,`locale`,`path`),
-  KEY `craft_templatecaches_locale_fk` (`locale`),
+  KEY `craft_templatecaches_locale_cacheKey_path_expiryDate_idx` (`locale`,`cacheKey`,`path`,`expiryDate`),
   CONSTRAINT `craft_templatecaches_locale_fk` FOREIGN KEY (`locale`) REFERENCES `craft_locales` (`locale`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -1385,7 +1388,9 @@ CREATE TABLE `craft_usergroups` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `craft_usergroups_handle_unq_idx` (`handle`),
+  UNIQUE KEY `craft_usergroups_name_unq_idx` (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
@@ -1520,7 +1525,7 @@ LOCK TABLES `craft_users` WRITE;
 
 INSERT INTO `craft_users` (`id`, `username`, `photo`, `firstName`, `lastName`, `email`, `password`, `preferredLocale`, `weekStartDay`, `admin`, `client`, `locked`, `suspended`, `pending`, `archived`, `lastLoginDate`, `lastLoginAttemptIPAddress`, `invalidLoginWindowStart`, `invalidLoginCount`, `lastInvalidLoginDate`, `lockoutDate`, `verificationCode`, `verificationCodeIssuedDate`, `unverifiedEmail`, `passwordResetRequired`, `lastPasswordChangeDate`, `dateCreated`, `dateUpdated`, `uid`)
 VALUES
-	(1,'admin',NULL,NULL,NULL,'info@authenticff.com','$2a$13$PnYZy8gGGe4V8bgWvr/IzugPN4WZj1OsUXcs.qqec3LBII58q7ani',NULL,0,1,0,0,0,0,0,'2016-03-09 15:34:54','::1',NULL,NULL,'2015-05-06 18:42:41',NULL,NULL,NULL,NULL,0,'2014-12-22 23:19:03','2014-12-22 23:19:03','2016-03-09 15:34:54','dbc2c556-5db1-4f8a-a36a-ee112c5e7d50');
+	(1,'admin',NULL,NULL,NULL,'info@authenticff.com','$2a$13$PnYZy8gGGe4V8bgWvr/IzugPN4WZj1OsUXcs.qqec3LBII58q7ani',NULL,0,1,0,0,0,0,0,'2017-01-06 03:22:41','::1',NULL,NULL,'2015-05-06 18:42:41',NULL,NULL,NULL,NULL,0,'2014-12-22 23:19:03','2014-12-22 23:19:03','2017-01-06 03:22:41','dbc2c556-5db1-4f8a-a36a-ee112c5e7d50');
 
 /*!40000 ALTER TABLE `craft_users` ENABLE KEYS */;
 UNLOCK TABLES;
