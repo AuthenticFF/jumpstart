@@ -21,6 +21,10 @@ main() {
   # Removing the EE repo
   rm -r -f ./TEMP
 
+  chmod 744 ./craft/app
+  chmod 744 ./craft/config
+  chmod 744 ./craft/storage
+
 }
 
 main

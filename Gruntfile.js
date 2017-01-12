@@ -190,13 +190,12 @@ module.exports = function(grunt) {
         // DB details
         db: {
           local: {
-            host     : 'localhost',
+            host     : 'localhost:8888',
             // For servers using MySQL v 5.6_ we need to set the credentials inside the mysql_config_editor or else we get a warning
-            // username: '',
-            // passwprd" '',
-            database : 'jumpstart-test',
+            // username: 'root',
+            // passwprd" 'root',
+            database : 'craft-template',
             adapter  : 'mysql',
-            socket   : '/Applications/MAMP/tmp/mysql/mysql.sock',
           }
         },
 
@@ -238,7 +237,7 @@ module.exports = function(grunt) {
         command: 'vagrant up'
       },
       converttocraft: {
-        command: 'bash ./config/converttocraft.sh'
+        command: 'bash ./server/provision-craft.sh'
       }
     }
 

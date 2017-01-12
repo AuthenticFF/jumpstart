@@ -2,6 +2,7 @@
 .DS_STORE
 .tmp/*
 .vagrant/*
+.tmp/*
 
 /node_modules
 
