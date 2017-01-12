@@ -120,6 +120,12 @@ mysql_go() {
 	echo "mysql-server mysql-server/root_password_again password root" | debconf-set-selections
 	apt-get -y install mysql-client mysql-server
 
+	cat << EOF > ${mysql_config_file}
+[mysqld]
+bind-address = 0.0.0.0
+EOF
+
+	touch $HOME/.my.cnf
 	cat << EOF > $HOME/.my.cnf
 [mysqld]
 sql_mode=STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
@@ -134,7 +140,7 @@ EOF
 	# mysql_config_editor set --login-path=client --host=localhost --user=root --password
 	# echo "$pass"
 
-	sed -i "s/bind-address\s*=\s*127.0.0.1/bind-address = 0.0.0.0/" ${mysql_config_file}
+	# sed -i "s/bind-address\s*=\s*127.0.0.1/bind-address = 0.0.0.0/" ${mysql_config_file}
 
 	# Allow root access from any host
 	echo "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'root' WITH GRANT OPTION" | mysql -u root

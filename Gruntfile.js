@@ -190,10 +190,10 @@ module.exports = function(grunt) {
         // DB details
         db: {
           local: {
-            host     : 'localhost:8888',
+            host     : '127.0.0.1:8889',
             // For servers using MySQL v 5.6_ we need to set the credentials inside the mysql_config_editor or else we get a warning
-            // username: 'root',
-            // passwprd" 'root',
+            username: 'root',
+            passwprd: 'root',
             database : 'craft-template',
             adapter  : 'mysql',
           }

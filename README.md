@@ -18,8 +18,7 @@ Major 2.0 changes include:
 
 To start a project, clone this repository and run `$ npm install`. This will install all packages needed for development.
 
-Next, open your `Gruntfile.js` and replace placeholder variables. Only the `proxy` option within the `browserSync` task is required for development. It should
-be set to the local url of your site, eg: `sitename.local`
+Next, open your `Gruntfile.js` and replace placeholder variables. Only the `proxy` option within the `browserSync` task is required for development. It should be set to the local url of your site, eg: `sitename.local`
 
 ## Developing
 
