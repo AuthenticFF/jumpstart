@@ -120,7 +120,7 @@ module.exports = function(grunt) {
     //
     // Setting up our watch events
     //
-    watch: {
+    chokidar: {
       all: {
         files: ['app/**/*.html', 'app/**/*.twig'],
       },
@@ -148,7 +148,15 @@ module.exports = function(grunt) {
         },
         options: {
           watchTask: true,
-          proxy: "localhost:8888"
+          open:false,
+          proxy: {
+            target: "localhost:8888",
+            reqHeaders: function(config){
+              return {
+                "host": "localhost:3000"
+              }
+            }
+          }
         }
       }
     },
@@ -240,7 +248,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-browserify');
-  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-grunticon');
   grunt.loadNpmTasks('grunt-shipit');
@@ -249,6 +256,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('shipit-db');
   grunt.loadNpmTasks('shipit-assets');
   grunt.loadNpmTasks('grunt-shell');
+  grunt.loadNpmTasks('grunt-chokidar');
 
   //
   // Halting vagrant when the watch process is killed
@@ -271,6 +279,6 @@ module.exports = function(grunt) {
   grunt.registerTask('compile', ['grunticon','uglify','cssmin']);
 
   // Launching our Dev environment
-  grunt.registerTask('dev', ['copy', 'grunticon', 'shell:vagrantup', 'browserify', 'browserSync', 'watch']);
+  grunt.registerTask('dev', ['copy', 'grunticon', 'shell:vagrantup', 'browserify', 'browserSync', 'chokidar']);
 
 };

@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.6.33)
 # Database: craft-template
-# Generation Time: 2017-01-06 3:24:14 AM +0000
+# Generation Time: 2017-01-12 12:09:13 AM +0000
 # ************************************************************
 
 
@@ -743,7 +743,7 @@ LOCK TABLES `craft_info` WRITE;
 
 INSERT INTO `craft_info` (`id`, `version`, `schemaVersion`, `edition`, `siteName`, `siteUrl`, `timezone`, `on`, `maintenance`, `dateCreated`, `dateUpdated`, `uid`)
 VALUES
-	(1,'2.6.2958','2.6.9',2,'Craft Template','http://craft-template.local','UTC',1,0,'2014-12-22 23:19:01','2017-01-06 03:23:42','24c2f91a-0c38-4c43-b6d3-31b5686c894e');
+	(1,'2.6.2958','2.6.9',2,'Craft Template','{siteUrl}','UTC',1,0,'2014-12-22 23:19:01','2017-01-12 00:08:35','24c2f91a-0c38-4c43-b6d3-31b5686c894e');
 
 /*!40000 ALTER TABLE `craft_info` ENABLE KEYS */;
 UNLOCK TABLES;
