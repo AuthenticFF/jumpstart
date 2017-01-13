@@ -127,10 +127,6 @@ module.exports = function(grunt) {
       sass: {
         files: ['public/assets/styles/sass/**/*.scss'],
         tasks: [ 'sass' ]
-      },
-      scripts: {
-        files: ['public/assets/scripts/**/*.js', '!public/assets/scripts/built/*'],
-        tasks: ['browserify']
       }
     },
 
