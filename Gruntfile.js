@@ -217,7 +217,7 @@ module.exports = function(grunt) {
             host     : '127.0.0.1',
             username : 'root',
             password : 'udh4756fhdknd8',
-            database : 'jumpstart-test',
+            database : 'caft-template',
             adapter  : 'mysql',
           }
         }
