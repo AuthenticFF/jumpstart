@@ -18,7 +18,9 @@ Major 2.0 changes include:
 
 To start a project, clone this repository and run `$ npm install`. This will install all packages needed for development.
 
-Next, open your `Gruntfile.js` and replace placeholder variables. Only the `proxy` option within the `browserSync` task is required for development. It should be set to the local url of your site, eg: `sitename.local`
+After this, you run `$ grunt dev` to setup your development environment, and start watching your code.
+
+The first time `$ grunt dev` is run on your project, your Vagrant dev environment will be setup, so it will take an extra minute or two.
 
 ## Developing
 
