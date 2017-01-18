@@ -167,8 +167,8 @@ module.exports = function(grunt) {
 
         // Codebase details
         workspace: '.tmp',
-        deployTo: '/var/www/jumpstart',
-        repositoryUrl: 'git@codebasehq.com:thegoodlab/internal/project-jumpstart.git',
+        deployTo: '/var/www/[FOLDERNAME]',
+        repositoryUrl: '[ENTER REPO ADDRESS]',
         branch: 'master',
         ignores: ['.git'],
         keepReleases: 2,
@@ -194,7 +194,7 @@ module.exports = function(grunt) {
             // For servers using MySQL v 5.6_ we need to set the credentials inside the mysql_config_editor or else we get a warning
             username: 'root',
             passwprd: 'root',
-            database : 'craft_template',
+            database : '[DBNAME]',
             adapter  : 'mysql',
           }
 
@@ -210,15 +210,15 @@ module.exports = function(grunt) {
       staging: {
 
         // server address and credentials
-        servers: ['root@198.58.109.239:24'],
+        servers: ['[USERNAME]@0.0.0.0'],
 
         // Database connections
         db: {
           remote: {
             host     : '127.0.0.1',
-            username : 'root',
-            password : 'udh4756fhdknd8',
-            database : 'craft_template',
+            username : '[USERNAME]',
+            password : '[PASSWORD]',
+            database : '[DBNAME]',
             adapter  : 'mysql',
           }
         }
