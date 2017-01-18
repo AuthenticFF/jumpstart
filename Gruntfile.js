@@ -9,7 +9,7 @@ module.exports = function(grunt) {
   //
   var ShutdownManager = require('node-shutdown-manager');
   var shutdownManager = ShutdownManager.createShutdownManager({
-      timeout: 10000
+    timeout: 1000
   });
 
   // Project configuration.
@@ -261,14 +261,16 @@ module.exports = function(grunt) {
   //
   // Halting vagrant when the watch process is killed
   //
-  shutdownManager.addShutdownAction(function() {
+  shutdownManager.on('preShutdown', function( reason, err) {
 
-    // grunt.util.spawn({
-    //   cmd: 'vagrant',
-    //   args: ['halt']
-    // });
-    //
-    // grunt.log.writeln('\n' + "Halting Vagrant");
+    if(reason === "SIGINT"){
+      grunt.util.spawn({
+        cmd: 'vagrant',
+        args: ['halt']
+      });
+
+      grunt.log.writeln('\n' + "Halting Vagrant");
+    }
 
   });
 
