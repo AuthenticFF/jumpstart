@@ -19,9 +19,9 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
-CREATE DATABASE IF NOT EXISTS `craft-template`;
+CREATE DATABASE IF NOT EXISTS `crafttemplate`;
 
-USE `craft-template`;
+USE `craft_template`;
 
 # Dump of table craft_assetfiles
 # ------------------------------------------------------------

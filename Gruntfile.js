@@ -185,14 +185,19 @@ module.exports = function(grunt) {
 
         // DB details
         db: {
+
+          backupDir: 'database',
+
           local: {
-            host     : '127.0.0.1:8889',
+            host     : '127.0.0.1',
+            port    : 8889,
             // For servers using MySQL v 5.6_ we need to set the credentials inside the mysql_config_editor or else we get a warning
             username: 'root',
             passwprd: 'root',
-            database : 'craft-template',
+            database : 'craft_template',
             adapter  : 'mysql',
           }
+
         },
 
         assets: {
@@ -213,7 +218,7 @@ module.exports = function(grunt) {
             host     : '127.0.0.1',
             username : 'root',
             password : 'udh4756fhdknd8',
-            database : 'caft-template',
+            database : 'craft_template',
             adapter  : 'mysql',
           }
         }
@@ -258,12 +263,12 @@ module.exports = function(grunt) {
   //
   shutdownManager.addShutdownAction(function() {
 
-    grunt.util.spawn({
-      cmd: 'vagrant',
-      args: ['halt']
-    });
-
-    grunt.log.writeln('\n' + "Halting Vagrant");
+    // grunt.util.spawn({
+    //   cmd: 'vagrant',
+    //   args: ['halt']
+    // });
+    //
+    // grunt.log.writeln('\n' + "Halting Vagrant");
 
   });
 

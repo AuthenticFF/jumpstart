@@ -8,9 +8,10 @@
 
 /public/content/*
 
-/db/staging/*
-/db/local/*
-/db/production/*
+/database/local/*
+/database/staging/*
+/database/dev/*
+/database/production/*
 
 *.sublime-project
 *.sublime-workspace
