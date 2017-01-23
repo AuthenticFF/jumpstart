@@ -145,8 +145,9 @@ module.exports = function(grunt) {
         options: {
           watchTask: true,
           open:false,
+          https: true,
           proxy: {
-            target: "localhost:8888",
+            target: "localhost:8890",
             reqHeaders: function(config){
               return {
                 "host": "localhost:3000"
@@ -257,6 +258,20 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('shipit-assets');
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-chokidar');
+
+  //
+  // File adjustments after sites are deployedPost Deploy
+  //
+  grunt.registerTask('post-deploy', function () {
+
+    var done = this.async();
+    var current = grunt.config('shipit.'+grunt.shipit.environment+'.deployTo') + '/current';
+    // grunt.shipit.remote('chmod -R 777 ' + current + "/craft/storage");
+    // grunt.shipit.remote('chmod -R 755 ' + current + "/public/content");
+    // grunt.shipit.remote('rm ' + current + "/public/.htaccess");
+    // grunt.shipit.remote('mv ' + current + "/public/.htaccess.production " + current + "/public/.htaccess");
+
+  });
 
   //
   // Halting vagrant when the watch process is killed

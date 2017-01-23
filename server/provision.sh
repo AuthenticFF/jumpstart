@@ -12,7 +12,6 @@ project_web_root="public"
 main() {
 	repositories_go
 	update_go
-	network_go
 	tools_go
 	apache_go
 	mysql_go
@@ -32,12 +31,6 @@ update_go() {
 
 autoremove_go() {
 	apt-get -y autoremove
-}
-
-network_go() {
-	IPADDR=$(/sbin/ifconfig eth0 | awk '/inet / { print $2 }' | sed 's/addr://')
-	sed -i "s/^${IPADDR}.*//" /etc/hosts
-	echo ${IPADDR} ubuntu.localhost >> /etc/hosts			# Just to quiet down some error messages
 }
 
 tools_go() {
@@ -67,11 +60,32 @@ apache_go() {
         Require all granted
     </Directory>
 </VirtualHost>
+
+<VirtualHost *:443>
+    ServerAdmin info@authenticff.com
+    DocumentRoot /vagrant/${project_web_root}
+    LogLevel debug
+
+    ErrorLog /var/log/apache2/error.log
+    CustomLog /var/log/apache2/access.log combined
+
+    <Directory /vagrant/${project_web_root}>
+        AllowOverride All
+        Require all granted
+    </Directory>
+		SSLEngine on
+	  SSLCertificateFile /etc/apache2/ssl.crt
+	  SSLCertificateKeyFile /etc/apache2/ssl.key
+	  SetEnvIf User-Agent ".*MSIE.*" nokeepalive ssl-unclean-shutdown
+</VirtualHost>
 EOF
 	fi
 
 	cp /etc/apache2/apache2.conf /etc/apache2/apache2.conf.backup
 	cp /vagrant/server/apache/apache2.conf /etc/apache2/apache2.conf
+
+	cp /vagrant/server/apache/server.key /etc/apache2/ssl.key
+	cp /vagrant/server/apache/server.crt /etc/apache2/ssl.crt
 
 	cp /etc/apache2/mods-available/mpm_prefork.conf /etc/apache2/mods-available/mpm_prefork.conf.backup
 	cp /vagrant/server/apache/mpm_prefork.conf /etc/apache2/mods-available/mpm_prefork.conf
@@ -80,6 +94,7 @@ EOF
 	a2enmod mpm_prefork
 	a2enmod rewrite
 	a2enmod mbstring
+	a2enmod ssl
 
 	a2dissite 000-default
 	a2ensite vagrant_vhost
@@ -123,24 +138,16 @@ mysql_go() {
 	cat << EOF > ${mysql_config_file}
 [mysqld]
 bind-address = 0.0.0.0
+sql_mode=STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
 EOF
 
 	touch $HOME/.my.cnf
 	cat << EOF > $HOME/.my.cnf
-[mysqld]
-sql_mode=STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
 [client]
 user = root
 password = root
 host = localhost
 EOF
-
-	# Removing error from MySQL imports/exports
-	# set pass "root"
-	# mysql_config_editor set --login-path=client --host=localhost --user=root --password
-	# echo "$pass"
-
-	# sed -i "s/bind-address\s*=\s*127.0.0.1/bind-address = 0.0.0.0/" ${mysql_config_file}
 
 	# Allow root access from any host
 	echo "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'root' WITH GRANT OPTION" | mysql -u root
