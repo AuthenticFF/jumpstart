@@ -147,7 +147,7 @@ module.exports = function(grunt) {
           open:false,
           https: true,
           proxy: {
-            target: "localhost:8890",
+            target: "https://localhost:8890",
             reqHeaders: function(config){
               return {
                 "host": "localhost:3000"
