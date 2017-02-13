@@ -273,6 +273,10 @@ module.exports = function(grunt) {
 
   });
 
+  grunt.shipit.on('published', function () {
+    grunt.task.run(['post-deploy']);
+  });
+
   //
   // Halting vagrant when the watch process is killed
   //
