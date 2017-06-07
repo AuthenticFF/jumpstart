@@ -194,7 +194,7 @@ module.exports = function(grunt) {
             port    : 8889,
             // For servers using MySQL v 5.6_ we need to set the credentials inside the mysql_config_editor or else we get a warning
             username: 'root',
-            passwprd: 'root',
+            password: 'root',
             database : '[DBNAME]',
             adapter  : 'mysql',
           }

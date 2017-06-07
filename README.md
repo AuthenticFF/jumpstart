@@ -1,25 +1,13 @@
 
 # Authentic Form & Function Project Jumpstart
 
-#### v2.0
-
-Our jumpstart repo has been updated with a more streamlined configuration, to make project creation and ongoing maintenance
-more consistent and easier to manage for all developers.
-
-Major 2.0 changes include:
-
-- Reconfigration of Javascript and SCSS compilation
-- Removal of forced copying of Foundation files into assets directory
-- Removal of Live Reload, replaced with Browser Sync
-- Removal of Capistrano for code deployments, replaced by Shipit
-- Addition of SVG icon embedding
-- Addition of Vagrant as a development server, replacing MAMP
-
 ## Starting a Project
 
-Before you create your project, make sure you have [Vagrant](https://www.vagrantup.com/) and [Virtual Box](https://www.virtualbox.org/wiki/Downloads) installed on your machine.
+Before you create your project, make sure you have [Vagrant](https://www.vagrantup.com/) and [Virtual Box](https://www.virtualbox.org/wiki/Downloads) installed on your machine. Additionally, you'll need [NPM](http://blog.teamtreehouse.com/install-node-js-npm-mac).
 
-To start a project, clone this repository `cd` into the codebase and run `$ npm install`. This will install all packages needed for development.
+If this is a new project, clone this repository `cd` into the codebase and run `$ npm install`. This will install all packages needed for development.
+
+If this is an existing project, `cd` into the codebase and run `$ npm install`.
 
 After, npm has installed you're able to create your development environment and start watching your code. To do this run `$ grunt dev`.
 
@@ -34,10 +22,12 @@ When this task starts, it will:
 1. Copy the `.pre-commit-sample` file into the `.git/hooks/pre-commit` file, to assist with auto-compilation on Git commit
 2. Process any newly added icons into the `public/assets/icons/original` folder, making them available for icon embedding
 3. Start your Vagrant dev environment
-4. Open a Browser Sync session, which auto-injects updated CSS and JS files into the browser
+4. Open a Browser Sync session, which auto-injects updated CSS and JS files into the browser as you are developing.
 5. Begin watching files for auto-compilation on save.
 
-After the startup tasks have completed, and your terminal is showing `Waiting...` you're able to access your development server. This is located at `http://localhost:3000`
+After the startup tasks have completed, and your terminal is showing `Waiting...` you're able to access your development server. This is located at `https://localhost:3000`
+
+As you're developing, when you save your javasscript and scss files, all code should autocompile, which you should see in the terminal.
 
 During development, your MySQL server is available at:
 
@@ -66,22 +56,17 @@ The `grunticon` package allows us to embed SVG icons inside our markup, which we
 
 Deployments have been reconfigured to use the Shipit automation tool. Shipit was modeled after Capistrano, so you'll more than likely notice similarities.
 
-Before you can deploy, configure the Shipit configuration inside `Gruntfile.js`
+Before you can deploy, configure the Shipit configuration inside `shipitfile.js`
 
-Shipit has 4 distinct deployment components
+To deploy your code, based on the shipitfile.js configuration run `$ shipit [environment-name] deploy`
 
-1. Codebase deployments `$ grunt shipit:[environment-name] deploy`
-2. Shared file linking `handled by deploy task`
-3. Database downloads `$ grunt shipit:[environment-name] db:pull`
-4. Asset downloads `$grunt shipit:[environment-name] assets:pull`
+## Syncing Codebase
 
-Similar to Capistrano, after commiting and pushing your code to the remote repository, run the deploy task to run the deployment.
+Many of the codebases have been configured to pull down the production database and uploaded files.
 
-When pulling or pushing databases, a new `database` folder will be created in your repository holding database dumps and backups.
+After configuring this within the `scripts/.env.sh` file run `$ grunt shell:syncdown` to pull down this data.
 
-Note: for local and remote servers running MySQL v5.6+, there needs to be an additional manual configuration on the server, to remove a warning created during Database syncing:
-
-On the environment showing the error, issue the command `$ mysql_config_editor set --login-path=client --host=localhost --user=[USERNAME] --password` replacing [USERNAME] with the correct username, and then typing the password when prompted to.
+Note for hosts running MSQL 5.6+, you might run into an issue. To resolve the issue run the command `$ mysql_config_editor set --login-path=client --host=localhost --user=[USERNAME] --password` replacing [USERNAME] with the correct username, and then typing the password when prompted to.
 
 ## Converting to Craft
 
