@@ -158,76 +158,6 @@ module.exports = function(grunt) {
       }
     },
 
-
-    //
-    // Deployments
-    //
-    shipit: {
-
-      options: {
-
-        // Codebase details
-        workspace: '.tmp',
-        deployTo: '/var/www/[FOLDERNAME]',
-        repositoryUrl: '[ENTER REPO ADDRESS]',
-        branch: 'master',
-        ignores: ['.git'],
-        keepReleases: 2,
-        key: '~/.ssh/id_rsa',
-        shallowClone: true,
-
-        // Shared directory details
-        shared: {
-          overwrite: true,
-          dirs: ['public/uploads']
-          // You can symlink files too
-          // files: ['public/uploads']
-        },
-
-        // DB details
-        db: {
-
-          backupDir: 'database',
-
-          local: {
-            host     : '127.0.0.1',
-            port    : 8889,
-            // For servers using MySQL v 5.6_ we need to set the credentials inside the mysql_config_editor or else we get a warning
-            username: 'root',
-            password: 'root',
-            database : '[DBNAME]',
-            adapter  : 'mysql',
-          }
-
-        },
-
-        assets: {
-          paths: ['public/uploads']
-        }
-
-      },
-
-      // Staging Server
-      staging: {
-
-        // server address and credentials
-        servers: ['[USERNAME]@0.0.0.0'],
-
-        // Database connections
-        db: {
-          remote: {
-            host     : '127.0.0.1',
-            username : '[USERNAME]',
-            password : '[PASSWORD]',
-            database : '[DBNAME]',
-            adapter  : 'mysql',
-          }
-        }
-
-      }
-
-    },
-
     //
     // Some shell commands we're using to help with Vagrant and converting things to Craft
     //
@@ -240,6 +170,9 @@ module.exports = function(grunt) {
       },
       converttocraft: {
         command: 'bash ./server/provision-craft.sh'
+      },
+      syncdown: {
+        command: 'bash ./scripts/pull_db.sh && bash ./scripts/pull_assets.sh'
       }
     }
 
@@ -251,31 +184,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-browserify');
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-grunticon');
-  grunt.loadNpmTasks('grunt-shipit');
-  grunt.loadNpmTasks('shipit-deploy');
-  grunt.loadNpmTasks('shipit-shared');
-  grunt.loadNpmTasks('shipit-db');
-  grunt.loadNpmTasks('shipit-assets');
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-chokidar');
-
-  //
-  // File adjustments after sites are deployedPost Deploy
-  //
-  grunt.registerTask('post-deploy', function () {
-
-    var done = this.async();
-    var current = grunt.config('shipit.'+grunt.shipit.environment+'.deployTo') + '/current';
-    // grunt.shipit.remote('chmod -R 777 ' + current + "/craft/storage");
-    // grunt.shipit.remote('chmod -R 755 ' + current + "/public/content");
-    // grunt.shipit.remote('rm ' + current + "/public/.htaccess");
-    // grunt.shipit.remote('mv ' + current + "/public/.htaccess.production " + current + "/public/.htaccess");
-
-  });
-
-  grunt.shipit.on('published', function () {
-    grunt.task.run(['post-deploy']);
-  });
 
   //
   // Halting vagrant when the watch process is killed
