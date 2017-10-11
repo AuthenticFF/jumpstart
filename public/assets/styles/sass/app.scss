@@ -2,7 +2,6 @@
 @charset "UTF-8";
 
 @import "foundation";
-@import "settings";
 @import "bourbon";
 
 $flex: false;
@@ -28,7 +27,6 @@ $flex: false;
 // Repeating Components
 @import "elements/buttons";
 @import "elements/forms";
-@import "elements/elements";
 
 // High Level Modules (eg: hero, footer, datepicker)
 @import "components/footer";

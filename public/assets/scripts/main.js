@@ -13,6 +13,7 @@ var HomeTemplate = require('./templates/Home.js');
 
 $(window).ready(function(){
 
+  Foundation.addToJquery($);
   $(document).foundation();
 
   var template = window.template;
