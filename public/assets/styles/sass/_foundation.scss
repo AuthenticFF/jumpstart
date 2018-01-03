@@ -65,6 +65,8 @@
 @import 'components/tooltip';
 @import 'prototype/prototype';
 
+$xy-grid: true;
+
 @mixin foundation-everything(
   $flex: true,
   $prototype: false

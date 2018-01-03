@@ -4,31 +4,17 @@ module.exports = function(grunt) {
 
   require('load-grunt-tasks')(grunt);
 
-  //
-  // We use this to monitor when our processes are killed, so we can make sure we're halting vagrant
-  //
-  var ShutdownManager = require('node-shutdown-manager');
-  var shutdownManager = ShutdownManager.createShutdownManager({
-    timeout: 1000
-  });
-
   // Project configuration.
   grunt.initConfig({
 
     pkg: grunt.file.readJSON('package.json'),
 
-    //
-    // We're using a Git pre-commit hook to compile our code each time we make a Git commit.
-    // this task moves the contents of the .pre-commit-sample file into the pre-commit file within
-    // the .git directory
-    //
-    // This technically only needs to be done once, but we have it triggered each time the dev task starts
-    // to ensure it's not forgotten
-    //
-    copy: {
-      dist:{
-        files: [
-          {src: '.pre-commit-sample', dest: '.git/hooks/pre-commit'},
+    githooks: {
+      all: {
+        'pre-commit': [
+          'uglify',
+          'cssmin',
+          'shell:addfiles'
         ]
       }
     },
@@ -37,23 +23,29 @@ module.exports = function(grunt) {
     // Style Tasks
     //
 
-    // Compiling our SCSS into CSS
-    //
-    // Note: our Bourbon and Foundation packages are being included
-    //
     sass: {
       options: {
         sourceMap: true,
         includePaths: [
-          require('node-bourbon').includePaths,
           'node_modules/foundation-sites/scss'
         ],
         outputStyle: 'nested'
       },
       dist: {
         files: {
-          'public/assets/styles/css/app.css': 'public/assets/styles/sass/app.scss'
+          'public/assets/styles/css/raw-app.css': 'public/assets/styles/sass/app.scss'
         },
+      }
+    },
+
+    autoprefixer: {
+      options: {
+        browsers: ['last 2 versions']
+      },
+      dist: {
+        files:{
+          'public/assets/styles/css/app.css':'public/assets/styles/css/raw-app.css'
+        }
       }
     },
 
@@ -65,7 +57,6 @@ module.exports = function(grunt) {
         }
       }
     },
-
 
     //
     // Javascript Tasks
@@ -126,7 +117,7 @@ module.exports = function(grunt) {
       },
       sass: {
         files: ['public/assets/styles/sass/**/*.scss'],
-        tasks: [ 'sass' ]
+        tasks: [ 'sass', 'autoprefixer' ]
       }
     },
 
@@ -146,6 +137,7 @@ module.exports = function(grunt) {
           watchTask: true,
           open:false,
           https: true,
+          ghostMode: false,
           proxy: {
             target: "https://localhost:8890",
             reqHeaders: function(config){
@@ -165,14 +157,11 @@ module.exports = function(grunt) {
       options: {
         stdout: true
       },
-      vagrantup: {
-        command: 'vagrant up'
-      },
-      converttocraft: {
-        command: 'bash ./server/provision-craft.sh'
-      },
       syncdown: {
         command: 'bash ./scripts/pull_db.sh && bash ./scripts/pull_assets.sh'
+      },
+      addfiles: {
+        command: 'git add -f public/assets/scripts/built && git add -f public/assets/scripts/built'
       }
     }
 
@@ -186,22 +175,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-grunticon');
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-chokidar');
-
-  //
-  // Halting vagrant when the watch process is killed
-  //
-  shutdownManager.on('preShutdown', function( reason, err) {
-
-    if(reason === "SIGINT"){
-      grunt.util.spawn({
-        cmd: 'vagrant',
-        args: ['halt']
-      });
-
-      grunt.log.writeln('\n' + "Halting Vagrant");
-    }
-
-  });
+  grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-githooks');
 
   // Converting our project to a Craft project
   grunt.registerTask('converttocraft', ['shell:converttocraft']);
@@ -210,6 +185,6 @@ module.exports = function(grunt) {
   grunt.registerTask('compile', ['grunticon','uglify','cssmin']);
 
   // Launching our Dev environment
-  grunt.registerTask('dev', ['copy', 'grunticon', 'shell:vagrantup', 'browserify', 'browserSync', 'chokidar']);
+  grunt.registerTask('dev', ['copy', 'grunticon', 'browserify', 'browserSync', 'chokidar']);
 
 };

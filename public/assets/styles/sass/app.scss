@@ -1,10 +1,8 @@
-
 @charset "UTF-8";
 
 @import "foundation";
-@import "bourbon";
 
-$flex: false;
+$flex: true;
 @include foundation-everything($flex);
 
 // 3rd Party Overrides
