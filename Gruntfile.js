@@ -9,16 +9,6 @@ module.exports = function(grunt) {
 
     pkg: grunt.file.readJSON('package.json'),
 
-    githooks: {
-      all: {
-        'pre-commit': [
-          'uglify',
-          'cssmin',
-          'shell:addfiles'
-        ]
-      }
-    },
-
     //
     // Style Tasks
     //
