@@ -9,6 +9,11 @@ module.exports = function(grunt) {
 
     pkg: grunt.file.readJSON('package.json'),
 
+    // Clean any pre-commit hooks in .git/hooks directory
+    clean: {
+      hooks: ['.git/hooks/pre-commit']
+    },
+
     //
     // Style Tasks
     //
@@ -129,7 +134,7 @@ module.exports = function(grunt) {
           https: true,
           ghostMode: false,
           proxy: {
-            target: "https://localhost:8890",
+            target: "https://jumpstart.local",
             reqHeaders: function(config){
               return {
                 "host": "localhost:3000"
@@ -152,29 +157,29 @@ module.exports = function(grunt) {
       },
       addfiles: {
         command: 'git add -f public/assets/scripts/built && git add -f public/assets/scripts/built'
+      },
+      hooks: {
+        command: 'cp pre-commit .git/hooks && chmod 777 .git/hooks/pre-commit'
       }
     }
 
   });
 
   // TASKS
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-browserify');
+  grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-browser-sync');
+  grunt.loadNpmTasks('grunt-browserify');
+  grunt.loadNpmTasks('grunt-chokidar');
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-grunticon');
   grunt.loadNpmTasks('grunt-shell');
-  grunt.loadNpmTasks('grunt-chokidar');
-  grunt.loadNpmTasks('grunt-autoprefixer');
-  grunt.loadNpmTasks('grunt-githooks');
 
-  // Converting our project to a Craft project
-  grunt.registerTask('converttocraft', ['shell:converttocraft']);
+  grunt.registerTask('hookmeup', ['clean:hooks', 'shell:hooks']);
 
-  // Compiling our Icons, Javascript, and SCSS
   grunt.registerTask('compile', ['grunticon','uglify','cssmin']);
 
-  // Launching our Dev environment
-  grunt.registerTask('dev', ['copy', 'grunticon', 'browserify', 'browserSync', 'chokidar']);
+  grunt.registerTask('dev', ['grunticon', 'browserify', 'browserSync', 'chokidar']);
 
 };
